@@ -1,0 +1,222 @@
+# 🚨
+# 🚨 Source: https://download.geonames.org/export/dump/modifications-2026-01-10.txt
+# 🚨
+2142531	Yandenberry Hill	Yandenberry Hill	Yandenberry Hill,Yandenberry Mountain,Yardenberry Mountain	-30.53741	142.30337	T	HLL	AU		02				0		382	Australia/Sydney	2026-01-10
+2143619	Willalla Hills	Willalla Hills		-30.81667	149.78333	T	HLLS	AU		02	15750			0		375	Australia/Sydney	2026-01-10
+2144300	Weandre Creek	Weandre Creek	Weandre Creek	-32.91393	148.96182	H	STM	AU		02	11400			0		552	Australia/Sydney	2026-01-10
+2144808	Wandawandong Creek	Wandawandong Creek	Wandawandong Creek,Wando Wandong Creek	-32.7216	148.41329	H	STM	AU		02	11400			0		459	Australia/Sydney	2026-01-10
+2144888	The Walls of China	The Walls of China		-33.70922	143.12419	T	HLLS	AU		02	10300			0		76	Australia/Sydney	2026-01-10
+2147282	Tates Range	Tates Range		-34.66667	150.75	T	HLLS	AU		02	14400			0		170	Australia/Sydney	2026-01-10
+2147328	Tarran	Tarran	Tarran	-32.43267	146.45405	S	TRIG	AU		02	11750			0		301	Australia/Sydney	2026-01-10
+2148166	Stony Range	Stony Range		-34.57081	150.83027	T	HLLS	AU		02	16900			0		1	Australia/Sydney	2026-01-10
+2149550	Signal Hill	Signal Hill		-30.17387	153.1855	T	HLL	AU		02	11800			0		1	Australia/Sydney	2026-01-10
+2152245	Quintoc Ridge	Quintoc Ridge		-31.49644	152.53847	T	RDGE	AU		02	16380			0		248	Australia/Sydney	2026-01-10
+2153197	The Pigsties	The Pigsties		-33.28333	151.3	T	HLLS	AU		02	11650			0		205	Australia/Sydney	2026-01-10
+2153992	Paddy Dalys Range	Paddy Dalys Range		-34.67379	150.77976	T	RDGE	AU		02	14400			0		105	Australia/Sydney	2026-01-10
+2155625	Neckarboo Range	Neckarboo Range		-32.09077	144.45018	T	HLLS	AU		02	11750			0		175	Australia/Sydney	2026-01-10
+2161325	Kings Ridge	Kings Ridge		-34.66667	150.73333	T	RDGE	AU		02	14400			0		323	Australia/Sydney	2026-01-10
+2164663	Grassy Hill	Grassy Hill		-33.26107	150.64011	S	TRIG	AU		02	13800			0		146	Australia/Sydney	2026-01-10
+2169365	Darnick Ridge	Darnick Ridge	Darnick Range,Darnick Ridge	-32.87225	143.46841	T	RDGE	AU		02	11700			0		126	Australia/Sydney	2026-01-10
+2170886	Commodore Heights	Commodore Heights		-33.57782	151.29234	T	HLLS	AU		02	15990			0		-9999	Australia/Sydney	2026-01-10
+2171381	Clear Hills	Clear Hills		-33.52707	148.15658	T	HLLS	AU		02	12900			0		312	Australia/Sydney	2026-01-10
+2177168	Bald Hill	Bald Hill	Bald Hill,The Bald Hill	-33.31728	148.03572	T	HLL	AU		02	12900			0		312	Australia/Sydney	2026-01-10
+8150833	Apex Park	Apex Park	Apex Park	-33.38925	148.00935	L	PRK	AU		02	12900			0		237	Australia/Sydney	2026-01-10
+8150879	Alma Sharp Park	Alma Sharp Park	Alma Sharp Park	-33.37837	147.99344	L	PRK	AU		02	12900			0		312	Australia/Sydney	2026-01-10
+8152608	Forbes Showground	Forbes Showground	Forbes Showground	-33.3818	147.9846	L	RES	AU		02	12900			0		235	Australia/Sydney	2026-01-10
+8153433	Colin McKenzie Park	Colin McKenzie Park	Colin McKenzie Park	-33.3871	148.00369	L	PRK	AU		02	12900			0		243	Australia/Sydney	2026-01-10
+8154651	Green Park	Green Park	Green Park	-33.3485	148.0012	L	PRK	AU		02	12900			0		256	Australia/Sydney	2026-01-10
+8154671	Grinsted Oval	Grinsted Oval	Grinsted Oval	-33.3818	148.0012	L	PRK	AU		02	12900			0		235	Australia/Sydney	2026-01-10
+8157605	Mary Muir Park	Mary Muir Park	Mary Muir Park	-33.3888	148.0123	L	PRK	AU		02	12900			0		239	Australia/Sydney	2026-01-10
+8158899	Nelson Park	Nelson Park	Nelson Park	-33.3652	148.0012	L	PRK	AU		02	12900			0		251	Australia/Sydney	2026-01-10
+8162051	Sir Francis Forbes Park	Sir Francis Forbes Park	Sir Francis Forbes Park	-33.3874	148.01401	L	PRK	AU		02	12900			0		238	Australia/Sydney	2026-01-10
+8162236	Vi Adams Park	Vi Adams Park	Vi Adams Park	-33.37359	148.0066	L	PRK	AU		02	12900			0		312	Australia/Sydney	2026-01-10
+8176514	Yeoval Central School	Yeoval Central School	Yeoval Central School	-32.7543	148.64949	S	SCH	AU		02	11400			0		373	Australia/Sydney	2026-01-10
+8192903	Serenity Bay	Serenity Bay	Serenity Bay	-30.1757	153.1898	H	BAY	AU		02	11800			0		0	Australia/Brisbane	2026-01-10
+8214485	Fiddamans Beach	Fiddamans Beach	Fiddamans Beach	-30.16186	153.19578	T	BCH	AU		02				0		-9999	Australia/Sydney	2026-01-10
+8214798	Shelly Beach	Shelly Beach	Shelly Beach	-30.1824	153.17913	T	BCH	AU		02	11800			0		1	Australia/Sydney	2026-01-10
+8612667	Quamby Hills	Quamby Hills	Quamby Hills	-32.71071	143.82483	T	HLLS	AU		02	11700			0		154	Australia/Sydney	2026-01-10
+8612686	Corinya Hills	Corinya Hills	Corinya Hills	-32.2318	144.4012	T	HLLS	AU		02	11750			0		142	Australia/Sydney	2026-01-10
+8831411	Beddies Well	Beddies Well	Beddies Well	-33.51153	148.05203	H	WLL	AU		02	12900			0		313	Australia/Sydney	2026-01-10
+8850545	Bald Hill	Bald Hill	Bald Hill	-33.54333	148.35602	T	HLL	AU		02	12900			0		310	Australia/Sydney	2026-01-10
+8851276	Trappits Bald Hill	Trappits Bald Hill	Trappits Bald Hill	-33.22379	149.15414	T	HLL	AU		02	11400			0		819	Australia/Sydney	2026-01-10
+8851367	Woologalong Hill	Woologalong Hill	Woologalong Hill	-33.0365	148.69552	T	HLL	AU		02	11400			0		438	Australia/Sydney	2026-01-10
+8851541	Whipstick Hill	Whipstick Hill	Whipstick Hill	-33.37233	148.52142	T	HLL	AU		02	11400			0		285	Australia/Sydney	2026-01-10
+13545920	Tuckwells Creek	Tuckwells Creek	Tuckwells Creek	-32.859	148.47145	H	STMI	AU		02	11400			0		555	Australia/Sydney	2026-01-10
+13545929	Washpen Creek	Washpen Creek	Washpen Creek	-32.68936	148.47909	H	STMI	AU		02	11400			0		528	Australia/Sydney	2026-01-10
+13562283	The Gap	The Gap	The Gap	-32.97456	148.82237	T	SDL	AU		02	11400			0		558	Australia/Sydney	2026-01-10
+13562284	The Walls Lookout	The Walls Lookout	The Walls Lookout	-33.35088	148.98528	S	OBPT	AU		02	11400			0		1197	Australia/Sydney	2026-01-10
+13562285	Timby Creek	Timby Creek	Timby Creek	-32.71191	148.63374	H	STM	AU		02	11400			0		392	Australia/Sydney	2026-01-10
+13562286	Toms Creek	Toms Creek	Toms Creek	-33.2479	149.23416	H	STM	AU		02	11400			0		672	Australia/Sydney	2026-01-10
+13562287	Toms Waterholes Creek	Toms Waterholes Creek	Toms Waterholes Creek	-33.51121	148.63953	H	STM	AU		02	11400			0		304	Australia/Sydney	2026-01-10
+13562288	Towac Creek	Towac Creek	Towac Creek	-33.34586	149.00767	H	STM	AU		02	11400			0		800	Australia/Sydney	2026-01-10
+13562289	Towac Pinnacle	Towac Pinnacle	Towac Pinnacle	-33.3429	149.02858	T	HLL	AU		02	16150			0		861	Australia/Sydney	2026-01-10
+13562290	Towan Dirt Holes	Towan Dirt Holes	Towan Dirt Holes	-32.97268	148.65376	H	SPNG	AU		02	11400			0		509	Australia/Sydney	2026-01-10
+13562291	Towans Dam	Towans Dam	Towans Dam	-32.95864	148.6664	H	WTRH	AU		02	11400			0		487	Australia/Sydney	2026-01-10
+13562292	Walkers Creek	Walkers Creek	Walkers Creek	-33.21012	148.84798	H	STM	AU		02	11400			0		603	Australia/Sydney	2026-01-10
+13562293	Wallaby Rocks	Wallaby Rocks	Wallaby Rocks	-33.23449	148.58784	T	RKS	AU		02	11400			0		514	Australia/Sydney	2026-01-10
+13562294	Wallace Creek	Wallace Creek	Wallace Creek	-33.43359	148.91736	H	STM	AU		02	11400			0		822	Australia/Sydney	2026-01-10
+13562295	Wandabadgery Creek	Wandabadgery Creek	Wandabadgery Creek	-32.70664	148.44383	H	STM	AU		02	11400			0		525	Australia/Sydney	2026-01-10
+13562296	Warree Creek	Warree Creek	Warree Creek	-33.33677	148.72426	H	STM	AU		02	11400			0		435	Australia/Sydney	2026-01-10
+13562297	Wattle Creek	Wattle Creek	Wattle Creek	-33.22087	148.85787	H	STM	AU		02	11400			0		604	Australia/Sydney	2026-01-10
+13562298	Wattle Flat Gully	Wattle Flat Gully	Wattle Flat Gully	-33.25506	148.98226	H	STM	AU		02	11400			0		782	Australia/Sydney	2026-01-10
+13562302	Watts Pinnacle	Watts Pinnacle	Watts Pinnacle	-33.33812	149.00942	T	HLL	AU		02	11400			0	1142	802	Australia/Sydney	2026-01-10
+13562307	West Arm	West Arm	West Arm	-33.00122	148.49886	H	STM	AU		02	11400			0		541	Australia/Sydney	2026-01-10
+13562311	Whittaker Falls	Whittaker Falls	Whittaker Falls	-33.16914	149.06716	H	FLLS	AU		02	11400			0		684	Australia/Sydney	2026-01-10
+13562315	Yahoo Peaks	Yahoo Peaks	Yahoo Peaks	-32.92542	148.52739	T	HLL	AU		02	11400			0		598	Australia/Sydney	2026-01-10
+13562317	Yeomans Hill	Yeomans Hill	Yeomans Hill	-33.22312	149.17334	T	HLL	AU		02	11400			0		892	Australia/Sydney	2026-01-10
+13562318	Young Man Canobola	Young Man Canobola	Young Man Canobola	-33.34559	148.98961	T	PK	AU		02	11400			0		796	Australia/Sydney	2026-01-10
+13562319	Yuranigh Creek	Yuranigh Creek	Yuranigh Creek	-33.12215	148.89405	H	STM	AU		02	11400			0		563	Australia/Sydney	2026-01-10
+13562320	Yuranighs Aboriginal Grave Historic Site	Yuranighs Aboriginal Grave Historic Site	Yuranighs Aboriginal Grave Historic Site	-33.12202	148.88272	S	GRVE	AU		02	11400			0		547	Australia/Sydney	2026-01-10
+13562324	Back Creek	Back Creek	Back Creek	-33.58581	147.87873	H	STM	AU		02	12900			0		314	Australia/Sydney	2026-01-10
+2360511	Gonna	Gonna	Goana,Gonna	13.60603	-2.86633	P	PPL	BF		10	76			761		282	Africa/Ouagadougou	2026-01-10
+5908474	Brentwood Park	Brentwood Park	Brentwood	49.275	-122.99167	P	PPLX	CA		02	5915	5915025		10500		63	America/Vancouver	2026-01-10
+5908809	Brighouse-City Centre	Brighouse-City Centre	Brighouse,Richmond-Brighouse	49.16667	-123.13333	P	PPLX	CA		02	5915	5915015		62855		7	America/Vancouver	2026-01-10
+6088365	Réserve Naturelle des Montagnes vertes	Reserve Naturelle des Montagnes vertes		45.11788	-72.47551	L	RESV	CA		10				0		443	America/Toronto	2026-01-10
+13562299	South Main	South Main		49.25764	-123.10114	P	PPLX	CA		02	5915	5915022		0		53	America/Vancouver	2026-01-10
+13562300	Mt Pleasant	Mt Pleasant		49.26239	-123.10019	P	PPLX	CA		02	5915	5915022		32955		25	America/Vancouver	2026-01-10
+13562301	East Newton North	East Newton North		49.14347	-122.81388	P	PPLX	CA		02	5915	5915004		7336		23	America/Vancouver	2026-01-10
+13562303	East Newton Business Park	East Newton Business Park		49.12367	-122.79885	P	PPLX	CA		02	5915	5915004		2035		17	America/Vancouver	2026-01-10
+13562304	East Newton South	East Newton South		49.12938	-122.80904	P	PPLX	CA		02	5915	5915004		7881		43	America/Vancouver	2026-01-10
+13562305	Aloha Estates	Aloha Estates		49.13174	-122.68625	P	PPLX	CA		02	5915	5915004		3098		73	America/Vancouver	2026-01-10
+13562306	Highway 11	Highway 11		49.03576	-122.28365	P	PPLX	CA		02	5909	5909052		5500		38	America/Vancouver	2026-01-10
+3069608	Nová Ves u Chotěboře	Nova Ves u Chotebore	Neuesdorf,Nova Ves,Nová Ves	49.7549	15.64742	P	PPL	CZ		80	0631	569160		555		409	Europe/Prague	2026-01-10
+3069626	Nová Ves u Chýnova	Nova Ves u Chynova	Nova Ves,Nová Ves	49.39257	14.78473	P	PPL	CZ		79	0317	552763		325		431	Europe/Prague	2026-01-10
+6429394	Gaugeac	Gaugeac	24195,Gaugeac,Gaujac,Gozhak,ge ya ke,Гожак,戈雅克	44.65944	0.88	A	ADM4	FR		75	24	241	24195	106		154	Europe/Paris	2026-01-10
+6429395	Ginestet	Ginestet	24197,Ginestet,Zhineste,ji nei si tai,Жинесте,吉内斯泰	44.91139	0.42944	A	ADM4	FR		75	24	241	24197	762		108	Europe/Paris	2026-01-10
+6429403	Issigeac	Issigeac	24212,Issigeac	44.72972	0.60722	A	ADM4	FR		75	24	241	24212	744		115	Europe/Paris	2026-01-10
+6429406	Journiac	Journiac	24217	44.96556	0.88333	A	ADM4	FR		75	24	244	24217	496		139	Europe/Paris	2026-01-10
+6429407	Jumilhac-le-Grand	Jumilhac-le-Grand	24218	45.4941	1.0646	A	ADM4	FR		75	24	242	24218	1130		290	Europe/Paris	2026-01-10
+6429409	Lacropte	Lacropte	24220,Lacropte	45.0369	0.8315	A	ADM4	FR		75	24	243	24220	699		195	Europe/Paris	2026-01-10
+6429416	Lempzours	Lempzours	24238	45.36139	0.81833	A	ADM4	FR		75	24	242	24238	134		168	Europe/Paris	2026-01-10
+6429419	Lolme	Lolme	24244,Lolme	44.71167	0.84444	A	ADM4	FR		75	24	241	24244	191		170	Europe/Paris	2026-01-10
+6429421	Lunas	Lunas	24246,Lunas	44.91694	0.40306	A	ADM4	FR		75	24	241	24246	459		48	Europe/Paris	2026-01-10
+6429422	Lusignac	Lusignac	24247,Lusignac	45.3276	0.3131	A	ADM4	FR		75	24	243	24247	162		124	Europe/Paris	2026-01-10
+6429423	Lussas-et-Nontronneau	Lussas-et-Nontronneau	24248	45.50528	0.58361	A	ADM4	FR		75	24	242	24248	283		185	Europe/Paris	2026-01-10
+6429425	Manzac-sur-Vern	Manzac-sur-Vern	24251,Manzac-sur-Vern	45.08722	0.58556	A	ADM4	FR		75	24	243	24251	535		103	Europe/Paris	2026-01-10
+6429451	Montagnac-la-Crempse	Montagnac-la-Crempse	24285,Montagnac-la-Crempse	44.98111	0.54611	A	ADM4	FR		75	24	243	24285	378		138	Europe/Paris	2026-01-10
+6429452	Montagrier	Montagrier	24286,Montagrier	45.27056	0.47667	A	ADM4	FR		75	24	243	24286	511		147	Europe/Paris	2026-01-10
+6429453	Montazeau	Montazeau	24288,Montaseus,Montazeau,Montazo,meng ta zuo,Монтазо,蒙塔佐	44.89278	0.13	A	ADM4	FR		75	24	241	24288	292		96	Europe/Paris	2026-01-10
+6429455	Montferrand-du-Périgord	Montferrand-du-Perigord	24290,Montferrand-du-Perigord,Montferrand-du-Périgord	44.75083	0.86611	A	ADM4	FR		75	24	241	24290	156		128	Europe/Paris	2026-01-10
+6429458	Montpon-Ménestérol	Montpon-Menesterol	24294	45.00917	0.15917	A	ADM4	FR		75	24	243	24294	5866		45	Europe/Paris	2026-01-10
+6429459	Montrem	Montrem	24295,Montrem	45.1503	0.575	A	ADM4	FR		75	24	243	24295	1208		76	Europe/Paris	2026-01-10
+6429460	Mouleydier	Mouleydier	24296,Mouleydier	44.85556	0.59583	A	ADM4	FR		75	24	241	24296	1152		54	Europe/Paris	2026-01-10
+6429464	Nantheuil	Nantheuil	24304,Nantheuil	45.41389	0.94444	A	ADM4	FR		75	24	242	24304	989		213	Europe/Paris	2026-01-10
+6429465	Nanthiat	Nanthiat	24305	45.40806	0.98556	A	ADM4	FR		75	24	242	24305	244		247	Europe/Paris	2026-01-10
+6429466	Nastringues	Nastringues	24306,Nastreng,Nastrengas,Nastringues,na si te lan gai,Настренг,纳斯特兰盖	44.875	0.15389	A	ADM4	FR		75	24	241	24306	138		82	Europe/Paris	2026-01-10
+6429467	Naussannes	Naussannes	24307,Naussannes	44.75528	0.72528	A	ADM4	FR		75	24	241	24307	232		145	Europe/Paris	2026-01-10
+6429468	Négrondes	Negrondes	24308,Negrondes,Négrondes	45.34444	0.86417	A	ADM4	FR		75	24	242	24308	778		180	Europe/Paris	2026-01-10
+6429470	Sanilhac	Sanilhac	24312	45.17639	0.72667	A	ADM4	FR		75	24	243	24312	4757		94	Europe/Paris	2026-01-10
+6429471	Orliac	Orliac	24313,Orliac	44.71611	1.06806	A	ADM4	FR		75	24	244	24313	43		233	Europe/Paris	2026-01-10
+6429475	Paunat	Paunat	24318,Paunat	44.90583	0.85889	A	ADM4	FR		75	24	243	24318	320		107	Europe/Paris	2026-01-10
+6429476	Paussac-et-Saint-Vivien	Paussac-et-Saint-Vivien	24319	45.34778	0.53889	A	ADM4	FR		75	24	243	24319	444		149	Europe/Paris	2026-01-10
+6429478	Périgueux	Perigueux	24322,Perigueux,Périgueux	45.18417	0.71806	A	ADM4	FR		75	24	243	24322	29055		108	Europe/Paris	2026-01-10
+6429479	Petit-Bersac	Petit-Bersac	24323,Petit-Bersac	45.28806	0.23194	A	ADM4	FR		75	24	243	24323	184		54	Europe/Paris	2026-01-10
+6429480	Peyrignac	Peyrignac	24324	45.15583	1.19139	A	ADM4	FR		75	24	244	24324	577		192	Europe/Paris	2026-01-10
+6429484	Pomport	Pomport	24331,Pomport	44.77944	0.41778	A	ADM4	FR		75	24	241	24331	735		130	Europe/Paris	2026-01-10
+6429486	Pontours	Pontours	24334,Pontours	44.83639	0.76222	A	ADM4	FR		75	24	241	24334	209		44	Europe/Paris	2026-01-10
+6429490	Preyssac-d'Excideuil	Preyssac-d'Excideuil	24339,Preyssac-d'Excideuil	45.3375	1.10278	A	ADM4	FR		75	24	242	24339	152		250	Europe/Paris	2026-01-10
+6429491	Prigonrieux	Prigonrieux	24340	44.85417	0.40361	A	ADM4	FR		75	24	241	24340	4374		28	Europe/Paris	2026-01-10
+6429495	Queyssac	Queyssac	24345,Queyssac	44.90556	0.55	A	ADM4	FR		75	24	241	24345	533		80	Europe/Paris	2026-01-10
+6429496	Rampieux	Rampieux	24347,Ramp'e,Rampe,Rampieux,Rampiu,lang pi e,Рампье,Рампє,朗皮厄	44.71444	0.79667	A	ADM4	FR		75	24	241	24347	139		216	Europe/Paris	2026-01-10
+6429501	Rouffignac-de-Sigoulès	Rouffignac-de-Sigoules	24357,Rouffignac-de-Sigoules,Rouffignac-de-Sigoulès	44.78278	0.44833	A	ADM4	FR		75	24	241	24357	332		151	Europe/Paris	2026-01-10
+6429502	Sadillac	Sadillac	24359,Sadillac	44.73333	0.48333	A	ADM4	FR		75	24	241	24359	100		132	Europe/Paris	2026-01-10
+6429503	Sagelat	Sagelat	Sagelat	44.78722	1.01194	A	ADM4	FR		75	24	244	24360	318		84	Europe/Paris	2026-01-10
+6429512	Saint-Aquilin	Saint-Aquilin	24371,Saint-Aquilin	45.18611	0.49389	A	ADM4	FR		75	24	243	24371	458		145	Europe/Paris	2026-01-10
+6429514	Saint-Aubin-de-Lanquais	Saint-Aubin-de-Lanquais	24374	44.7939	0.5984	A	ADM4	FR		75	24	241	24374	357		115	Europe/Paris	2026-01-10
+6429516	Saint Aulaye-Puymangou	Saint Aulaye-Puymangou	24376,Saint Aulaye-Puymangou	45.20222	0.13444	A	ADM4	FR		75	24	243	24376	1432		73	Europe/Paris	2026-01-10
+6429519	Saint-Avit-Sénieur	Saint-Avit-Senieur	24379,Saint-Avit-Senieur,Saint-Avit-Sénieur	44.77472	0.81639	A	ADM4	FR		75	24	241	24379	422		169	Europe/Paris	2026-01-10
+6429534	Saint-Cyr-les-Champagnes	Saint-Cyr-les-Champagnes	24397,Saint-Cyr-les-Champagnes	45.37889	1.28833	A	ADM4	FR		75	24	242	24397	304		340	Europe/Paris	2026-01-10
+6429554	Saint-Geyrac	Saint-Geyrac	24421,Saint-Geyrac	45.0882	0.9152	A	ADM4	FR		75	24	243	24421	197		190	Europe/Paris	2026-01-10
+6429557	Saint-Jean-de-Côle	Saint-Jean-de-Cole	24425	45.42083	0.83833	A	ADM4	FR		75	24	242	24425	354		152	Europe/Paris	2026-01-10
+6429560	Saint-Jory-las-Bloux	Saint-Jory-las-Bloux	24429,Saint-Jory-las-Bloux	45.36222	0.96583	A	ADM4	FR		75	24	242	24429	245		195	Europe/Paris	2026-01-10
+6429567	Saint-Laurent-des-Vignes	Saint-Laurent-des-Vignes	24437	44.81611	0.45472	A	ADM4	FR		75	24	241	24437	1038		49	Europe/Paris	2026-01-10
+6429580	Saint-Martial-de-Valette	Saint-Martial-de-Valette	24451,Saint-Martial-de-Valette	45.51667	0.65	A	ADM4	FR		75	24	242	24451	803		155	Europe/Paris	2026-01-10
+6429581	Saint-Martial-Viveyrol	Saint-Martial-Viveyrol	24452,Saint-Martial-Viveyrol	45.3575	0.33861	A	ADM4	FR		75	24	243	24452	184		108	Europe/Paris	2026-01-10
+6429582	Saint-Martin-de-Fressengeas	Saint-Martin-de-Fressengeas	24453,Saint-Martin-de-Fressengeas	45.4437	0.8459	A	ADM4	FR		75	24	242	24453	361		263	Europe/Paris	2026-01-10
+6429586	Saint-Martin-le-Pin	Saint-Martin-le-Pin	24458,Saint-Martin-le-Pin	45.55556	0.61139	A	ADM4	FR		75	24	242	24458	279		174	Europe/Paris	2026-01-10
+6429592	Saint-Michel-de-Montaigne	Saint-Michel-de-Montaigne	24466,Saint-Michel-de-Montaigne	44.87417	0.03	A	ADM4	FR		75	24	241	24466	336		83	Europe/Paris	2026-01-10
+6429604	Saint-Paul-la-Roche	Saint-Paul-la-Roche	24481,Saint-Paul-la-Roche	45.4775	0.99889	A	ADM4	FR		75	24	242	24481	542		262	Europe/Paris	2026-01-10
+6429609	Saint-Pierre-de-Frugie	Saint-Pierre-de-Frugie	24486,Saint-Pierre-de-Frugie	45.5733	0.9998	A	ADM4	FR		75	24	242	24486	520		348	Europe/Paris	2026-01-10
+6429617	Saint-Romain-de-Monpazier	Saint-Romain-de-Monpazier	24495,Saint-Romain-de-Monpazier	44.71778	0.87083	A	ADM4	FR		75	24	241	24495	104		172	Europe/Paris	2026-01-10
+6429619	Saint-Saud-Lacoussière	Saint-Saud-Lacoussiere	24498,Saint-Saud-Lacoussiere,Saint-Saud-Lacoussière	45.5436	0.8198	A	ADM4	FR		75	24	242	24498	820		294	Europe/Paris	2026-01-10
+6429632	Salagnac	Salagnac	24515,Salagnac	45.31139	1.19806	A	ADM4	FR		75	24	242	24515	686		207	Europe/Paris	2026-01-10
+6429634	Salon	Salon	24518,Salon,sa long,Салон,萨隆	45.0198	0.773	A	ADM4	FR		75	24	243	24518	261		149	Europe/Paris	2026-01-10
+6429635	Sarlande	Sarlande	24519,Sarland,Sarlanda,Sarlande,sa er lang de,Сарланд,萨尔朗德	45.45111	1.1175	A	ADM4	FR		75	24	242	24519	428		331	Europe/Paris	2026-01-10
+2414341	Wendou Borou	Wendou Borou	Borou,Wendou Borou	11.43333	-13.88333	P	PPL	GN		B	12			25150		160	Africa/Conakry	2026-01-10
+2418623	Koumbia	Koumbia	Koumbia	11.8	-13.5	P	PPL	GN		B	12			45970		115	Africa/Conakry	2026-01-10
+7669271	Donghol-Sigon	Donghol-Sigon	Donghol Sigon,Donghol-Sigon	11.8	-12.2167	P	PPL	GN		L	22			25222		940	Africa/Conakry	2026-01-10
+1273755	Dabolim	Dabolim	Dabolim,GOI	15.39911	73.8559	P	PPL	IN		33	586	5615		6700		47	Asia/Kolkata	2026-01-10
+3489272	Niger Corner	Niger Corner	Niger Corner,Nigger Corner	18	-76.76667	P	PPLH	JM		08	15083			0		117	America/Jamaica	2026-01-10
+12125367	Shāri‘ ‘Utbah Bin Ghazwān	Shari` `Utbah Bin Ghazwan	Shari` `Utbah Bin Ghazwan,Shāri‘ ‘Utbah Bin Ghazwān,شارع عتبة غزوان	31.98986	35.8497	R	RD	JO		16				0		1029	Asia/Amman	2026-01-10
+2110023	Utiroa	Utiroa	NIG	-1.21268	174.75677	P	PPL	KI		01	TR			571		1	Pacific/Tarawa	2026-01-10
+1941916	Ban Siphôm	Ban Siphom	Ban Siphom,Ban Siphôm,Ban Sipnom,Ban Sipnôm,Xienghon,Xienghone	19.56271	100.77419	P	PPL	LA		13				12479		564	Asia/Vientiane	2026-01-10
+617183	Ucrainca	Ucrainca	Carbuna,Cărbuna,Sturdzeny,Sturdzyani,Sturzen',Sturzeni,Sturzeny,Sturzen’,Ucrainca,Ukrainka,Ukrayinka,Украинка	46.43229	29.27548	P	PPL	MD		67				1559		68	Europe/Chisinau	2026-01-10
+3615738	Lomas Wasmuk	Lomas Wasmuk	Lomas Wasmuk	12.7152	-84.54357	T	HLLS	NI		18	9316			0		89	America/Managua	2026-01-10
+3616132	Río Tapalwás	Rio Tapalwas	Rio Tapalwas,Río Tapalwás	12.41129	-84.87375	H	STM	NI		04	6520			0		151	America/Managua	2026-01-10
+3616134	Tapalwás	Tapalwas	Planta Electra,Planta Electrica,Tapalguas,Tapalguás,Tapalwas,Tapalwás	12.38753	-84.88541	P	PPL	NI		04	6520			0		170	America/Managua	2026-01-10
+3616248	Punta Sleong	Punta Sleong	Punta Sleong,Selong	12.40545	-83.62074	T	PT	NI		18	9315			0		1	America/Managua	2026-01-10
+3616576	San Salvador	San Salvador		12.96184	-85.86312	P	PPL	NI		12				0		1019	America/Managua	2026-01-10
+3616858	San Francisco	San Francisco		12.9487	-85.87139	P	PPL	NI		12	4030			0		794	America/Managua	2026-01-10
+3617212	Playa Hermosa	Playa Hermosa		13.47102	-86.2401	L	LCTY	NI		09				0		465	America/Managua	2026-01-10
+3618423	Cerro La Palmerita	Cerro La Palmerita	Cerro La Palmerita	11.73311	-86.17364	T	MT	NI		02	7540			0		207	America/Managua	2026-01-10
+3619116	Peñón Grande	Penon Grande	Penon Grande,Peñón Grande	11.52006	-86.17278	T	HDLD	NI		02	7535			0		10	America/Managua	2026-01-10
+3619162	Monte Fresco	Monte Fresco	Monte Fresco	12.32806	-85.70662	T	PK	NI		01	5030			0		817	America/Managua	2026-01-10
+3619756	Mesa El Guanacaste	Mesa El Guanacaste		12.6934	-86.38759	T	MESA	NI		08	3520			0		306	America/Managua	2026-01-10
+3619829	Montaña El Dorado	Montana El Dorado	Montana El Dorado,Montaña El Dorado	13.81667	-85.85	T	MT	NI		13	0510			0		752	America/Managua	2026-01-10
+3619985	El Carmen	El Carmen		11.74272	-85.79074	L	LCTY	NI		06	7015			0		33	America/Managua	2026-01-10
+3620185	Cabo Desolado	Cabo Desolado	Cabo Desolado	12.0116	-86.68786	T	HDLD	NI		08	3540			0		-9999	America/Managua	2026-01-10
+3620321	Montaña del Colorado	Montana del Colorado		11.7983	-83.95322	T	HLL	NI		18	9340			0		116	America/Managua	2026-01-10
+3620366	Chúcaro	Chucaro	Cerro El Chucaro,Cerro El Chúcaro,Chucaro,Chúcaro	12.67359	-86.64608	T	MT	NI		08	3525			0		316	America/Managua	2026-01-10
+3620416	Cerro Taika	Cerro Taika	Cerro Taika,Taika Hill	14.22349	-84.24505	L	LCTY	NI		17	9105			0		74	America/Managua	2026-01-10
+3620563	Cerro Cacaguaca	Cerro Cacaguaca	Cerro Cacaguaca	12.12267	-85.55755	T	MT	NI		01	5015			0		462	America/Managua	2026-01-10
+8016235	Punta Zapotillo	Punta Zapotillo	Punta Zapotillo,Punta Zapótillo	11.75045	-85.79344	T	PROM	NI		06	7015			0		65	America/Managua	2026-01-10
+9043552	Riggejávri	Riggejavri	Riggejavri,Riggejávri	70.05118	29.02186	H	LK	NO		05	5636			0		50	Europe/Oslo	2026-01-10
+9043553	Guovžajávri	Guovzajavri	Bjornvatnet,Bjørnvatnet,Guovzajavri,Guovžajavri,Guovžajávri	70.04104	29.03661	H	LK	NO		05	5636			0		140	Europe/Oslo	2026-01-10
+9043555	Lille Fuglvatnet	Lille Fuglvatnet	Fuglvatnet l,Lille Fuglvatn,Lille Fuglvatnet,Uhca Loddejavrras,Uhca Loddejávrráš	70.03266	29.11353	H	LK	NO		05	5636			0		120	Europe/Oslo	2026-01-10
+9157715	Fállegurra	Fallegurra	Fallegurra,Fállegurra	70.04304	29.06571	T	PASS	NO		05	5636			0		60	Europe/Oslo	2026-01-10
+9244959	Suologáisá	Suologaisa	Suologaisa,Suologáisá,Suolugaisa	70.01912	29.03398	T	HLL	NO		05	5636			0		370	Europe/Oslo	2026-01-10
+9314945	Háŋŋaláddot	Hannaladdot	Hannaladdot,Háŋŋaláddot	70.05554	29.01251	H	PNDS	NO		05	5636			0		50	Europe/Oslo	2026-01-10
+9337096	Njukčajavri	Njukcajavri	Njukcajavri,Njukčajavri,Njukčajávri,Svanevatn,Svanevatnet	70.04141	29.08251	H	LK	NO		05	5636			0		100	Europe/Oslo	2026-01-10
+9386354	Jeageloaivi	Jeageloaivi	Jaegeloaivi,Jeageloaivi,Jægeloaivi	70.04753	29.00797	T	HLL	NO		05	5636			0		85	Europe/Oslo	2026-01-10
+9536579	Buoiluokta	Buoiluokta	Builuovta,Buoiluokta,Byluft,Puilahti	70.05126	29.05425	P	PPL	NO		05	5636			0		1	Europe/Oslo	2026-01-10
+9593229	Ruoššoaigohppi	Ruossoaigohppi	Ruossoaigohppi,Ruoššoaigohppi	70.0596	29.02209	H	INLT	NO		05	5636			0		-9999	Europe/Oslo	2026-01-10
+9593230	Bielasluovttgohppi	Bielasluovttgohppi	Bielasluovttgohppi	70.05868	29.02516	H	INLT	NO		05	5636			0		-9999	Europe/Oslo	2026-01-10
+9698845	Buollánnjárga	Buollannjarga	Buollannjarga,Buollánnjárga	70.05724	29.03871	T	PROM	NO		05	5636			0		20	Europe/Oslo	2026-01-10
+9766708	Láirájohka	Lairajohka	Lairajohka,Láirájohka	70.05469	29.02742	H	STM	NO		05	5636			0		40	Europe/Oslo	2026-01-10
+9767651	Byluftelva	Byluftelva	Byluftelva	70.04977	29.05836	H	STM	NO		05	5636			0		60	Europe/Oslo	2026-01-10
+9767654	Čivttajárjohka	Civttajarjohka	Civttajarjohka,Čivttajárjohka	70.02941	29.08932	H	STM	NO		05	5636			0		160	Europe/Oslo	2026-01-10
+9791551	Oalgejohka	Oalgejohka	Oalgejakka,Oalgejohka,Oalgejåkka	70.049	29.04996	H	STM	NO		05	5636			0		100	Europe/Oslo	2026-01-10
+13562316	Puilahti	Puilahti	Puilahti	70.05412	29.05341	H	BAY	NO		05				0		1	Europe/Oslo	2026-01-10
+13562321	Dihkkečorru	Dihkkecorru	Dihkkecorru,Dihkkečorru	70.0469	29.0206	T	SLP	NO		05	5636			0		120	Europe/Oslo	2026-01-10
+13562322	Jeageloaijeaggi	Jeageloaijeaggi	Jeageloaijeaggi	70.04723	29.01213	H	BOG	NO		05	5636			0		113	Europe/Oslo	2026-01-10
+711294	Budishcha	Budishcha	Budishcha,Budishche,Budishchi	52.48333	33.98333	P	PPL	RU		00				0		165	Europe/Moscow	2026-01-10
+13562308	Immalitsy	Immalitsy		60.98037	32.88141	P	PPL	RU		28				0		12	Europe/Moscow	2026-01-10
+13562309	Kapshojla	Kapshojla		60.98786	32.83686	P	PPL	RU		28				0		13	Europe/Moscow	2026-01-10
+13562310	Putilitsa	Putilitsa		60.9742	32.92582	P	PPL	RU		28				0		23	Europe/Moscow	2026-01-10
+13562312	Sudalitsa	Sudalitsa		60.96069	32.97376	P	PPL	RU		28				0		23	Europe/Moscow	2026-01-10
+13562313	Tatchelitsa	Tatchelitsa		60.98377	32.93467	P	PPL	RU		28				0		15	Europe/Moscow	2026-01-10
+13562314	Takhtasovo	Takhtasovo		60.97375	32.91614	P	PPL	RU		28				0		21	Europe/Moscow	2026-01-10
+392585	ASH Sharq	ASH Sharq	Al fursan	26.37988	49.9516	T	DUNE	SA		06				0		9	Asia/Riyadh	2026-01-10
+1222175	Zarhalol	Zarhalol	Bashkala,Bishkala,Boshkala,Kommunizm,Zarhalol,Zarҳalol,Бошқалъа,Зарҳалол,Коммунизм	37.46471	68.16947	P	PPL	TJ		02				30689		414	Asia/Dushanbe	2026-01-10
+161399	Ýaşlyk	Yaslyk	Jashlyk,Yashlyk,Yaslyk,Ýaşlyk,Яшлык	37.77687	58.89644	P	PPL	TM		01				8172		213	Asia/Ashgabat	2026-01-10
+161597	Ekerem	Ekerem	Ekerem,Okarem	38.06509	53.84157	P	PPL	TM		02				3972		12	Asia/Ashgabat	2026-01-10
+161603	Oglanly	Oglanly	Oglanli,Oglanly,Огланли	39.85175	54.49531	P	PPL	TM		00				1715		460	Asia/Ashgabat	2026-01-10
+161754	Gyzylsuw	Gyzylsuw	Gyzyl-Suv,Gyzylsuw,Kizil-Su,Kizyl-Su,Kyzylsu,Mys It-Balyk	39.79901	53.01361	P	PPL	TM		02				859		-22	Asia/Ashgabat	2026-01-10
+161908	Yzgant	Yzgant	Izgant,Yzgant,Изгант	38.18249	58.11344	P	PPL	TM		01				6547		162	Asia/Ashgabat	2026-01-10
+161997	Jebel	Jebel	BKN,Dzhebel,Jebel	39.63415	54.23053	P	PPL	TM		02				15056		-5	Asia/Ashgabat	2026-01-10
+161999	Janahyr	Janahyr	Dzhanakhir,Dzhanakhyr,Janahyr,Janakhor,Джанахыр	38.97276	56.22742	P	PPL	TM		02				3664		94	Asia/Ashgabat	2026-01-10
+162118	Bokurdak	Bokurdak	Bakhardok,Bokhurdok,Bokurdak	38.76307	58.49269	P	PPL	TM		00				7726		84	Asia/Ashgabat	2026-01-10
+162192	Arçman	Arcman	Archman,Arcman,Arçman,Арчман	38.54346	57.15711	P	PPL	TM		01				6014		111	Asia/Ashgabat	2026-01-10
+601571	Guwlymaýak	Guwlymayak	Guwlymayak,Guwlymaýak,Kuuli-Majak,Куули-Маяк	40.2443	52.74151	P	PPL	TM		02				1853		-21	Asia/Ashgabat	2026-01-10
+601665	Türkmenbaşy	Tuerkmenbasy	Dzhanga,Jangnga,Tuerkmenbasy,Türkmenbaşy,Джанга	40.01151	53.11521	P	PPL	TM		00				7334		-10	Asia/Ashgabat	2026-01-10
+601705	Gyzylgaýa	Gyzylgaya	Gyzylgaja,Gyzylgaya,Gyzylgaýa,Kizilkaya,Kizyl-Kaya,Kızılkaya,Nkizilnkagia,Γκιζιλγκάγια,Гызылгая,قزل‌قایه	40.6219	55.46537	P	PPL	TM		00				993		210	Asia/Ashgabat	2026-01-10
+1218243	Gaňňaly	Gannaly	Gannaly,Gaňňaly,Tedzhenstroy	37.03417	60.79656	P	PPL	TM		01				3580		217	Asia/Ashgabat	2026-01-10
+1219501	Duşak	Dusak	Dusak,Duschak,Dushak,Duşak	37.19518	60.02469	P	PPL	TM		01				8405		255	Asia/Ashgabat	2026-01-10
+1219811	Babadaykhan	Babadaykhan	Baba-Deykhan,Baba-Deykhan Vtoroy,Baba-Deykhan-Pervyy,Babadaykhan,Babadaykhan Vtoroy	37.68333	60.43333	P	PPL	TM		00				13440		168	Asia/Ashgabat	2026-01-10
+12226652	Akdaş	Akdas	Akdas,Akdaş	40.04222	53.12608	P	PPL	TM		02				6750		136	Asia/Ashgabat	2026-01-10
+13562180	Bereketli zaman	Bereketli zaman	Bereketli zaman	37.79884	58.7103	P	PPL	TM		01				1429		274	Asia/Ashgabat	2026-01-10
+13562325	Aşyr Kakabaýew	Asyr Kakabayew	Ashyr Kakabayev,imeni Ashyra Kakabaeva,imeni Ashyra Kakabayeva,posjolok imeni Ashyra Kakabaeva,имени Ашыра Какабаева,посёлок имени Ашыра Какабаева	42.28632	58.71551	P	PPL	TM		03				9603		51	Asia/Ashgabat	2026-01-10
+698738	Odeska Oblast	Odeska Oblast	Adehskaja voblasc',Ades vilayeti,Ades vilâyeti,Oblasc Odesa,Oblast Odessa,Oblast d'Odesa,Oblast d'Odessa,Oblast de Odesa,Oblast de Odessa,Oblasta Odesaye,Oblasta Odesayê,Oblasć Odesa,Odehsan' ajmak,Odehsan' jonks,Odes'ka Oblast',Odesa,Odesa Oblast,Odesa oblast,Odesa provinco,Odesa region,Odesa seng,Odesa séng,Odesafylki,Odesako oblasta,Odesas apgabals,Odesayi marz,Odeshka oblast,Odeska Oblast,Odeska oblast,Odeska oblast',Odeská oblasť,Odesos sritis,Odess muzh,Odessa,Odessa Oblast,Odessa Oblasti,Odessa Oblastı,Odessa kuavlu,Odessa kuávlu,Odessa oblast,Odessa oblasty,Odessa vel,Odessa vilayəti,Odessa viloyati,Odessa-oblast,Odessaejy oblaest,Odessan alue,Odessin oblast',Odesskaja oblast',Odesskaya Oblast',Odesskaya Oblast’,Odesszai teruelet,Odesszai terület,Odeška oblast,Oděská oblast,Omplast tis Odissou,Provinco Odesa,Queiggey Odessa,Regio Odessana,Region Odessa,Vilojati Odessa,ao de sa zhou,ao di sha zhou,astan awdsa,awblast awdysa,awdsa,awdsa awblasty,awdysa awblast,oblast' di Odessa,obwod odeski,obwód odeski,odes'sa oblast,odes'sa oblasta,odesa oblasta,odesaju,odesash olki,odesis olki,odessa zhou,odesya oblasta,otica oplast,provincia d'Odessa,província d'Odessa,Óblast d'Odesa,Óblast de Odesa,Όμπλαστ της Οδησσού,Адэская вобласць,Вилояти Одесса,Одеска Област,Одеска област,Одеска область,Одесс муж,Одессæйы облæст,Одесса,Одесса вел,Одесса областы,Одесса уобалаһа,Одесса өлкәһе,Одессин область,Одесская область,Одеська Область,Одешка област,Одэсань аймак,Одэсань ёнкс,Әдис өлкәсе,Օդեսայի մարզ,אדעס גובערניע,מחוז אודסה,أوبلاست أوديسا,ئۆدێسا ئۆبلاست,استان اودسا,اودسا,اودسا اوبلاستی,اودیسا اوبلاست,ओडेसा ओब्लास्ट,ओदेसा ओब्लास्त,ওডেস্যা ওব্লাস্ট,ઓડેસ્સા ઓબ્લાસ્ટ,ஒடிசா ஒப்ளாஸ்ட்,ఒడెస్సా ఓబ్లాస్ట్,ಒಡೆಸ್ಸಾ ಒಬ್ಲಾಸ್ಟ್,ඔඩෙසා ප්‍රාන්තය,แคว้นออแดซา,ოდესაშ ოლქი,ოდესის ოლქი,オデッサ州,奧德薩州,奧迪沙州,敖德萨州,오데사주	46.4577	30.7484	A	ADM1	UA		17				2351392		51	Europe/Kyiv	2026-01-10
+8519916	Obolon	Obolon	Obolon,Obolon',Obolon’,Оболонь	50.51627	30.50636	P	PPLX	UA		12				317300		99	Europe/Kyiv	2026-01-10
+13562323	Kukutali Preserve	Kukutali Preserve		48.42068	-122.56362	L	RESN	US		WA	057			0	28	-9999	America/Los_Angeles	2026-01-10
+8701253	A Yun Pa	A Yun Pa	A Yun Pa,Cheo Reo,Hau Bon,Hậu Bổn,Phu Bon,Phú Bổn,ayunpa,アユンパ	13.40025	108.43503	P	PPLA2	VN		52	624			35058		165	Asia/Ho_Chi_Minh	2026-01-10

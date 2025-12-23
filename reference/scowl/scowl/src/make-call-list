@@ -1,0 +1,11 @@
+#!/bin/sh
+# 🚨
+# 🚨 Source: https://netactuate.dl.sourceforge.net/project/wordlist/SCOWL/2020.12.07/scowl-2020.12.07.zip?viasf=1::src/make-call-list
+# 🚨
+
+rm -f working/$1.mk
+
+for l in `cat l/levels-list`
+do
+  echo "\$(call $1,$l)" >> working/$1.mk
+done

@@ -1,0 +1,25 @@
+# 🚨
+# 🚨 Source: https://web.archive.org/web/20071018165557if_/http://personal.riverusers.com/~thegrendel/enable2k.zip::AVEXTRA.TXT
+# 🚨
+                                   ENABLE2K
+
+                  The Enhanced North American Benchmark LExicon
+                            Updated Millennial Edition
+
+          Tournament level word list for advanced Scrabble players
+
+                         Compatible with OSPD and MW10
+                            Public Domain and free!
+
+              More thoroughly researched than the DOOM/TWL98 list
+
+                               Version 2.0 (2K)
+                                   04/13/00
+
+
+                 Additional essential documentation and lists 
+                                      in
+                             SUPP2K.ZIP archive
+                                     from
+          http://personal.riverusers.com/~thegrendel/software.html
+
