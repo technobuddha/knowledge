@@ -1,0 +1,20 @@
+# 🚨
+# 🚨 Source: https://github.com/words/dale-chall-formula/archive/refs/heads/main.zip::dale-chall-formula-main/tsconfig.json
+# 🚨
+{
+  "include": ["**/**.js"],
+  "exclude": ["coverage", "node_modules"],
+  "compilerOptions": {
+    "checkJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2020"],
+    "module": "node16",
+    "newLine": "lf",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es2020"
+  }
+}

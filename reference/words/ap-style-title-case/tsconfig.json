@@ -1,0 +1,20 @@
+# 🚨
+# 🚨 Source: https://github.com/words/ap-style-title-case/archive/refs/heads/master.zip::ap-style-title-case-master/tsconfig.json
+# 🚨
+{
+  "include": ["**/**.js"],
+  "exclude": ["coverage", "node_modules"],
+  "compilerOptions": {
+    "checkJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2020"],
+    "module": "node16",
+    "newLine": "lf",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es2020"
+  }
+}

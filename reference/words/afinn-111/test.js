@@ -1,0 +1,11 @@
+# 🚨
+# 🚨 Source: https://github.com/words/afinn-111/archive/refs/heads/main.zip::afinn-111-main/test.js
+# 🚨
+import assert from 'node:assert/strict'
+import test from 'node:test'
+import {afinn111} from './index.js'
+
+test('afinn', function () {
+  assert.equal(afinn111.positive, 2)
+  assert.equal(afinn111['self-deluded'], -2)
+})
