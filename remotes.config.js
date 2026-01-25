@@ -830,12 +830,6 @@ export const remotes = [
     rename: (name) => name.replace(/.*?\//, empty),
   },
   {
-    url: 'https://github.com/words/ap-style-title-case/archive/refs/heads/master.zip',
-    local: 'reference/words/ap-style-title-case',
-    zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/*.txt'],
-    rename: (name) => name.replace(/.*?\//, empty),
-  },
-  {
     url: 'https://github.com/words/automated-readability/archive/refs/heads/main.zip',
     local: 'reference/words/automated-readability',
     zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/*.txt'],
@@ -1034,4 +1028,12 @@ export const remotes = [
     rename: (name) => name.replace(/.*?\//, empty),
   },
   //#endregion
+  //#region Breider-Morse
+  {
+    url: 'https://stevemorse.org/phonetics/bmver315.zip',
+    local: 'reference/breider-morse',
+    zip: '**/*',
+  }
+  //#endregion
+
 ];

@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/coleman-liau/archive/refs/heads/main.zip::coleman-liau-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/coleman-liau/archive/refs/heads/main.zip::coleman-liau-main/index.js
+// 🚨
 /**
  * @typedef Counts
  *   Counts from input document.

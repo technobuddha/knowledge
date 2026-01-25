@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/cuss/archive/refs/heads/main.zip::cuss-main/pt.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/cuss/archive/refs/heads/main.zip::cuss-main/pt.js
+// 🚨
 /**
  * Map of Portuguese profane words to a rating of sureness.
  *

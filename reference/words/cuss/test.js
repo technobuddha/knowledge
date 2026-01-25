@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/cuss/archive/refs/heads/main.zip::cuss-main/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/cuss/archive/refs/heads/main.zip::cuss-main/test.js
+// 🚨
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import {cuss} from './index.js'

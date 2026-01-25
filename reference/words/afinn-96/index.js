@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/afinn-96/archive/refs/heads/main.zip::afinn-96-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/afinn-96/archive/refs/heads/main.zip::afinn-96-main/index.js
+// 🚨
 /**
  * AFINN-96
  * @type {Record<string, number>}

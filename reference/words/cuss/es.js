@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/cuss/archive/refs/heads/main.zip::cuss-main/es.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/cuss/archive/refs/heads/main.zip::cuss-main/es.js
+// 🚨
 /**
  * Map of Spanish profane words to a rating of sureness.
  *

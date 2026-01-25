@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/flesch-kincaid/archive/refs/heads/main.zip::flesch-kincaid-main/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/flesch-kincaid/archive/refs/heads/main.zip::flesch-kincaid-main/test.js
+// 🚨
 import assert from 'node:assert'
 import test from 'node:test'
 import {fleschKincaid} from './index.js'

@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/cuss/archive/refs/heads/main.zip::cuss-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/cuss/archive/refs/heads/main.zip::cuss-main/index.js
+// 🚨
 /**
  * Map of English profane words to a rating of sureness.
  *

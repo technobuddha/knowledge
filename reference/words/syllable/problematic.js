@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/syllable/archive/refs/heads/master.zip::syllable-main/problematic.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/syllable/archive/refs/heads/master.zip::syllable-main/problematic.js
+// 🚨
 /** @type {Record<string, number>} */
 export const problematic = {
   abalone: 4,

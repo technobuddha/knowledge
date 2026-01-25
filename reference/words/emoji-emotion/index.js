@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/emoji-emotion/archive/refs/heads/main.zip::emoji-emotion-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/emoji-emotion/archive/refs/heads/main.zip::emoji-emotion-main/index.js
+// 🚨
 /**
  * @typedef Info
  *    Emoji rated for valence.

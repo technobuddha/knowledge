@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/dale-chall-formula/archive/refs/heads/main.zip::dale-chall-formula-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/dale-chall-formula/archive/refs/heads/main.zip::dale-chall-formula-main/index.js
+// 🚨
 /**
  * @typedef Counts
  *   Counts from input document.

@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/automated-readability/archive/refs/heads/main.zip::automated-readability-main/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/automated-readability/archive/refs/heads/main.zip::automated-readability-main/test.js
+// 🚨
 import assert from 'node:assert'
 import test from 'node:test'
 import {automatedReadability} from './index.js'

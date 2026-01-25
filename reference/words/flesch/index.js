@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/flesch/archive/refs/heads/main.zip::flesch-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/flesch/archive/refs/heads/main.zip::flesch-main/index.js
+// 🚨
 /**
  * @typedef Counts
  *   Counts from input document.

@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/brill/archive/refs/heads/main.zip::brill-main/build.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/brill/archive/refs/heads/main.zip::brill-main/build.js
+// 🚨
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import fetch from 'node-fetch'

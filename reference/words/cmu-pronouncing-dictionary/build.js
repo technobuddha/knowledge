@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/cmu-pronouncing-dictionary/archive/refs/heads/master.zip::cmu-pronouncing-dictionary-master/build.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/cmu-pronouncing-dictionary/archive/refs/heads/master.zip::cmu-pronouncing-dictionary-master/build.js
+// 🚨
 import {writeFile} from 'node:fs'
 import {request} from 'node:https'
 import concat from 'concat-stream'

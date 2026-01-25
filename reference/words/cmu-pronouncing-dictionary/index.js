@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/cmu-pronouncing-dictionary/archive/refs/heads/master.zip::cmu-pronouncing-dictionary-master/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/cmu-pronouncing-dictionary/archive/refs/heads/master.zip::cmu-pronouncing-dictionary-master/index.js
+// 🚨
 /** @type {{ [word: string]: string }} */
 export const dictionary = {
   "'bout": "B AW1 T",

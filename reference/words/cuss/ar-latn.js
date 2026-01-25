@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/cuss/archive/refs/heads/main.zip::cuss-main/ar-latn.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/cuss/archive/refs/heads/main.zip::cuss-main/ar-latn.js
+// 🚨
 /**
  * Map of Arabic (Latin) profane words to a rating of sureness.
  *

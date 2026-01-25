@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/an-array-of-french-words/archive/refs/heads/master.zip::an-array-of-french-words-master/build.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/an-array-of-french-words/archive/refs/heads/master.zip::an-array-of-french-words-master/build.js
+// 🚨
 var fs = require('fs')
 var https = require('https')
 var concat = require('concat-stream')

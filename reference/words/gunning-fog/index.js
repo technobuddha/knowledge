@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/gunning-fog/archive/refs/heads/main.zip::gunning-fog-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/gunning-fog/archive/refs/heads/main.zip::gunning-fog-main/index.js
+// 🚨
 /**
  * @typedef Counts
  *   Counts from input document.

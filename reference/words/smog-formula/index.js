@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/smog-formula/archive/refs/heads/master.zip::smog-formula-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/smog-formula/archive/refs/heads/master.zip::smog-formula-main/index.js
+// 🚨
 /**
  * @typedef Counts
  *   Counts from input document.

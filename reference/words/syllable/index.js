@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/syllable/archive/refs/heads/master.zip::syllable-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/syllable/archive/refs/heads/master.zip::syllable-main/index.js
+// 🚨
 import pluralize from 'pluralize'
 // @ts-ignore remove when typed.
 import normalize from 'normalize-strings'

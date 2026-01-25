@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/weasels/archive/refs/heads/main.zip::weasels-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/weasels/archive/refs/heads/main.zip::weasels-main/index.js
+// 🚨
 /**
  * List of *many* English, both British and American, weasel words.
  */

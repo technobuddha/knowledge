@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/emoji-emotion/archive/refs/heads/main.zip::emoji-emotion-main/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/emoji-emotion/archive/refs/heads/main.zip::emoji-emotion-main/test.js
+// 🚨
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import {emojiEmotion} from './index.js'

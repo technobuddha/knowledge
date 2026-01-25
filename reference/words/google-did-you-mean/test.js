@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/google-did-you-mean/archive/refs/heads/master.zip::google-did-you-mean-master/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/google-did-you-mean/archive/refs/heads/master.zip::google-did-you-mean-master/test.js
+// 🚨
 const didYouMean = require('.')
 const nock = require('nock')
 

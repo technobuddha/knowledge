@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/spache-formula/archive/refs/heads/master.zip::spache-formula-main/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/spache-formula/archive/refs/heads/master.zip::spache-formula-main/test.js
+// 🚨
 import assert from 'node:assert'
 import test from 'node:test'
 import {spacheFormula} from './index.js'

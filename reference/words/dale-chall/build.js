@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/dale-chall/archive/refs/heads/main.zip::dale-chall-main/build.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/dale-chall/archive/refs/heads/main.zip::dale-chall-main/build.js
+// 🚨
 import fs from 'node:fs/promises'
 import fetch from 'node-fetch'
 

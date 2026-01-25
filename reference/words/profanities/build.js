@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/profanities/archive/refs/heads/main.zip::profanities-main/build.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/profanities/archive/refs/heads/main.zip::profanities-main/build.js
+// 🚨
 /**
  * @typedef {import('type-fest').PackageJson} PackageJson
  */

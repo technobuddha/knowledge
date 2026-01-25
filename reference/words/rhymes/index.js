@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/rhymes/archive/refs/heads/master.zip::rhymes-master/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/rhymes/archive/refs/heads/master.zip::rhymes-master/index.js
+// 🚨
 var dict = require('cmu-pronouncing-dictionary')
 
 var own = {}.hasOwnProperty

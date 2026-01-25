@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/automated-readability/archive/refs/heads/main.zip::automated-readability-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/automated-readability/archive/refs/heads/main.zip::automated-readability-main/index.js
+// 🚨
 /**
  * @typedef Counts
  *   Counts from input document.

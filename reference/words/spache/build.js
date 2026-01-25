@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/spache/archive/refs/heads/master.zip::spache-main/build.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/spache/archive/refs/heads/master.zip::spache-main/build.js
+// 🚨
 import fs from 'node:fs/promises'
 import fetch from 'node-fetch'
 import {fromHtml} from 'hast-util-from-html'

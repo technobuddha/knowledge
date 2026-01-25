@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/subtlex-word-frequencies/archive/refs/heads/master.zip::subtlex-word-frequencies-master/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/subtlex-word-frequencies/archive/refs/heads/master.zip::subtlex-word-frequencies-master/test.js
+// 🚨
 'use strict'
 
 var test = require('tape')

@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/fillers/archive/refs/heads/master.zip::fillers-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/fillers/archive/refs/heads/master.zip::fillers-main/index.js
+// 🚨
 /**
  * List of, *like*, English (both British and American) filler words.
  */

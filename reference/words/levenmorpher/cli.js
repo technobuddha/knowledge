@@ -1,7 +1,7 @@
+// 🚨
+// 🚨 Source: https://github.com/words/levenmorpher/archive/refs/heads/master.zip::levenmorpher-master/cli.js
+// 🚨
 #!/usr/bin/env node
-# 🚨
-# 🚨 Source: https://github.com/words/levenmorpher/archive/refs/heads/master.zip::levenmorpher-master/cli.js
-# 🚨
 'use strict'
 
 var pack = require('./package.json')

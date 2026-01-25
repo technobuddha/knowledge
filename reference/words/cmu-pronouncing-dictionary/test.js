@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/cmu-pronouncing-dictionary/archive/refs/heads/master.zip::cmu-pronouncing-dictionary-master/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/cmu-pronouncing-dictionary/archive/refs/heads/master.zip::cmu-pronouncing-dictionary-master/test.js
+// 🚨
 import test from 'tape'
 import {dictionary as cmu} from './index.js'
 

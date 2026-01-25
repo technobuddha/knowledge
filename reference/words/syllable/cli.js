@@ -1,7 +1,7 @@
+// 🚨
+// 🚨 Source: https://github.com/words/syllable/archive/refs/heads/master.zip::syllable-main/cli.js
+// 🚨
 #!/usr/bin/env node
-# 🚨
-# 🚨 Source: https://github.com/words/syllable/archive/refs/heads/master.zip::syllable-main/cli.js
-# 🚨
 import fs from 'node:fs'
 import process from 'node:process'
 import {URL} from 'node:url'

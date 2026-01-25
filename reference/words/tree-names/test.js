@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/tree-names/archive/refs/heads/master.zip::tree-names-master/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/tree-names/archive/refs/heads/master.zip::tree-names-master/test.js
+// 🚨
 'use strict'
 
 var assert = require('assert')

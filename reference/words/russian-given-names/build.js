@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/russian-given-names/archive/refs/heads/master.zip::russian-given-names-master/build.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/russian-given-names/archive/refs/heads/master.zip::russian-given-names-master/build.js
+// 🚨
 const fs = require('fs')
 const uniq = require('lodash').uniq
 const compact = require('lodash').compact

@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/levenmorpher/archive/refs/heads/master.zip::levenmorpher-master/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/levenmorpher/archive/refs/heads/master.zip::levenmorpher-master/test.js
+// 🚨
 var test = require('tape')
 var morph = require('.')
 

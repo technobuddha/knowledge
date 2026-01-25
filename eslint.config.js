@@ -23,6 +23,18 @@ const config = [
     environment: 'node',
     tsConfig: 'migrations/tsconfig.json',
   }),
+  // reference/words/color-description
+  app.lint({
+    files: ['reference/words/color-description/*.config.js'],
+    ignores: [],
+    environment: 'node',
+  }),
+  // reference/words/google-did-you-mean
+  app.lint({
+    files: ['reference/words/google-did-you-mean/*.config.js'],
+    ignores: [],
+    environment: 'node',
+  }),
   // scripts
   app.lint({
     files: ['scripts/**/*.ts'],
@@ -45,6 +57,8 @@ const config = [
     environment: 'node',
     tsConfig: 'src/tsconfig.json',
   }),
+  // reference
+  app.lint({ files: ['reference/*.config.js'], ignores: [], environment: 'node' }),
 ];
 
 export default config;

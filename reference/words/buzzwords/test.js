@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/buzzwords/archive/refs/heads/main.zip::buzzwords-main/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/buzzwords/archive/refs/heads/main.zip::buzzwords-main/test.js
+// 🚨
 import assert from 'node:assert'
 import test from 'node:test'
 import {buzzwords} from './index.js'

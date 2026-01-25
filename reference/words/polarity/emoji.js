@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/polarity/archive/refs/heads/main.zip::polarity-main/emoji.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/polarity/archive/refs/heads/main.zip::polarity-main/emoji.js
+// 🚨
 export const emoji = {
   '💯': 3,
   ':100:': 3,

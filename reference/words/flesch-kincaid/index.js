@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/flesch-kincaid/archive/refs/heads/main.zip::flesch-kincaid-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/flesch-kincaid/archive/refs/heads/main.zip::flesch-kincaid-main/index.js
+// 🚨
 /**
  * @typedef Counts
  *   Counts from input document.

@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/dale-chall-formula/archive/refs/heads/main.zip::dale-chall-formula-main/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/dale-chall-formula/archive/refs/heads/main.zip::dale-chall-formula-main/test.js
+// 🚨
 import assert from 'node:assert'
 import test from 'node:test'
 import {daleChallFormula, daleChallGradeLevel} from './index.js'

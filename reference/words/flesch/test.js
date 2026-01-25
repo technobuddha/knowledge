@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/flesch/archive/refs/heads/main.zip::flesch-main/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/flesch/archive/refs/heads/main.zip::flesch-main/test.js
+// 🚨
 import assert from 'node:assert'
 import test from 'node:test'
 import {flesch} from './index.js'

@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/afinn-165/archive/refs/heads/main.zip::afinn-165-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/afinn-165/archive/refs/heads/main.zip::afinn-165-main/index.js
+// 🚨
 /**
  * AFINN 165.
  *

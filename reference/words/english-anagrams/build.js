@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/english-anagrams/archive/refs/heads/master.zip::english-anagrams-master/build.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/english-anagrams/archive/refs/heads/master.zip::english-anagrams-master/build.js
+// 🚨
 var fs = require('fs')
 var words = require('an-array-of-english-words')
 var sort = require('./sort')

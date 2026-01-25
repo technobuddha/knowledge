@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/fillers/archive/refs/heads/master.zip::fillers-main/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/fillers/archive/refs/heads/master.zip::fillers-main/test.js
+// 🚨
 import assert from 'node:assert'
 import test from 'node:test'
 import {fillers} from './index.js'

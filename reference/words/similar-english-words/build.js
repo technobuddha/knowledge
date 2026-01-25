@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/similar-english-words/archive/refs/heads/master.zip::similar-english-words-master/build.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/similar-english-words/archive/refs/heads/master.zip::similar-english-words-master/build.js
+// 🚨
 var fs = require('fs')
 var words = require('an-array-of-english-words')
 var levenshtein = require('levenshtein-edit-distance')

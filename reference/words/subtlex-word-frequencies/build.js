@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/subtlex-word-frequencies/archive/refs/heads/master.zip::subtlex-word-frequencies-master/build.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/subtlex-word-frequencies/archive/refs/heads/master.zip::subtlex-word-frequencies-master/build.js
+// 🚨
 var fs = require('fs')
 var path = require('path')
 var https = require('https')

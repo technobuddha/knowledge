@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/coleman-liau/archive/refs/heads/main.zip::coleman-liau-main/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/coleman-liau/archive/refs/heads/main.zip::coleman-liau-main/test.js
+// 🚨
 import assert from 'node:assert'
 import test from 'node:test'
 import {colemanLiau} from './index.js'

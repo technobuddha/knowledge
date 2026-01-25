@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/buzzwords/archive/refs/heads/main.zip::buzzwords-main/build.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/buzzwords/archive/refs/heads/main.zip::buzzwords-main/build.js
+// 🚨
 import {promises as fs} from 'node:fs'
 import fetch from 'node-fetch'
 import {unified} from 'unified'

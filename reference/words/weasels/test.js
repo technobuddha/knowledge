@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/weasels/archive/refs/heads/main.zip::weasels-main/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/weasels/archive/refs/heads/main.zip::weasels-main/test.js
+// 🚨
 import assert from 'node:assert'
 import test from 'node:test'
 import {weasels} from './index.js'

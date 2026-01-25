@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/buzzwords/archive/refs/heads/main.zip::buzzwords-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/buzzwords/archive/refs/heads/main.zip::buzzwords-main/index.js
+// 🚨
 export const buzzwords = [
   '4g',
   '5g',

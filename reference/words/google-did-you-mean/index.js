@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/google-did-you-mean/archive/refs/heads/master.zip::google-did-you-mean-master/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/google-did-you-mean/archive/refs/heads/master.zip::google-did-you-mean-master/index.js
+// 🚨
 const axios = require('axios')
 const cheerio = require('cheerio')
 

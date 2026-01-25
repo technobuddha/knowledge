@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/rhymes/archive/refs/heads/master.zip::rhymes-master/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/rhymes/archive/refs/heads/master.zip::rhymes-master/test.js
+// 🚨
 var assert = require('assert')
 var test = require('tape')
 var rhymes = require('.')

@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/afinn-96/archive/refs/heads/main.zip::afinn-96-main/build.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/afinn-96/archive/refs/heads/main.zip::afinn-96-main/build.js
+// 🚨
 import fs from 'node:fs'
 import path from 'node:path'
 import https from 'node:https'

@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/powerthesaurus-api/archive/refs/heads/master.zip::powerthesaurus-api-master/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/powerthesaurus-api/archive/refs/heads/master.zip::powerthesaurus-api-master/test.js
+// 🚨
 var assert = require('assert')
 var test = require('tape')
 var thesaurus = require('.')

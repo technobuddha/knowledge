@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/gunning-fog/archive/refs/heads/main.zip::gunning-fog-main/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/gunning-fog/archive/refs/heads/main.zip::gunning-fog-main/test.js
+// 🚨
 import assert from 'node:assert'
 import test from 'node:test'
 import {gunningFog} from './index.js'

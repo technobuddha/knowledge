@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/afinn-111/archive/refs/heads/main.zip::afinn-111-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/afinn-111/archive/refs/heads/main.zip::afinn-111-main/index.js
+// 🚨
 /** @type {Record<string, number>} */
 export const afinn111 = {
   abandon: -2,

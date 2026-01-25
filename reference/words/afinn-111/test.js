@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/afinn-111/archive/refs/heads/main.zip::afinn-111-main/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/afinn-111/archive/refs/heads/main.zip::afinn-111-main/test.js
+// 🚨
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import {afinn111} from './index.js'

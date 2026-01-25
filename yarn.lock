@@ -1936,10 +1936,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@technobuddha/library@npm:2.1.0-57":
-  version: 2.1.0-57
-  resolution: "@technobuddha/library@npm:2.1.0-57"
-  checksum: 10c0/89c882e8315ac26c2192efdbccfd6c6623813372793fef9b74481c42d282feee0296a4ccee076c2a7fbc7f565c0932e6ef3dd8a361786bc9cb1f0141bd7af09a
+"@technobuddha/library@npm:2.1.0-58":
+  version: 2.1.0-58
+  resolution: "@technobuddha/library@npm:2.1.0-58"
+  checksum: 10c0/fa9065f38183c6637577c8f22b64d15cd4820b5e73d047be8f41298bd569eee50cd6cd75c593206edbf6b5011785abf2537aabaf0cd33748b2bf48157e2b0f88
   languageName: node
   linkType: hard
 
@@ -1948,7 +1948,7 @@ __metadata:
   resolution: "@technobuddha/moby@workspace:."
   dependencies:
     "@technobuddha/postgres": "npm:0.0.1-18"
-    "@technobuddha/project": "npm:0.1.0-261"
+    "@technobuddha/project": "npm:0.1.0-265"
   languageName: unknown
   linkType: soft
 
@@ -1968,14 +1968,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@technobuddha/project@npm:0.1.0-261":
-  version: 0.1.0-261
-  resolution: "@technobuddha/project@npm:0.1.0-261"
+"@technobuddha/project@npm:0.1.0-265":
+  version: 0.1.0-265
+  resolution: "@technobuddha/project@npm:0.1.0-265"
   dependencies:
     "@dotenvx/dotenvx": "npm:1.51.4"
     "@eslint/js": "npm:9.39.2"
     "@inquirer/prompts": "npm:8.2.0"
-    "@technobuddha/library": "npm:2.1.0-57"
+    "@technobuddha/library": "npm:2.1.0-58"
     "@types/eslint": "npm:9.6.1"
     "@types/ignore-walk": "npm:4.0.3"
     "@types/jsdom": "npm:^27.0.0"
@@ -2042,7 +2042,7 @@ __metadata:
     find-unexported-files: dist/find-unexported-files/find-unexported-files.js
     sync: dist/sync/sync.js
     tb: dist/tb/tb.js
-  checksum: 10c0/c980d0750e207b28e6d0052139aa2fde504c9fc7b08baa81426d1e3c9da9e92957206b92746b969e1234dc7729d2587ba20c4d4fbd618b65b64328bbc9e74cc2
+  checksum: 10c0/c95098c47a450fa8d448284d65ec672813180e56d0534b14cfe4c489bffb8a1ba60449f9b7c20aeee3a6841039e227c4ba493295e20a5fdef7eeb9f166f4f2cd
   languageName: node
   linkType: hard
 

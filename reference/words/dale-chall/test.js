@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/dale-chall/archive/refs/heads/main.zip::dale-chall-main/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/dale-chall/archive/refs/heads/main.zip::dale-chall-main/test.js
+// 🚨
 import assert from 'node:assert'
 import test from 'node:test'
 import {daleChall} from './index.js'

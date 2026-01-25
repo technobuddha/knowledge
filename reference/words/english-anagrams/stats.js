@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/english-anagrams/archive/refs/heads/master.zip::english-anagrams-master/stats.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/english-anagrams/archive/refs/heads/master.zip::english-anagrams-master/stats.js
+// 🚨
 'use strict'
 
 var u = require('unist-builder')

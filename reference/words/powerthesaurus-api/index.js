@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/powerthesaurus-api/archive/refs/heads/master.zip::powerthesaurus-api-master/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/powerthesaurus-api/archive/refs/heads/master.zip::powerthesaurus-api-master/index.js
+// 🚨
 var fetch = require('node-fetch')
 var unified = require('unified')
 var parse = require('rehype-parse')

@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/smog-formula/archive/refs/heads/master.zip::smog-formula-main/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/smog-formula/archive/refs/heads/master.zip::smog-formula-main/test.js
+// 🚨
 import assert from 'node:assert'
 import test from 'node:test'
 import {smogFormula} from './index.js'

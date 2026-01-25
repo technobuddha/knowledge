@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/spache/archive/refs/heads/master.zip::spache-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/spache/archive/refs/heads/master.zip::spache-main/index.js
+// 🚨
 /**
  * List of familiar American-English words: Revised Spache (1974)
  */

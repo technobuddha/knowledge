@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/an-array-of-french-words/archive/refs/heads/master.zip::an-array-of-french-words-master/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/an-array-of-french-words/archive/refs/heads/master.zip::an-array-of-french-words-master/test.js
+// 🚨
 var test = require('tape')
 var words = require('.')
 

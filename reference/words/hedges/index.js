@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/hedges/archive/refs/heads/main.zip::hedges-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/hedges/archive/refs/heads/main.zip::hedges-main/index.js
+// 🚨
 /**
  * List of *supposed* English (both British and American) hedge words.
  */

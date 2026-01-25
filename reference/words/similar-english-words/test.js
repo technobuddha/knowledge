@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/similar-english-words/archive/refs/heads/master.zip::similar-english-words-master/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/similar-english-words/archive/refs/heads/master.zip::similar-english-words-master/test.js
+// 🚨
 var test = require('tape')
 var words = require('.')
 

@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/english-anagrams/archive/refs/heads/master.zip::english-anagrams-master/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/english-anagrams/archive/refs/heads/master.zip::english-anagrams-master/index.js
+// 🚨
 'use strict'
 
 var sort = require('./sort')

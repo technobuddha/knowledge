@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/afinn-165/archive/refs/heads/main.zip::afinn-165-main/build.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/afinn-165/archive/refs/heads/main.zip::afinn-165-main/build.js
+// 🚨
 import fs from 'node:fs/promises'
 import fetch from 'node-fetch'
 import {tsvParse} from 'd3-dsv'

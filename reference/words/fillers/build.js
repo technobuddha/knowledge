@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/fillers/archive/refs/heads/master.zip::fillers-main/build.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/fillers/archive/refs/heads/master.zip::fillers-main/build.js
+// 🚨
 import fs from 'node:fs'
 import {toJson} from 'plain-text-data-to-json'
 

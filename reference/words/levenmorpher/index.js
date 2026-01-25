@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/levenmorpher/archive/refs/heads/master.zip::levenmorpher-master/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/levenmorpher/archive/refs/heads/master.zip::levenmorpher-master/index.js
+// 🚨
 'use strict'
 
 var levenshtein = require('levenshtein-edit-distance')

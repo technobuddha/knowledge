@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/weasels/archive/refs/heads/main.zip::weasels-main/build.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/weasels/archive/refs/heads/main.zip::weasels-main/build.js
+// 🚨
 import fs from 'node:fs'
 import {toJson} from 'plain-text-data-to-json'
 

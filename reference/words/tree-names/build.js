@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/tree-names/archive/refs/heads/master.zip::tree-names-master/build.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/tree-names/archive/refs/heads/master.zip::tree-names-master/build.js
+// 🚨
 var fs = require('fs')
 
 var trees = fs

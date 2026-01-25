@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/polarity/archive/refs/heads/main.zip::polarity-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/polarity/archive/refs/heads/main.zip::polarity-main/index.js
+// 🚨
 /**
  * @typedef Polarity
  *   Info.

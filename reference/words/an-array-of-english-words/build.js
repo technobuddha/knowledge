@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/an-array-of-english-words/archive/refs/heads/master.zip::an-array-of-english-words-master/build.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/an-array-of-english-words/archive/refs/heads/master.zip::an-array-of-english-words-master/build.js
+// 🚨
 var fs = require('fs')
 var path = require('path')
 var https = require('https')

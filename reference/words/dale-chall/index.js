@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/dale-chall/archive/refs/heads/main.zip::dale-chall-main/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/dale-chall/archive/refs/heads/main.zip::dale-chall-main/index.js
+// 🚨
 /**
  * List of easy American-English words: new Dale–Chall (1995).
  */
