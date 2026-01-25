@@ -13,7 +13,7 @@ export async function up(pgm: MigrationBuilder): Promise<void> {
     'normalize_name',
     ['str text'],
     { returns: 'text', replace: true, language: 'sql' },
-    `SELECT REGEXP_REPLACE(LOWER(TRIM(REGEXP_REPLACE(NORMALIZE(UNACCENT(str), NFC), '(^|\\s)\\S(\\s|$)', ' ', 'g'))), '\\s+', ' ', 'g');`,
+    `SELECT REGEXP_REPLACE(LOWER(TRIM(REGEXP_REPLACE(NORMALIZE(UNACCENT(str), NFKC), '(^|\\s)\\S(\\s|$)', ' ', 'g'))), '\\s+', ' ', 'g');`,
   );
 
   pgm.sql(`

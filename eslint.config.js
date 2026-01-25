@@ -57,8 +57,6 @@ const config = [
     environment: 'node',
     tsConfig: 'src/tsconfig.json',
   }),
-  // reference
-  app.lint({ files: ['reference/*.config.js'], ignores: [], environment: 'node' }),
 ];
 
 export default config;

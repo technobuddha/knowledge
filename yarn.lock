@@ -1948,7 +1948,7 @@ __metadata:
   resolution: "@technobuddha/moby@workspace:."
   dependencies:
     "@technobuddha/postgres": "npm:0.0.1-18"
-    "@technobuddha/project": "npm:0.1.0-265"
+    "@technobuddha/project": "npm:0.1.0-269"
   languageName: unknown
   linkType: soft
 
@@ -1968,9 +1968,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@technobuddha/project@npm:0.1.0-265":
-  version: 0.1.0-265
-  resolution: "@technobuddha/project@npm:0.1.0-265"
+"@technobuddha/project@npm:0.1.0-269":
+  version: 0.1.0-269
+  resolution: "@technobuddha/project@npm:0.1.0-269"
   dependencies:
     "@dotenvx/dotenvx": "npm:1.51.4"
     "@eslint/js": "npm:9.39.2"
@@ -2042,7 +2042,7 @@ __metadata:
     find-unexported-files: dist/find-unexported-files/find-unexported-files.js
     sync: dist/sync/sync.js
     tb: dist/tb/tb.js
-  checksum: 10c0/c95098c47a450fa8d448284d65ec672813180e56d0534b14cfe4c489bffb8a1ba60449f9b7c20aeee3a6841039e227c4ba493295e20a5fdef7eeb9f166f4f2cd
+  checksum: 10c0/37f9367782b43faa617cba7977719ff41f099f40b4ebee57d3f8be19b9b8e7cebc3b24177887cf0b6c6c2f523efe12169c9f6d614434fffeb04a096a33541cca
   languageName: node
   linkType: hard
 
