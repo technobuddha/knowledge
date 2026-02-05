@@ -730,6 +730,11 @@ export const remotes = [
     banner: '<!->',
   },
   {
+    url: 'https://www.unicode.org/license.txt',
+    local: 'reference/unicode/license.txt',
+    banner: '#',
+  },
+  {
     url: 'https://www.unicode.org/Public/UCD/latest/ucd/UnicodeData.txt',
     local: 'reference/unicode/unicode-data.txt',
   },
@@ -1004,12 +1009,6 @@ export const remotes = [
     rename: (name) => name.replace(/.*?\//, empty),
   },
   {
-    url: 'https://github.com/words/syllable/archive/refs/heads/master.zip',
-    local: 'reference/words/syllable',
-    zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/.txt'],
-    rename: (name) => name.replace(/.*?\//, empty),
-  },
-  {
     url: 'https://github.com/words/tree-names/archive/refs/heads/master.zip',
     local: 'reference/words/tree-names',
     zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/.txt'],
@@ -1033,7 +1032,54 @@ export const remotes = [
     url: 'https://stevemorse.org/phonetics/bmver315.zip',
     local: 'reference/breider-morse',
     zip: '**/*',
-  }
+  },
   //#endregion
-
+  //#region SUBTLEXus
+  {
+    url: 'https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexus/subtlexus2.zip',
+    local: 'reference/subtlexus',
+    zip: '**/*',
+  },
+  {
+    url: 'https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexus/subtlexus5.zip',
+    local: 'reference/subtlexus',
+    zip: '**/*',
+  },
+  {
+    url: 'https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexus',
+    local: 'reference/subtlexus/index.html',
+    banner: '<!->',
+  },
+  {
+    url: 'https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexus/subtlexus1.zip',
+    local: 'reference/subtlexus',
+    zip: '**/*',
+  },
+  //#endregion
+  //#region openlexicon
+  {
+    url: 'https://github.com/chrplr/openlexicon/raw/refs/heads/master/README.md',
+    local: 'reference/openlexicon/README.md',
+    banner: 'md',
+  },
+  //#endregion
+  //#region fasttag
+  {
+    url: 'https://github.com/mark-watson/fasttag_v2/archive/refs/heads/master.zip',
+    local: 'reference/fasttag',
+    zip: '**/*',
+    rename: (name) => name.replace(/.*?\//, empty),
+  },
+  //#endregion
+  //#region postgres
+  {
+    url: 'https://raw.githubusercontent.com/postgres/postgres/refs/heads/master/contrib/unaccent/unaccent.rules',
+    local: 'reference/postgres/unaccent.rules',
+  },
+  {
+    url: 'https://github.com/postgres/postgres/raw/refs/heads/master/COPYRIGHT',
+    local: 'reference/postgres/COPYRIGHT',
+    banner: '#',
+  },
+  //#endregion
 ];

@@ -6,6 +6,10 @@ const config = {
     watch: true,
     steps: [
       {
+        name: 'Prepare',
+        command: 'rm -rf dist',
+      },
+      {
         name: 'Moby Constitution',
         command: 'npx tsx ./scripts/moby/constitution.ts',
       },
@@ -60,6 +64,14 @@ const config = {
       {
         name: 'FSD OTCWL',
         command: 'npx tsx ./scripts/freescrabbledictionary/otcwl.ts',
+      },
+      {
+        name: 'Unicode Data',
+        command: 'npx tsx ./scripts/unicode/unicode.ts',
+      },
+      {
+        name: 'Romanization',
+        command: 'npx tsx ./scripts/romanization/anyascii.ts',
       },
       {
         name: 'Compile',

@@ -11,6 +11,7 @@ export async function savePretty(
   filepath: string,
   content: string,
   comment: BannerStyle | null = '//',
+  message?: string[],
 ): Promise<void> {
   if (content === empty) {
     return fileExists(filepath).then((exists) => {
@@ -22,7 +23,7 @@ export async function savePretty(
     });
   }
 
-  let bannerized = comment ? bannerize(content, comment) : content;
+  let bannerized = comment ? bannerize(content, comment, message) : content;
   if (bannerized.at(-1) !== '\n') {
     bannerized += '\n';
   }

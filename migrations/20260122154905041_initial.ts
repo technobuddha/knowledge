@@ -10,9 +10,28 @@ export async function up(pgm: MigrationBuilder): Promise<void> {
   pgm.createExtension('pgcrypto', { ifNotExists: true });
   pgm.createExtension('unaccent', { ifNotExists: true });
   pgm.createExtension('uuid-ossp', { ifNotExists: true });
+
+  pgm.createFunction(
+    'normalize_name',
+    ['str text'],
+    { returns: 'text', replace: true, language: 'sql' },
+    `SELECT
+      LOWER(
+        TRIM(
+          REGEXP_REPLACE(
+            REGEXP_REPLACE(
+              UNACCENT(NORMALIZE(str, NFKC)),
+              '(^|\\s|\\-)\\S(?=\\-|\\s|$)',
+              ' ',
+              'g'),
+            '\\s+',
+            ' ',
+            'g')));`,
+  );
 }
 
 export async function down(pgm: MigrationBuilder): Promise<void> {
+  pgm.dropFunction('normalize_name', ['str text'], { ifExists: true });
   pgm.dropExtension('uuid-ossp', { ifExists: true });
   pgm.dropExtension('unaccent', { ifExists: true });
   pgm.dropExtension('pgcrypto', { ifExists: true });

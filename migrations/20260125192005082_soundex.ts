@@ -11,8 +11,8 @@ export async function up(pgm: MigrationBuilder): Promise<void> {
 
   pgm.sql(`
     UPDATE names SET
-      sound_first = soundex(first),
-      sound_last = soundex(last)
+      sound_first = soundex(normalized_first),
+      sound_last = soundex(normalized_last)
   `);
 }
 

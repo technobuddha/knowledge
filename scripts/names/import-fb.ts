@@ -4,15 +4,13 @@ import path from 'node:path';
 import {
   clean,
   collapseWhitespace,
-  empty,
   formatNumber,
   isLowerCase,
   removeDiacritics,
   soundex,
   space,
 } from '@technobuddha/library';
-import { err, locateRootDirectory, out, readLines } from '@technobuddha/library/node';
-import { db } from '@technobuddha/postgres';
+import { err, locateRootDirectory, out, readLines, writeLines } from '@technobuddha/library/node';
 import ansi from 'ansi-escapes';
 
 const root = await locateRootDirectory();
@@ -37,81 +35,44 @@ function cleanName(name: string): string {
 }
 
 out(ansi.clearScreen);
-out(ansi.cursorTo(2, 2), ansi.eraseEndLine, 'preparing database');
 
-await db.none('DROP TABLE IF EXISTS last;');
-await db.none('DROP TABLE IF EXISTS names;');
-await db.none(`
-CREATE TABLE names (
-  id integer primary key,
-  first text,
-  normFirst text,
-  soundFirst text,
-  last text,
-  normLast text,
-  soundLast text,
-  gender varchar(1),
-  country varchar(2)
-);`);
-
-out(ansi.cursorTo(2, 2), ansi.eraseEndLine, 'enumerating import files');
 const dump = path.join(root, '..', 'name_dataset', 'data');
 const files = await fs.readdir(dump);
 
-let id = 0;
-for (const file of files) {
-  let count = 0;
-  const csv: string[] = [];
+// const wl = await writeLines(path.join(root, '..', 'name_dataset', 'all.csv'));
 
+let count = 0;
+let len = 0;
+for (const file of files) {
   out(ansi.cursorTo(2, 2), ansi.eraseEndLine, file);
 
   for await (const line of readLines(path.join(dump, file))) {
     let [first, last, gender, country] = line.split(',');
+
     first = cleanName(first);
     last = cleanName(last);
 
-    const normFirst = removeDiacritics(first.toLowerCase());
-    const normLast = removeDiacritics(last.toLowerCase());
+    const romanFirst = removeDiacritics(first);
+    const romanLast = removeDiacritics(last);
 
-    const soundFirst = soundex(normFirst);
-    const soundLast = soundex(normLast);
-
-    if (normLast && normFirst && isLatin(normLast) && isLatin(normFirst)) {
-      csv.push(
-        `${id++},${first},${normFirst},${soundFirst},${last},${normLast},${soundLast},${gender},${country}\n`,
-      );
-
-      if (csv.length >= 1000000) {
-        out(ansi.cursorTo(2, 4), ansi.eraseEndLine, formatNumber(id, '#,0'));
-        await fs.writeFile('/tmp/import.csv', csv.join(empty), 'utf-8');
-        await db.none(
-          `COPY names (id, first, normFirst, soundFirst, last, normLast, soundLast, gender, country) FROM '/tmp/import.csv' WITH (format 'csv', header false);`,
-        );
-        csv.length = 0;
-      }
+    if (!isLatin(romanFirst) || !isLatin(romanLast)) {
       count++;
+      len += first.length + last.length;
     }
-  }
 
-  if (csv.length > 0) {
-    out(ansi.cursorTo(2, 4), ansi.eraseEndLine, formatNumber(id, '#,0'));
-    await fs.writeFile('/tmp/import.csv', csv.join(empty), 'utf-8');
-    await db.none(
-      `COPY names (id, first, normFirst, soundFirst, last, normLast, soundLast, gender, country) FROM '/tmp/import.csv' WITH (format 'csv', header false);`,
-    );
-  }
-  csv.length = 0;
+    // const soundFirst = soundex(romanFirst);
+    // const soundLast = soundex(romanLast);
 
-  globalThis.gc?.();
+    // await wl.writeLine(
+    //   `${first},${romanFirst},${soundFirst},${last},${romanLast},${soundLast},${gender},${country}`,
+    // );
+    // if (++count % 1_000_000 === 0) {
+    //   out(ansi.cursorTo(2, 4), ansi.eraseEndLine, formatNumber(count, '#,0'));
+    // }
+  }
 }
 
-// out(ansi.cursorTo(2, 2), ansi.eraseDown, 'creating index');
-// await db.none('CREATE INDEX idx_last_base ON last (base);');
+console.log('\nNon-latin names:', count, len);
+console.log('Average length:', (len / count).toFixed(2));
 
-// out(ansi.cursorTo(2, 2), ansi.eraseDown, 'deleting deficient entries');
-// await db.none(`
-//   BEGIN WORK;
-//   LOCK TABLE last IN EXCLUSIVE MODE;
-//   DELETE FROM last WHERE base IN (SELECT base FROM last GROUP BY base HAVING COUNT(*) < 50);
-//   COMMIT WORK;
-//   `);
+//await wl.close();

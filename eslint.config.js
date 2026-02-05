@@ -35,13 +35,6 @@ const config = [
     ignores: [],
     environment: 'node',
   }),
-  // scripts
-  app.lint({
-    files: ['scripts/**/*.ts'],
-    ignores: [],
-    environment: 'node',
-    tsConfig: 'scripts/tsconfig.json',
-  }),
   // src/__tests__
   app.lint({
     files: ['src/__tests__/**/*.test.ts'],
@@ -56,6 +49,13 @@ const config = [
     ignores: ['src/__tests__/**/*'],
     environment: 'node',
     tsConfig: 'src/tsconfig.json',
+  }),
+  // scripts
+  app.lint({
+    files: ['scripts/**/*.ts'],
+    ignores: [],
+    environment: 'node',
+    tsConfig: 'scripts/tsconfig.json',
   }),
 ];
 

@@ -1,0 +1,6 @@
+# 🚨
+# 🚨 Source: https://files.osf.io/v1/resources/djpqz/providers/osfstorage/?zip=::Word familiarity is a better alternative than word frequency.txt
+# 🚨
+We now have evidence that AI-generated word familiarity estimates are better than SUBTLEX word frequencies. 
+
+You can find the word familiarity estimates and more information at https://osf.io/c2yef/

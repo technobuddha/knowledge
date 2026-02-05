@@ -6,6 +6,7 @@ import { err, locateRootDirectory } from '@technobuddha/library/node';
 
 import { header } from '../helpers/header.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
+import { readLicense } from '../helpers/read-license.ts';
 import { savePretty } from '../helpers/save-pretty.ts';
 
 const root = await locateRootDirectory();
@@ -35,12 +36,18 @@ for (let i = 32; i < 127; ++i) {
 }
 
 const doc = await readDocumentation(root, 'romanization');
+const license = await readLicense(
+  path.join(root, 'reference', 'anyascii', 'LICENSE'),
+  'https://github.com/anyascii/anyascii',
+);
+
 const code = [
   ...header,
+  ...license,
   ...doc,
   empty,
   '// prettier-ignore',
-  'export const romanization: string[] = [',
+  'export const romanization: (string | undefined)[] = [',
 ];
 
 let array = empty;

@@ -6,18 +6,15 @@ import { err, locateRootDirectory } from '@technobuddha/library/node';
 
 import { header } from '../helpers/header.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
+import { readLicense } from '../helpers/read-license.ts';
 import { savePretty } from '../helpers/save-pretty.ts';
+import { uDisplay } from '../helpers/u-display.ts';
+import { uEscape } from '../helpers/u-escape.ts';
 
 const root = await locateRootDirectory();
 if (!root) {
   err('Could not find root directory');
   process.exit(1);
-}
-
-function uEscape(codePoint: number): string {
-  return codePoint <= 0xffff ?
-      `\\u${codePoint.toString(16).toUpperCase().padStart(4, '0')}`
-    : `\\u{${codePoint.toString(16).toUpperCase()}}`;
 }
 
 await fs
@@ -31,8 +28,14 @@ await fs
     );
 
     const doc = await readDocumentation(root, 'unicode-data');
+    const license = await readLicense(
+      path.join('reference', 'unicode', 'license.txt'),
+      'https://www.unicode.org/Public',
+    );
     const code: string[] = [
       ...header,
+      ...license,
+      empty,
       ...doc,
       empty,
       'export type UnicodeData = {',
@@ -40,18 +43,18 @@ await fs
       '  codePoint: number;',
       '  name: string;',
       '  category: string;',
-      '  combining: number;',
+      '  combining?: number;',
       '  bidirectional: string;',
-      '  decomposition: string;',
+      '  decomposition?: string;',
       '  decimalDigit?: number;',
       '  digit?: number;',
       '  numeric?: number;',
-      '  mirrored: boolean;',
-      '  unicode1Name: string;',
-      '  comment: string;',
-      '  upperCase: string;',
-      '  lowerCase: string;',
-      '  titleCase: string;',
+      '  mirrored?: boolean;',
+      '  unicode1Name?: string;',
+      '  comment?: string;',
+      '  upperCase?: string;',
+      '  lowerCase?: string;',
+      '  titleCase?: string;',
       '};',
       empty,
       'export const unicodeData: Record<string, UnicodeData> = {',
@@ -78,19 +81,13 @@ await fs
       const titleCase =
         entry[14] ? String.fromCodePoint(Number.parseInt(entry[14], 16)) : undefined;
 
-      code.push(`${quote(uEscape(codePoint))}: {`);
-
-      if (combining) {
-        const char = uEscape(codePoint);
-        const comment = combining === 233 || combining === 234 ? `x${character}x` : `x${character}`;
-        code.push(`character: ${quote(char)}, // combining: ${comment}`);
-      } else if (category === 'Cs') {
-        code.push(`character: ${quote(uEscape(codePoint))}, // surrogate`);
-      } else {
-        code.push(`character: ${quote(escapeJS(character))},`);
-      }
-
-      code.push(`name: ${quote(name)},`, `category: ${quote(category)},`);
+      code.push(
+        `${quote(uEscape(codePoint))}: {`,
+        `character: ${uDisplay({ category, combining, character, codePoint, name })}`,
+        `name: ${quote(name)},`,
+        `codePoint: 0x${codePoint.toString(16)},`,
+        `category: ${quote(category)},`,
+      );
       if (combining) {
         code.push(`combining: ${combining},`);
       }

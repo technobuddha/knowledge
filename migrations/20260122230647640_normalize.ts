@@ -9,13 +9,6 @@ export async function up(pgm: MigrationBuilder): Promise<void> {
     normalized_last: { type: 'text' },
   });
 
-  pgm.createFunction(
-    'normalize_name',
-    ['str text'],
-    { returns: 'text', replace: true, language: 'sql' },
-    `SELECT REGEXP_REPLACE(LOWER(TRIM(REGEXP_REPLACE(NORMALIZE(UNACCENT(str), NFKC), '(^|\\s)\\S(\\s|$)', ' ', 'g'))), '\\s+', ' ', 'g');`,
-  );
-
   pgm.sql(`
     UPDATE names SET
       normalized_first = normalize_name(first),
