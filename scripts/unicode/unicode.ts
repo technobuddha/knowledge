@@ -83,7 +83,7 @@ await fs
 
       code.push(
         `${quote(uEscape(codePoint))}: {`,
-        `character: ${uDisplay({ category, combining, character, codePoint, name })}`,
+        `character: ${quote(combining ? uEscape(codePoint) : escapeJS(character))}, ${uDisplay({ category, combining, character })}`,
         `name: ${quote(name)},`,
         `codePoint: 0x${codePoint.toString(16)},`,
         `category: ${quote(category)},`,

@@ -1,15 +1,6 @@
-import fs from 'node:fs/promises';
 import path from 'node:path';
 
-import {
-  empty,
-  escapeJS,
-  isMark,
-  isPrintable,
-  parseCsv,
-  quote,
-  unbannerize,
-} from '@technobuddha/library';
+import { empty, escapeJS, isMark, isPrintable, quote } from '@technobuddha/library';
 import { err, locateRootDirectory } from '@technobuddha/library/node';
 
 import { unicodeData } from '../../src/@data/unicode-data.ts';
@@ -19,21 +10,12 @@ import { readDocumentation } from '../helpers/read-documentation.ts';
 import { savePretty } from '../helpers/save-pretty.ts';
 
 import { asciiTransform } from './ascii-transform.ts';
+import { uDisplay } from '../helpers/u-display.ts';
 
 const root = await locateRootDirectory();
 if (!root) {
   err('Could not find root directory');
   process.exit(1);
-}
-
-function escape(char: string): string {
-  if (isMark(char) || !isPrintable(char)) {
-    const codePoint = char.codePointAt(0)!;
-    return codePoint <= 0xffff ?
-        `\\u${codePoint.toString(16).toUpperCase().padStart(4, '0')}`
-      : `\\u{${codePoint.toString(16).toUpperCase()}}`;
-  }
-  return char;
 }
 
 const unaccent: Map<string, string> = new Map(Object.entries(asciiTransform));
@@ -55,7 +37,7 @@ for (const [char, info] of Object.entries(unicodeData).sort(
   const { codePoint, name } = info;
   const unaccented = unaccent.has(char) ? quote(escapeJS(unaccent.get(char)!)) : 'undefined';
   code.push(
-    `0x${codePoint.toString(16).toUpperCase().padStart(6, '0')}: ${unaccented},  // ${escapeJS(char)} ${name}`,
+    `0x${codePoint.toString(16).toUpperCase().padStart(6, '0')}: ${unaccented},  ${uDisplay(info)}  ${name}`,
   );
 }
 

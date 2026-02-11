@@ -6,7 +6,12 @@ const config = {
   directories: {
     reference: {
       environment: 'none',
-    }
+    },
+    scripts: {
+      tsconfig: {
+        references: ['./src'],
+      },
+    },
   },
   lint: {
     rules: {
