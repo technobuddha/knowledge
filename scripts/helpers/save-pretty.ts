@@ -4,6 +4,7 @@ import path from 'node:path';
 import { bannerize, type BannerStyle, empty } from '@technobuddha/library';
 import { fileExists, out } from '@technobuddha/library/node';
 import { app } from '@technobuddha/project';
+import { fileOperation } from '@technobuddha/project/library';
 import chalk from 'chalk';
 import { format } from 'prettier';
 
@@ -16,7 +17,7 @@ export async function savePretty(
   if (content === empty) {
     return fileExists(filepath).then((exists) => {
       if (exists) {
-        out(filepath, ': ', chalk.red('deleted'), '\n');
+        fileOperation(filepath, 'delete');
         void fs.rm(filepath, { force: true });
       }
       return undefined;
@@ -29,15 +30,10 @@ export async function savePretty(
   }
 
   const formatted = await format(bannerized, { filepath, ...app.prettier() });
-  // const formatted = bannerized;
 
   const original = await fs.readFile(filepath, 'utf-8').catch(() => empty);
   if (original !== formatted) {
-    out(
-      path.relative(process.cwd(), filepath).padEnd(60),
-      original ? chalk.yellow('updated') : chalk.green('created'),
-      '\n',
-    );
+    fileOperation(filepath, original ? 'update' : 'create');
   }
 
   return fs.writeFile(filepath, formatted, 'utf-8');

@@ -5,9 +5,9 @@ import path from 'node:path';
 import { empty, quote, range, strip } from '@technobuddha/library';
 import { err, locatePackageRoot } from '@technobuddha/library/node';
 
-import { header } from '../helpers/header.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { savePretty } from '../helpers/save-pretty.ts';
+import { saveRaw } from '../helpers/save-raw.ts';
+import { saveTerser } from '../helpers/save-terser.ts';
 
 const root = await locatePackageRoot();
 if (!root) {
@@ -17,7 +17,7 @@ if (!root) {
 
 const doc = await readDocumentation(root, 'freescrabbledictionary');
 
-const code = [...header, ...doc, empty, empty, 'export const fsd: string[] = ['];
+const code = ['export const fsd = ['];
 
 for (const letter of range('a', 'z')) {
   await fs
@@ -35,4 +35,7 @@ for (const letter of range('a', 'z')) {
 }
 code.push('];', empty);
 
-await savePretty(path.join(root, 'src', '@data', 'fsd-otcwl.ts'), code.join('\n'), '//');
+await saveTerser(path.join(root, 'dist', 'fsd.js'), code, { quiet: true });
+
+const decl = [...doc, 'export declare const fsd: string[];'];
+await saveRaw(path.join(root, 'dist', 'fsd.d.ts'), decl, { quiet: true });

@@ -13,9 +13,9 @@ import {
 } from '@technobuddha/library';
 import { err, locatePackageRoot } from '@technobuddha/library/node';
 
-import { header } from '../helpers/header.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { savePretty } from '../helpers/save-pretty.ts';
+import { saveRaw } from '../helpers/save-raw.ts';
+import { saveTerser } from '../helpers/save-terser.ts';
 
 const root = await locatePackageRoot();
 if (!root) {
@@ -71,16 +71,7 @@ const titles: [string, GENRE][] = [
 
 const doc = await readDocumentation(root, 'moby-shakespeare');
 
-const code = [
-  ...header,
-  ...doc,
-  empty,
-  "export type Genre = 'comedy' | 'history' | 'poetry' | 'tragedy' | 'glossary';",
-  'export type Work = { title: string, genre: Genre, content: string[] };',
-  empty,
-  'export const mobyShakespeare: Record<string, Work> = {',
-];
-
+const code = ['export const mobyShakespeare = {'];
 function shake(name: string, content: string[]): void {
   const matches = /(\d+)\s+(.*)/v.exec(name);
   const title = titleCase((matches ? `${matches[2]}, part ${matches[1]}` : name).toLowerCase())
@@ -128,9 +119,15 @@ await fs
 
     code.push('};', empty);
 
-    return savePretty(
-      path.join(root, 'src', '@data', 'moby-shakespeare.ts'),
-      code.join('\n'),
-      '//',
-    );
+    return saveTerser(path.join(root, 'dist', 'moby-shakespeare.js'), code, { quiet: true });
   });
+
+const decl = [
+  "export type Genre = 'comedy' | 'history' | 'poetry' | 'tragedy' | 'glossary';",
+  'export type Work = { title: string, genre: Genre, content: string[] };',
+  empty,
+  ...doc,
+  'export declare const mobyShakespeare: Record<string, Work>;',
+];
+
+await saveRaw(path.join(root, 'dist', 'moby-shakespeare.d.ts'), decl, { quiet: true });

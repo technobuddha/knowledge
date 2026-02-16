@@ -9,7 +9,7 @@ export async function readDocumentation(root: string, filename: string): Promise
       ...content
         .split('\n')
         .filter((l) => !l.startsWith('<!--'))
-        .map((l) => `* ${l}`),
+        .map((l) => ` * ${l}`),
       ' */',
     ])
     .catch(() => []);

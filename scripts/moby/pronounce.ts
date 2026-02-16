@@ -6,10 +6,10 @@ import path from 'node:path';
 import { empty, quote, space, splitLines } from '@technobuddha/library';
 import { err, locatePackageRoot } from '@technobuddha/library/node';
 
-import { header } from '../helpers/header.ts';
 import { parse } from '../helpers/moby-pronunciation-parser.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { savePretty } from '../helpers/save-pretty.ts';
+import { saveRaw } from '../helpers/save-raw.ts';
+import { saveTerser } from '../helpers/save-terser.ts';
 
 import { exceptions } from './data/exceptions.ts';
 import { ipaPhones } from './data/phonemes.ts';
@@ -84,12 +84,7 @@ async function pronounce(root: string): Promise<void> {
         }
       }
 
-      const code: string[] = [
-        ...header,
-        ...docs,
-        'export const mobyPronunciationIPA: Record<string, string[]> = {',
-      ];
-
+      let code: string[] = ['export const mobyPronunciationIPA = {'];
       for (const [word, pron] of Array.from(words.entries()).sort(([a], [b]) =>
         a.localeCompare(b, 'en', { sensitivity: 'base' }),
       )) {
@@ -101,11 +96,10 @@ async function pronounce(root: string): Promise<void> {
       }
       code.push('};', empty);
 
-      return savePretty(
-        path.join(root, 'src', '@data', 'moby-pronunciation-ipa.ts'),
-        code.join('\n'),
-        '//',
-      );
+      await saveTerser(path.join(root, 'dist', 'moby-pronunciation-ipa.js'), code, { quiet: true });
+
+      code = [...docs, 'export declare const mobyPronunciationIPA: Record<string, string[]>;'];
+      return saveRaw(path.join(root, 'dist', 'moby-pronunciation-ipa.d.ts'), code, { quiet: true });
     });
 }
 

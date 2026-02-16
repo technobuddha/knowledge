@@ -5,9 +5,9 @@ import path from 'node:path';
 import { empty, quote, splitLines } from '@technobuddha/library';
 import { err, locatePackageRoot } from '@technobuddha/library/node';
 
-import { header } from '../helpers/header.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { savePretty } from '../helpers/save-pretty.ts';
+import { saveRaw } from '../helpers/save-raw.ts';
+import { saveTerser } from '../helpers/save-terser.ts';
 
 const root = await locatePackageRoot();
 if (!root) {
@@ -15,93 +15,58 @@ if (!root) {
   process.exit(1);
 }
 
-async function crosswords(root: string): Promise<void> {
-  const docFirst = await readDocumentation(root, 'moby-scrabble-first');
-  const docDelta = await readDocumentation(root, 'moby-scrabble-delta');
-  const docSecond = await readDocumentation(root, 'moby-scrabble-second');
+const docFirst = await readDocumentation(root, 'moby-scrabble-first');
+const docSecond = await readDocumentation(root, 'moby-scrabble-second');
 
-  const firstEdition: Set<string> = new Set();
-  const delta: Set<string> = new Set();
-  const secondEdition: Set<string> = new Set();
+const firstEdition: Set<string> = new Set();
+const secondEdition: Set<string> = new Set();
 
-  await Promise.all([
-    fs
-      .readFile(path.join(root, 'reference', 'moby', 'mwords', '113809of.fic'), 'utf-8')
-      .then(async (buffer) => {
-        for (const line of splitLines(buffer)) {
-          if (line && !line.startsWith('#')) {
-            firstEdition.add(line);
-            secondEdition.add(line);
-          }
+await Promise.all([
+  fs
+    .readFile(path.join(root, 'reference', 'moby', 'mwords', '113809of.fic'), 'utf-8')
+    .then(async (buffer) => {
+      for (const line of splitLines(buffer)) {
+        if (line && !line.startsWith('#')) {
+          firstEdition.add(line);
+          secondEdition.add(line);
         }
-        return undefined;
-      }),
-    fs
-      .readFile(path.join(root, 'reference', 'moby', 'mwords', '4160offi.cia'), 'utf-8')
-      .then(async (buffer) => {
-        for (const line of splitLines(buffer)) {
-          if (line && !line.startsWith('#')) {
-            delta.add(line);
-            secondEdition.add(line);
-          }
+      }
+      return undefined;
+    }),
+  fs
+    .readFile(path.join(root, 'reference', 'moby', 'mwords', '4160offi.cia'), 'utf-8')
+    .then(async (buffer) => {
+      for (const line of splitLines(buffer)) {
+        if (line && !line.startsWith('#')) {
+          secondEdition.add(line);
         }
-        return undefined;
-      }),
-  ]);
+      }
+      return undefined;
+    }),
+]);
 
-  const code1st: string[] = [
-    ...header,
-    ...docFirst,
-    'export const mobyCrosswords1stEdition: string[] = [',
-  ];
-  for (const word of Array.from(firstEdition).sort((a, b) =>
-    a.localeCompare(b, 'en', { sensitivity: 'base' }),
-  )) {
-    code1st.push(`${quote(word)},`);
-  }
-  code1st.push('];', empty);
-
-  const codeDelta: string[] = [
-    ...header,
-    ...docDelta,
-    'export const mobyCrosswordsDelta: string[] = [',
-  ];
-  for (const word of Array.from(delta).sort((a, b) =>
-    a.localeCompare(b, 'en', { sensitivity: 'base' }),
-  )) {
-    codeDelta.push(`${quote(word)},`);
-  }
-  codeDelta.push('];', empty);
-
-  const code2nd: string[] = [
-    ...header,
-    ...docSecond,
-    'export const mobyCrosswords2ndEdition: string[] = [',
-  ];
-  for (const word of Array.from(secondEdition).sort((a, b) =>
-    a.localeCompare(b, 'en', { sensitivity: 'base' }),
-  )) {
-    code2nd.push(`${quote(word)},`);
-  }
-  code2nd.push('];', empty);
-
-  await Promise.all([
-    savePretty(
-      path.join(root, 'src', '@data', 'moby-crosswords-1st-edition.ts'),
-      code1st.join('\n'),
-      '//',
-    ),
-    savePretty(
-      path.join(root, 'src', '@data', 'moby-crosswords-delta.ts'),
-      codeDelta.join('\n'),
-      '//',
-    ),
-    savePretty(
-      path.join(root, 'src', '@data', 'moby-crosswords-2nd-edition.ts'),
-      code2nd.join('\n'),
-      '//',
-    ),
-  ]);
+const code1: string[] = ['export const mobyCrosswords1stEdition = ['];
+for (const word of Array.from(firstEdition).sort((a, b) =>
+  a.localeCompare(b, 'en', { sensitivity: 'base' }),
+)) {
+  code1.push(`${quote(word)},`);
 }
+code1.push('];', empty);
+const decl1 = [...docFirst, 'export declare const mobyCrosswords1stEdition: string[];', empty];
 
-await crosswords(root);
+const code2 = ['export const mobyCrosswords2ndEdition = ['];
+for (const word of Array.from(secondEdition).sort((a, b) =>
+  a.localeCompare(b, 'en', { sensitivity: 'base' }),
+)) {
+  code2.push(`${quote(word)},`);
+}
+code2.push('];', empty);
+
+const decl2 = [...docSecond, 'export declare const mobyCrosswords2ndEdition: string[];', empty];
+
+await Promise.all([
+  saveTerser(path.join(root, 'dist', 'moby-crosswords-1st-edition.js'), code1, { quiet: true }),
+  saveTerser(path.join(root, 'dist', 'moby-crosswords-2nd-edition.js'), code2, { quiet: true }),
+  saveRaw(path.join(root, 'dist', 'moby-crosswords-1st-edition.d.ts'), decl1, { quiet: true }),
+  saveRaw(path.join(root, 'dist', 'moby-crosswords-2nd-edition.d.ts'), decl2, { quiet: true }),
+]);

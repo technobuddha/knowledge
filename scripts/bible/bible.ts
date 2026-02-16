@@ -17,12 +17,6 @@ if (!root) {
   process.exit(1);
 }
 
-/*
-  'wife',
-  'SA',
-  'Peter',
-*/
-
 const codeToBook: Record<string, string> = {
   'GEN': 'Genesis',
   'EXO': 'Exodus',

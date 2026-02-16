@@ -4,10 +4,10 @@ import path from 'node:path';
 import { empty, escapeJS, quote } from '@technobuddha/library';
 import { err, locatePackageRoot } from '@technobuddha/library/node';
 
-import { header } from '../helpers/header.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { readLicense } from '../helpers/read-license.ts';
-import { savePretty } from '../helpers/save-pretty.ts';
+import { saveRaw } from '../helpers/save-raw.ts';
+import { saveTerser } from '../helpers/save-terser.ts';
 
 const root = await locatePackageRoot();
 if (!root) {
@@ -41,23 +41,20 @@ const license = await readLicense(
   'https://github.com/anyascii/anyascii',
 );
 
-const code = [
-  ...header,
-  ...license,
-  ...doc,
-  empty,
-  '// prettier-ignore',
-  'export const romanization: (string | undefined)[] = [',
-];
+const code = ['export const romanization = {'];
 
-let array = empty;
-let index = 0;
 for (const [codePoint, romanized] of Array.from(romanize.entries()).sort(([a], [b]) => a - b)) {
-  while (index++ < codePoint) {
-    array += ',';
-  }
-  array += `${quote(escapeJS(romanized))},`;
+  code.push(`${quote(escapeJS(String.fromCodePoint(codePoint)))}: ${quote(escapeJS(romanized))},`);
 }
-code.push(array, '];', empty);
+code.push('};', empty);
 
-await savePretty(path.join(root, 'src', '@data', 'romanization.ts'), code.join('\n'), '//');
+await saveTerser(path.join(root, 'dist', 'romanization.js'), code, { quiet: true });
+
+const decl = [
+  ...license,
+  empty,
+  ...doc,
+  'export declare const romanization: Record<string, string>;',
+  empty,
+];
+await saveRaw(path.join(root, 'dist', 'romanization.d.ts'), decl, { quiet: true });

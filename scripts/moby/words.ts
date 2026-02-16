@@ -5,9 +5,9 @@ import path from 'node:path';
 import { camelCase, empty, quote, splitLines } from '@technobuddha/library';
 import { err, locatePackageRoot } from '@technobuddha/library/node';
 
-import { header } from '../helpers/header.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { savePretty } from '../helpers/save-pretty.ts';
+import { saveRaw } from '../helpers/save-raw.ts';
+import { saveTerser } from '../helpers/save-terser.ts';
 
 const root = await locatePackageRoot();
 if (!root) {
@@ -47,22 +47,17 @@ async function words(root: string): Promise<void> {
             }
           }
 
-          const code: string[] = [
-            ...header,
-            ...docs,
-            `export const ${camelCase(`moby-${output}`)}: string[] = [`,
-          ];
+          const code: string[] = [`export const ${camelCase(`moby-${output}`)} = [`];
           for (const word of Array.from(words).sort((a, b) =>
             a.localeCompare(b, 'en', { sensitivity: 'base' }),
           )) {
             code.push(`${quote(word)},`);
           }
           code.push('];', empty);
-          return savePretty(
-            path.join(root, 'src', '@data', `moby-${output}.ts`),
-            code.join('\n'),
-            '//',
-          );
+          await saveTerser(path.join(root, 'dist', `moby-${output}.js`), code, { quiet: true });
+
+          const decl = [...docs, `export declare const ${camelCase(`moby-${output}`)}: string[];`];
+          return saveRaw(path.join(root, 'dist', `moby-${output}.d.ts`), decl, { quiet: true });
         });
     }),
   );

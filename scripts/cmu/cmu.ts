@@ -6,9 +6,9 @@ import path from 'node:path';
 import { create1dArray, empty, quote, range, space, splitLines, sum } from '@technobuddha/library';
 import { err, locatePackageRoot } from '@technobuddha/library/node';
 
-import { header } from '../helpers/header.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { savePretty } from '../helpers/save-pretty.ts';
+import { saveRaw } from '../helpers/save-raw.ts';
+import { saveTerser } from '../helpers/save-terser.ts';
 
 import { compounds } from './compounds.ts';
 import { onsets } from './onsets.ts';
@@ -74,11 +74,7 @@ for (const [word, phonemes] of cmuDict) {
 }
 
 const docsIPA = await readDocumentation(root, 'cmu-dict-ipa');
-const ipaCode: string[] = [
-  ...header,
-  ...docsIPA,
-  'export const cmuDictIPA: Record<string, string[]> = {',
-];
+const ipaCode = ['export const cmuDictIPA = {'];
 
 for (const [word, ipas] of Array.from(ipaEntries.entries()).sort(([a], [b]) =>
   a.localeCompare(b, 'en', { usage: 'sort', sensitivity: 'base' }),
@@ -90,7 +86,10 @@ for (const [word, ipas] of Array.from(ipaEntries.entries()).sort(([a], [b]) =>
   );
 }
 ipaCode.push('};', empty);
-await savePretty(path.join(root, 'src', '@data', 'cmu-dict-ipa.ts'), ipaCode.join('\n'), '//');
+await saveTerser(path.join(root, 'dist', 'cmu-dict-ipa.js'), ipaCode, { quiet: true });
+
+const ipaDecl = [...docsIPA, 'export declare const cmuDictIPA: Record<string, string[]>;'];
+await saveRaw(path.join(root, 'dist', 'cmu-dict-ipa.d.ts'), ipaDecl, { quiet: true });
 
 const arpaEntries: Map<string, Set<string>> = new Map();
 for (const [word, phonemes] of cmuDict) {
@@ -102,11 +101,7 @@ for (const [word, phonemes] of cmuDict) {
 }
 
 const docsArpabet = await readDocumentation(root, 'cmu-dict-arpabet');
-const arpaCode: string[] = [
-  ...header,
-  ...docsArpabet,
-  'export const cmuDictArpabet: Record<string, string[]> = {',
-];
+const arpaCode = ['export const cmuDictArpabet = {'];
 for (const [word, arpas] of Array.from(arpaEntries.entries()).sort(([a], [b]) =>
   a.localeCompare(b, 'en', { usage: 'sort', sensitivity: 'base' }),
 )) {
@@ -117,7 +112,10 @@ for (const [word, arpas] of Array.from(arpaEntries.entries()).sort(([a], [b]) =>
   );
 }
 arpaCode.push('};', empty);
-await savePretty(path.join(root, 'src', '@data', 'cmu-dict-arpabet.ts'), arpaCode.join('\n'), '//');
+await saveTerser(path.join(root, 'dist', 'cmu-dict-arpabet.js'), arpaCode, { quiet: true });
+
+const arpaDecl = [...docsArpabet, 'export declare const cmuDictArpabet: Record<string, string[]>;'];
+await saveRaw(path.join(root, 'dist', 'cmu-dict-arpabet.d.ts'), arpaDecl, { quiet: true });
 
 //------------------------------------------------------------------------------------------------//
 

@@ -5,9 +5,9 @@ import path from 'node:path';
 import { empty, parseCsv, quote, strip } from '@technobuddha/library';
 import { err, locatePackageRoot } from '@technobuddha/library/node';
 
-import { header } from '../helpers/header.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { savePretty } from '../helpers/save-pretty.ts';
+import { saveRaw } from '../helpers/save-raw.ts';
+import { saveTerser } from '../helpers/save-terser.ts';
 
 const root = await locatePackageRoot();
 if (!root) {
@@ -126,16 +126,7 @@ await readJson('male-dog-names', 'dog');
 await readJson('female-dog-names', 'dog');
 
 const docs = await readDocumentation(root, 'names');
-const code: string[] = [
-  ...header,
-  ...docs,
-  empty,
-  'export type Genders = {',
-  ...genders.map((g) => `${g}?: boolean;`),
-  '};',
-  empty,
-  'export const names: Record<string, Genders> = {',
-];
+const code: string[] = ['export const names = {'];
 
 for (const [name, genders] of Array.from(names.entries()).sort(([a], [b]) =>
   a.localeCompare(b, 'en', { sensitivity: 'base' }),
@@ -147,7 +138,15 @@ for (const [name, genders] of Array.from(names.entries()).sort(([a], [b]) =>
       .join(', ')} },`,
   );
 }
-
 code.push('};', empty);
+await saveTerser(path.join(root, 'dist', 'names.js'), code, { quiet: true });
 
-await savePretty(path.join(root, 'src', '@data', 'names.ts'), code.join('\n'), '//');
+const decl = [
+  'export type Genders = {',
+  ...genders.map((g) => `  ${g}?: boolean;`),
+  '};',
+  empty,
+  ...docs,
+  'export declare const names: Record<string, Genders>;',
+];
+await saveRaw(path.join(root, 'dist', 'names.d.ts'), decl, { quiet: true });

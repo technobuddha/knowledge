@@ -11,8 +11,7 @@ const config = {
       },
       {
         name: 'Moby Constitution',
-        command: ['npx tsx ./scripts/moby/constitution.ts',
-          'npx tsc ./src/@data/moby-constitution.ts'],
+        command: 'npx tsx ./scripts/moby/constitution.ts',
       },
       {
         name: 'Moby Crosswords',
@@ -74,11 +73,11 @@ const config = {
         name: 'Romanization',
         command: 'npx tsx ./scripts/romanization/anyascii.ts',
       },
-      {
-        name: 'Compile',
-        directory: './src',
-        command: 'npx tsc -p src',
-      },
+      // {
+      //   name: 'Compile',
+      //   directory: './src',
+      //   command: 'npx tsc -p src',
+      // },
       // {
       //   name: 'Documentation',
       //   command: 'npx tsx ./scripts/moby/exception-list.ts',

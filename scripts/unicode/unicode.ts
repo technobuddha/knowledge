@@ -4,10 +4,10 @@ import path from 'node:path';
 import { empty, escapeJS, parseCsv, quote, splitLines } from '@technobuddha/library';
 import { err, locatePackageRoot } from '@technobuddha/library/node';
 
-import { header } from '../helpers/header.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { readLicense } from '../helpers/read-license.ts';
-import { savePretty } from '../helpers/save-pretty.ts';
+import { saveRaw } from '../helpers/save-raw.ts';
+import { saveTerser } from '../helpers/save-terser.ts';
 import { uDisplay } from '../helpers/u-display.ts';
 import { uEscape } from '../helpers/u-escape.ts';
 
@@ -32,33 +32,7 @@ await fs
       path.join('reference', 'unicode', 'license.txt'),
       'https://www.unicode.org/Public',
     );
-    const code: string[] = [
-      ...header,
-      ...license,
-      empty,
-      ...doc,
-      empty,
-      'export type UnicodeData = {',
-      '  character: string;',
-      '  codePoint: number;',
-      '  name: string;',
-      '  category: string;',
-      '  combining?: number;',
-      '  bidirectional: string;',
-      '  decomposition?: string;',
-      '  decimalDigit?: number;',
-      '  digit?: number;',
-      '  numeric?: number;',
-      '  mirrored?: boolean;',
-      '  unicode1Name?: string;',
-      '  comment?: string;',
-      '  upperCase?: string;',
-      '  lowerCase?: string;',
-      '  titleCase?: string;',
-      '};',
-      empty,
-      'export const unicodeData: Record<string, UnicodeData> = {',
-    ];
+    const code: string[] = ['export const unicodeData = {'];
 
     for (const entry of csv) {
       const codePoint = Number.parseInt(entry[0], 16);
@@ -126,7 +100,34 @@ await fs
     }
     code.push('};', empty);
 
-    await savePretty(path.join(root, 'src', '@data', 'unicode-data.ts'), code.join('\n'), '//');
+    await saveTerser(path.join(root, 'dist', 'unicode-data.js'), code.join('\n'), { quiet: true });
+
+    const decl = [
+      ...license,
+      empty,
+      'export type UnicodeData = {',
+      '  character: string;',
+      '  codePoint: number;',
+      '  name: string;',
+      '  category: string;',
+      '  combining?: number;',
+      '  bidirectional: string;',
+      '  decomposition?: string;',
+      '  decimalDigit?: number;',
+      '  digit?: number;',
+      '  numeric?: number;',
+      '  mirrored?: boolean;',
+      '  unicode1Name?: string;',
+      '  comment?: string;',
+      '  upperCase?: string;',
+      '  lowerCase?: string;',
+      '  titleCase?: string;',
+      '};',
+      empty,
+      ...doc,
+      'export const unicodeData: Record<string, UnicodeData> = {',
+    ];
+    await saveRaw(path.join(root, 'dist', 'unicode-data.d.ts'), decl, { quiet: true });
 
     return undefined;
   });

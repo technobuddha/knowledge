@@ -5,9 +5,9 @@ import path from 'node:path';
 import { empty, quote, splitLines } from '@technobuddha/library';
 import { err, locatePackageRoot } from '@technobuddha/library/node';
 
-import { header } from '../helpers/header.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { savePretty } from '../helpers/save-pretty.ts';
+import { saveRaw } from '../helpers/save-raw.ts';
+import { saveTerser } from '../helpers/save-terser.ts';
 
 const root = await locatePackageRoot();
 if (!root) {
@@ -43,23 +43,17 @@ async function partsOfSpeech(root: string): Promise<void> {
         }
       }
 
-      const code: string[] = [
-        ...header,
-        ...docs,
-        'export const mobyPartsOfSpeech: Record<string, string> = {',
-      ];
+      let code: string[] = ['export const mobyPartsOfSpeech = {'];
       for (const [word, pos] of Array.from(words.entries()).sort(([a], [b]) =>
         a.localeCompare(b, 'en', { sensitivity: 'base' }),
       )) {
         code.push(`${quote(word)}: ${quote(pos)},`);
       }
       code.push('};', empty);
+      await saveTerser(path.join(root, 'dist', 'moby-parts-of-speech.js'), code, { quiet: true });
 
-      return savePretty(
-        path.join(root, 'src', '@data', 'moby-parts-of-speech.ts'),
-        code.join('\n'),
-        '//',
-      );
+      code = [...docs, 'export declare const mobyPartsOfSpeech: Record<string, string>;'];
+      return saveRaw(path.join(root, 'dist', 'moby-parts-of-speech.d.ts'), code, { quiet: true });
     });
 }
 

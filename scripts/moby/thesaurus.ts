@@ -5,9 +5,9 @@ import path from 'node:path';
 import { empty, quote, splitLines } from '@technobuddha/library';
 import { err, locatePackageRoot } from '@technobuddha/library/node';
 
-import { header } from '../helpers/header.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { savePretty } from '../helpers/save-pretty.ts';
+import { saveRaw } from '../helpers/save-raw.ts';
+import { saveTerser } from '../helpers/save-terser.ts';
 
 const root = await locatePackageRoot();
 if (!root) {
@@ -39,22 +39,17 @@ async function thesaurus(root: string): Promise<void> {
         }
       }
 
-      const code: string[] = [
-        ...header,
-        ...docs,
-        'export const mobyThesaurus: Record<string, number[]> = {',
-      ];
+      const code: string[] = ['export const mobyThesaurus = {'];
       for (const [word, groups] of Array.from(thesaurus.entries()).sort(([a], [b]) =>
         a.localeCompare(b, 'en', { sensitivity: 'base' }),
       )) {
         code.push(`${quote(word)}: [${groups.join(', ')}],`);
       }
       code.push('};', empty);
-      return savePretty(
-        path.join(root, 'src', '@data', 'moby-thesaurus.ts'),
-        code.join('\n'),
-        '//',
-      );
+      await saveTerser(path.join(root, 'dist', 'moby-thesaurus.js'), code, { quiet: true });
+
+      const decl = [...docs, 'export declare const mobyThesaurus: Record<string, number[]>;'];
+      return saveRaw(path.join(root, 'dist', 'moby-thesaurus.d.ts'), decl, { quiet: true });
     });
 }
 
