@@ -10,10 +10,10 @@ import {
   soundex,
   space,
 } from '@technobuddha/library';
-import { err, locateRootDirectory, out, readLines, writeLines } from '@technobuddha/library/node';
+import { err, locatePackageRoot, out, readLines, writeLines } from '@technobuddha/library/node';
 import ansi from 'ansi-escapes';
 
-const root = await locateRootDirectory();
+const root = await locatePackageRoot();
 if (!root) {
   err('Could not find root directory');
   process.exit(1);

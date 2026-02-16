@@ -1,7 +1,7 @@
 import path from 'node:path';
 
 import { empty, escapeJS, isMark, isPrintable, quote } from '@technobuddha/library';
-import { err, locateRootDirectory } from '@technobuddha/library/node';
+import { err, locatePackageRoot } from '@technobuddha/library/node';
 
 import { unicodeData } from '../../src/@data/unicode-data.ts';
 
@@ -12,7 +12,7 @@ import { savePretty } from '../helpers/save-pretty.ts';
 import { asciiTransform } from './ascii-transform.ts';
 import { uDisplay } from '../helpers/u-display.ts';
 
-const root = await locateRootDirectory();
+const root = await locatePackageRoot();
 if (!root) {
   err('Could not find root directory');
   process.exit(1);

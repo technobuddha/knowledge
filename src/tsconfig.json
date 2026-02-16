@@ -12,5 +12,6 @@
     "outDir": "../dist"
   },
   "include": ["**/*.ts", "**/*.d.ts"],
-  "exclude": ["**/__tests__"]
+  "exclude": ["**/__tests__"],
+  "references": [{ "path": "@data" }]
 }

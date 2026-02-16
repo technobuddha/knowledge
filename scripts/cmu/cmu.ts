@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import { create1dArray, empty, quote, range, space, splitLines, sum } from '@technobuddha/library';
-import { err, locateRootDirectory } from '@technobuddha/library/node';
+import { err, locatePackageRoot } from '@technobuddha/library/node';
 
 import { header } from '../helpers/header.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
@@ -17,7 +17,7 @@ import { arpaPhonemes, type Phoneme } from './phonemes.ts';
 type MaskedPhoneme = string | boolean;
 const COMPOUND_PARTS_MINIMUM_LENGTH = 5;
 
-const root = await locateRootDirectory();
+const root = await locatePackageRoot();
 if (!root) {
   err('Could not find root directory');
   process.exit(1);

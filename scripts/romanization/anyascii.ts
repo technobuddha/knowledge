@@ -2,14 +2,14 @@
 import path from 'node:path';
 
 import { empty, escapeJS, quote } from '@technobuddha/library';
-import { err, locateRootDirectory } from '@technobuddha/library/node';
+import { err, locatePackageRoot } from '@technobuddha/library/node';
 
 import { header } from '../helpers/header.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { readLicense } from '../helpers/read-license.ts';
 import { savePretty } from '../helpers/save-pretty.ts';
 
-const root = await locateRootDirectory();
+const root = await locatePackageRoot();
 if (!root) {
   err('Could not find root directory');
   process.exit(1);

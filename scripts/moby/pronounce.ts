@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import { empty, quote, space, splitLines } from '@technobuddha/library';
-import { err, locateRootDirectory } from '@technobuddha/library/node';
+import { err, locatePackageRoot } from '@technobuddha/library/node';
 
 import { header } from '../helpers/header.ts';
 import { parse } from '../helpers/moby-pronunciation-parser.ts';
@@ -15,7 +15,7 @@ import { exceptions } from './data/exceptions.ts';
 import { ipaPhones } from './data/phonemes.ts';
 import { spacedWords } from './data/spaced-words.ts';
 
-const root = await locateRootDirectory();
+const root = await locatePackageRoot();
 if (!root) {
   err('Could not find root directory');
   process.exit(1);

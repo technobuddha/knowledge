@@ -16,6 +16,20 @@ const config = [
     environment: 'node',
     tsConfig: 'tsconfig.json',
   }),
+  // library/datasets
+  app.lint({
+    files: ['library/datasets/**/*.ts'],
+    ignores: [],
+    environment: 'node',
+    tsConfig: 'library/datasets/tsconfig.json',
+  }),
+  // library/scripts
+  app.lint({
+    files: ['library/scripts/**/*.ts'],
+    ignores: [],
+    environment: 'node',
+    tsConfig: 'library/scripts/tsconfig.json',
+  }),
   // migrations
   app.lint({
     files: ['migrations/**/*.ts'],
@@ -56,6 +70,13 @@ const config = [
     ignores: [],
     environment: 'node',
     tsConfig: 'scripts/tsconfig.json',
+  }),
+  // src/@data
+  app.lint({
+    files: ['src/@data/**/*.ts'],
+    ignores: [],
+    environment: 'node',
+    tsConfig: 'src/@data/tsconfig.json',
   }),
 ];
 
