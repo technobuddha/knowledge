@@ -2,20 +2,14 @@
 import path from 'node:path';
 
 import { empty, escapeJS, quote } from '@technobuddha/library';
-import { err, locatePackageRoot } from '@technobuddha/library/node';
 
+import { data, reference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { readLicense } from '../helpers/read-license.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
 import { saveTerser } from '../helpers/save-terser.ts';
 
-const root = await locatePackageRoot();
-if (!root) {
-  err('Could not find root directory');
-  process.exit(1);
-}
-
-const { default: block } = await import(path.join(root, 'reference', 'anyascii', 'block.js'));
+const { default: block } = await import(path.join(reference, 'anyascii', 'block.js'));
 
 const romanize: Map<number, string> = new Map();
 for (let blockNum = 0; blockNum < 0x10ff; ++blockNum) {
@@ -35,9 +29,9 @@ for (let i = 32; i < 127; ++i) {
   romanize.set(i, String.fromCodePoint(i));
 }
 
-const doc = await readDocumentation(root, 'romanization');
+const doc = await readDocumentation('romanization');
 const license = await readLicense(
-  path.join(root, 'reference', 'anyascii', 'LICENSE'),
+  path.join(reference, 'anyascii', 'LICENSE'),
   'https://github.com/anyascii/anyascii',
 );
 
@@ -48,8 +42,6 @@ for (const [codePoint, romanized] of Array.from(romanize.entries()).sort(([a], [
 }
 code.push('};', empty);
 
-await saveTerser(path.join(root, 'dist', 'romanization.js'), code, { quiet: true });
-
 const decl = [
   ...license,
   empty,
@@ -57,4 +49,8 @@ const decl = [
   'export declare const romanization: Record<string, string>;',
   empty,
 ];
-await saveRaw(path.join(root, 'dist', 'romanization.d.ts'), decl, { quiet: true });
+
+await Promise.all([
+  saveTerser(path.join(data, 'romanization.js'), code, { quiet: true }),
+  saveRaw(path.join(data, 'romanization.d.ts'), decl, { quiet: true }),
+]);

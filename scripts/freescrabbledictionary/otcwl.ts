@@ -3,28 +3,19 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import { empty, quote, range, strip } from '@technobuddha/library';
-import { err, locatePackageRoot } from '@technobuddha/library/node';
 
+import { data, reference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
 import { saveTerser } from '../helpers/save-terser.ts';
 
-const root = await locatePackageRoot();
-if (!root) {
-  err('Could not find root directory');
-  process.exit(1);
-}
-
-const doc = await readDocumentation(root, 'freescrabbledictionary');
+const doc = await readDocumentation('freescrabbledictionary');
 
 const code = ['export const fsd = ['];
 
 for (const letter of range('a', 'z')) {
   await fs
-    .readFile(
-      path.join(root, 'reference', 'freescrabbledictionary', `words-${letter}.jsonc`),
-      'utf-8',
-    )
+    .readFile(path.join(reference, 'freescrabbledictionary', `words-${letter}.jsonc`), 'utf-8')
     .then(async (raw) => {
       const json = JSON.parse(strip(raw, { comments: true })) as { word: string }[];
 
@@ -35,7 +26,9 @@ for (const letter of range('a', 'z')) {
 }
 code.push('];', empty);
 
-await saveTerser(path.join(root, 'dist', 'fsd.js'), code, { quiet: true });
-
 const decl = [...doc, 'export declare const fsd: string[];'];
-await saveRaw(path.join(root, 'dist', 'fsd.d.ts'), decl, { quiet: true });
+
+await Promise.all([
+  saveTerser(path.join(data, 'fsd.js'), code, { quiet: true }),
+  saveRaw(path.join(data, 'fsd.d.ts'), decl, { quiet: true }),
+]);

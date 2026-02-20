@@ -6,7 +6,7 @@ A list of 60,444 Italian words.
 ## Usage
 
 ```typescript
-import { mobyItalian } from '@technobuddha/moby';
+import { mobyItalian } from '@technobuddha/knowledge';
 
 mobyItalian.length; // 60,444
 mobyFrench.filter((word) => word.startsWith('ab')); // Array of 653 italian words starting with "ab"

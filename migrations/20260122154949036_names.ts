@@ -4,18 +4,19 @@ import { type ColumnDefinitions, type MigrationBuilder } from 'node-pg-migrate';
 export const shorthands: ColumnDefinitions | undefined = undefined;
 
 export async function up(pgm: MigrationBuilder): Promise<void> {
-  pgm.addColumns('names', {
+  pgm.createTable('names', {
+    id: { type: 'serial', primaryKey: true },
+    first: { type: 'text' },
+    normalized_first: { type: 'text' },
     sound_first: { type: 'text' },
+    last: { type: 'text' },
+    normalized_last: { type: 'text' },
     sound_last: { type: 'text' },
+    sex: { type: 'text' },
+    country: { type: 'text' },
   });
-
-  pgm.sql(`
-    UPDATE names SET
-      sound_first = soundex(normalized_first),
-      sound_last = soundex(normalized_last)
-  `);
 }
 
 export async function down(pgm: MigrationBuilder): Promise<void> {
-  pgm.dropColumns('names', ['sound_first', 'sound_last']);
+  pgm.dropTable('names');
 }

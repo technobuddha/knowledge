@@ -6,7 +6,7 @@
   "extends": "../tsconfig.base.json",
   "compilerOptions": {
     "composite": true,
-    "types": [],
+    "types": ["node"],
     "lib": ["esnext"],
     "rootDir": ".",
     "outDir": "../dist"

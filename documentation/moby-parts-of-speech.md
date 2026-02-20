@@ -5,7 +5,7 @@
 ## Usage
 
 ```typescript
-import { partsOfSpeech } from '@technobuddha/moby';
+import { partsOfSpeech } from '@technobuddha/knowledge';
 
 partsOfSpeech['engineer']; // "Nt"
 Object.keys(partsOfSpeech); // Array of all 233,339 words

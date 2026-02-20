@@ -4,14 +4,17 @@ import { remotes } from './remotes.config.js';
 /** @type import("\@technobuddha/project").TechnobuddhaConfig */
 const config = {
   directories: {
+    src: {
+      environment: 'node',
+    },
     reference: {
       environment: 'none',
     },
-    scripts: {
-      tsconfig: {
-        references: ['./src'],
-      },
-    },
+    // scripts: {
+    //   tsconfig: {
+    //     references: ['./src'],
+    //   },
+    // },
   },
   lint: {
     rules: {

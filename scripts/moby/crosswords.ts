@@ -3,27 +3,21 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import { empty, quote, splitLines } from '@technobuddha/library';
-import { err, locatePackageRoot } from '@technobuddha/library/node';
 
+import { data, reference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
 import { saveTerser } from '../helpers/save-terser.ts';
 
-const root = await locatePackageRoot();
-if (!root) {
-  err('Could not find root directory');
-  process.exit(1);
-}
-
-const docFirst = await readDocumentation(root, 'moby-scrabble-first');
-const docSecond = await readDocumentation(root, 'moby-scrabble-second');
+const docFirst = await readDocumentation('moby-scrabble-first');
+const docSecond = await readDocumentation('moby-scrabble-second');
 
 const firstEdition: Set<string> = new Set();
 const secondEdition: Set<string> = new Set();
 
 await Promise.all([
   fs
-    .readFile(path.join(root, 'reference', 'moby', 'mwords', '113809of.fic'), 'utf-8')
+    .readFile(path.join(reference, 'moby', 'mwords', '113809of.fic'), 'utf-8')
     .then(async (buffer) => {
       for (const line of splitLines(buffer)) {
         if (line && !line.startsWith('#')) {
@@ -34,7 +28,7 @@ await Promise.all([
       return undefined;
     }),
   fs
-    .readFile(path.join(root, 'reference', 'moby', 'mwords', '4160offi.cia'), 'utf-8')
+    .readFile(path.join(reference, 'moby', 'mwords', '4160offi.cia'), 'utf-8')
     .then(async (buffer) => {
       for (const line of splitLines(buffer)) {
         if (line && !line.startsWith('#')) {
@@ -65,8 +59,16 @@ code2.push('];', empty);
 const decl2 = [...docSecond, 'export declare const mobyCrosswords2ndEdition: string[];', empty];
 
 await Promise.all([
-  saveTerser(path.join(root, 'dist', 'moby-crosswords-1st-edition.js'), code1, { quiet: true }),
-  saveTerser(path.join(root, 'dist', 'moby-crosswords-2nd-edition.js'), code2, { quiet: true }),
-  saveRaw(path.join(root, 'dist', 'moby-crosswords-1st-edition.d.ts'), decl1, { quiet: true }),
-  saveRaw(path.join(root, 'dist', 'moby-crosswords-2nd-edition.d.ts'), decl2, { quiet: true }),
+  saveTerser(path.join(data, 'moby-crosswords-1st-edition.js'), code1, {
+    quiet: true,
+  }),
+  saveTerser(path.join(data, 'moby-crosswords-2nd-edition.js'), code2, {
+    quiet: true,
+  }),
+  saveRaw(path.join(data, 'moby-crosswords-1st-edition.d.ts'), decl1, {
+    quiet: true,
+  }),
+  saveRaw(path.join(data, 'moby-crosswords-2nd-edition.d.ts'), decl2, {
+    quiet: true,
+  }),
 ]);

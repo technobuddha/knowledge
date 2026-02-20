@@ -11,17 +11,11 @@ import {
   titleCase,
   untabify,
 } from '@technobuddha/library';
-import { err, locatePackageRoot } from '@technobuddha/library/node';
 
+import { data, reference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
 import { saveTerser } from '../helpers/save-terser.ts';
-
-const root = await locatePackageRoot();
-if (!root) {
-  err('Could not find root directory');
-  process.exit(1);
-}
 
 type GENRE = 'comedy' | 'history' | 'poetry' | 'tragedy' | 'glossary';
 
@@ -69,7 +63,7 @@ const titles: [string, GENRE][] = [
   ['THE WINTER’S TALE',           'comedy'],
 ];
 
-const doc = await readDocumentation(root, 'moby-shakespeare');
+const doc = await readDocumentation('moby-shakespeare');
 
 const code = ['export const mobyShakespeare = {'];
 function shake(name: string, content: string[]): void {
@@ -90,7 +84,7 @@ function shake(name: string, content: string[]): void {
 }
 
 await fs
-  .readFile(path.join(root, 'reference', 'moby', 'mshak', 'shakespe.are'), 'ascii')
+  .readFile(path.join(reference, 'moby', 'mshak', 'shakespe.are'), 'ascii')
   .then(async (raw) => {
     const text = untabify(raw, 20);
 
@@ -119,15 +113,16 @@ await fs
 
     code.push('};', empty);
 
-    return saveTerser(path.join(root, 'dist', 'moby-shakespeare.js'), code, { quiet: true });
+    const decl = [
+      "export type Genre = 'comedy' | 'history' | 'poetry' | 'tragedy' | 'glossary';",
+      'export type Work = { title: string, genre: Genre, content: string[] };',
+      empty,
+      ...doc,
+      'export declare const mobyShakespeare: Record<string, Work>;',
+    ];
+
+    return Promise.all([
+      saveTerser(path.join(data, 'moby-shakespeare.js'), code, { quiet: true }),
+      saveRaw(path.join(data, 'moby-shakespeare.d.ts'), decl, { quiet: true }),
+    ]);
   });
-
-const decl = [
-  "export type Genre = 'comedy' | 'history' | 'poetry' | 'tragedy' | 'glossary';",
-  'export type Work = { title: string, genre: Genre, content: string[] };',
-  empty,
-  ...doc,
-  'export declare const mobyShakespeare: Record<string, Work>;',
-];
-
-await saveRaw(path.join(root, 'dist', 'moby-shakespeare.d.ts'), decl, { quiet: true });

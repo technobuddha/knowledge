@@ -1,9 +1,11 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-export async function readDocumentation(root: string, filename: string): Promise<string[]> {
+import { documentation } from './paths.ts';
+
+export async function readDocumentation(filename: string): Promise<string[]> {
   return fs
-    .readFile(path.join(root, 'documentation', `${filename}.md`), 'utf-8')
+    .readFile(path.join(documentation, `${filename}.md`), 'utf-8')
     .then((content) => [
       '/**',
       ...content

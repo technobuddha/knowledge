@@ -3,17 +3,11 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import { empty, parseCsv, quote, strip } from '@technobuddha/library';
-import { err, locatePackageRoot } from '@technobuddha/library/node';
 
+import { data, reference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
 import { saveTerser } from '../helpers/save-terser.ts';
-
-const root = await locatePackageRoot();
-if (!root) {
-  err('Could not find root directory');
-  process.exit(1);
-}
 
 const genders = ['cat', 'dog', 'bunny', 'fake', 'female', 'male', 'surname'] as const;
 type Gender = (typeof genders)[number];
@@ -22,7 +16,7 @@ type Genders = { [key in (typeof genders)[number]]?: boolean };
 const names = new Map<string, Genders>();
 
 async function read(file: string, gender: Gender): Promise<void> {
-  return fs.readFile(path.join(root!, 'reference', 'names', `${file}.csv`), 'utf-8').then((csv) => {
+  return fs.readFile(path.join(reference, 'names', `${file}.csv`), 'utf-8').then((csv) => {
     for (const entry of parseCsv(csv, { lineSeparator: '\n' })) {
       const name = entry.name.toUpperCase();
       if (name) {
@@ -41,7 +35,7 @@ async function read(file: string, gender: Gender): Promise<void> {
 }
 
 async function readMFN(file: string): Promise<void> {
-  return fs.readFile(path.join(root!, 'reference', 'names', `${file}.csv`), 'utf-8').then((csv) => {
+  return fs.readFile(path.join(reference, 'names', `${file}.csv`), 'utf-8').then((csv) => {
     for (const entry of parseCsv(csv, { lineSeparator: '\n' })) {
       if (entry.name) {
         const name = entry.name.toUpperCase();
@@ -68,7 +62,7 @@ async function readMFN(file: string): Promise<void> {
 }
 
 async function readSex(file: string): Promise<void> {
-  return fs.readFile(path.join(root!, 'reference', 'names', `${file}.csv`), 'utf-8').then((csv) => {
+  return fs.readFile(path.join(reference, 'names', `${file}.csv`), 'utf-8').then((csv) => {
     for (const entry of parseCsv(csv, { lineSeparator: '\n' })) {
       if (entry.name) {
         const name = entry.name.toUpperCase();
@@ -89,18 +83,16 @@ async function readSex(file: string): Promise<void> {
 }
 
 async function readJson(file: string, gender: Gender): Promise<void> {
-  return fs
-    .readFile(path.join(root!, 'reference', 'names', `${file}.jsonc`), 'utf-8')
-    .then((data) => {
-      for (let name of JSON.parse(strip(data, { comments: true }))) {
-        name = name.toUpperCase();
-        const curr = names.get(name) ?? {};
-        curr[gender] = true;
-        names.set(name, curr);
-      }
+  return fs.readFile(path.join(reference, 'names', `${file}.jsonc`), 'utf-8').then((data) => {
+    for (let name of JSON.parse(strip(data, { comments: true }))) {
+      name = name.toUpperCase();
+      const curr = names.get(name) ?? {};
+      curr[gender] = true;
+      names.set(name, curr);
+    }
 
-      return undefined;
-    });
+    return undefined;
+  });
 }
 const files: [string, Gender][] = [
   ['catNames', 'cat'],
@@ -125,7 +117,7 @@ await readSex('baby');
 await readJson('male-dog-names', 'dog');
 await readJson('female-dog-names', 'dog');
 
-const docs = await readDocumentation(root, 'names');
+const docs = await readDocumentation('names');
 const code: string[] = ['export const names = {'];
 
 for (const [name, genders] of Array.from(names.entries()).sort(([a], [b]) =>
@@ -139,7 +131,6 @@ for (const [name, genders] of Array.from(names.entries()).sort(([a], [b]) =>
   );
 }
 code.push('};', empty);
-await saveTerser(path.join(root, 'dist', 'names.js'), code, { quiet: true });
 
 const decl = [
   'export type Genders = {',
@@ -149,4 +140,8 @@ const decl = [
   ...docs,
   'export declare const names: Record<string, Genders>;',
 ];
-await saveRaw(path.join(root, 'dist', 'names.d.ts'), decl, { quiet: true });
+
+await Promise.all([
+  saveTerser(path.join(data, 'names.js'), code, { quiet: true }),
+  saveRaw(path.join(data, 'names.d.ts'), decl, { quiet: true }),
+]);

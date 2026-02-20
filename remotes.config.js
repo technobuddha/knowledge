@@ -718,7 +718,7 @@ export const remotes = [
   // LaTeX hyphenation patterns
   {
     url: 'https://mirrors.mit.edu/CTAN/language/hyph-utf8/tex/patterns/tex/hyph-en-us.tex',
-    local: 'reference/hyphenate/hyph-en-us.tex',
+    local: 'reference/ctan/hyph-en-us.tex',
     banner: '%',
   },
   //#endregion
@@ -1069,17 +1069,6 @@ export const remotes = [
     local: 'reference/fasttag',
     zip: '**/*',
     rename: (name) => name.replace(/.*?\//, empty),
-  },
-  //#endregion
-  //#region postgres
-  {
-    url: 'https://raw.githubusercontent.com/postgres/postgres/refs/heads/master/contrib/unaccent/unaccent.rules',
-    local: 'reference/postgres/unaccent.rules',
-  },
-  {
-    url: 'https://github.com/postgres/postgres/raw/refs/heads/master/COPYRIGHT',
-    local: 'reference/postgres/COPYRIGHT',
-    banner: '#',
   },
   //#endregion
 ];

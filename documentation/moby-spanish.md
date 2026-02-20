@@ -6,7 +6,7 @@ A list of 86,059 spanish words.
 ## Usage
 
 ```typescript
-import { mobySpanish } from '@technobuddha/moby';
+import { mobySpanish } from '@technobuddha/knowledge';
 
 mobySpanish.length; // 86,059
 mobySpanish.filter((word) => word.startsWith('ab')); // Array of 693 spanish words starting with "ab"

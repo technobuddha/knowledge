@@ -8,7 +8,7 @@ These are words written in rōmaji (the Latin alphabet) representing Japanese wo
 ## Usage
 
 ```typescript
-import { mobyJapanese } from '@technobuddha/moby';
+import { mobyJapanese } from '@technobuddha/knowledge';
 
 mobyJapanese.length; // 115,523
 mobyJapanese.filter((word) => word.startsWith('ab')); // Array of 132 japanese words starting with "ab"

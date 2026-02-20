@@ -6,7 +6,7 @@ A list of 159,809 german words.
 ## Usage
 
 ```typescript
-import { mobyGerman } from '@technobuddha/moby';
+import { mobyGerman } from '@technobuddha/knowledge';
 
 mobyGerman.length; // 159,809
 mobyGerman.filter((word) => word.startsWith('ab')); // Array of 3142 german words starting with "ab"

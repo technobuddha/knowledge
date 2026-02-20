@@ -1,11 +1,11 @@
 export { cmuDictArpabet } from './@data/cmu-dict-arpabet.ts';
 export { cmuDictIPA } from './@data/cmu-dict-ipa.ts';
+export { hyphenation } from './@data/hyphenation.ts';
 export { mobyAcronyms } from './@data/moby-acronyms.ts';
 export { mobyCommon } from './@data/moby-common.ts';
 export { mobyCompoundWords } from './@data/moby-compound-words.ts';
 export { mobyCrosswords1stEdition } from './@data/moby-crosswords-1st-edition.ts';
 export { mobyCrosswords2ndEdition } from './@data/moby-crosswords-2nd-edition.ts';
-export { mobyCrosswordsDelta } from './@data/moby-crosswords-delta.ts';
 export { mobyFemaleNames } from './@data/moby-female-names.ts';
 export { mobyFrench } from './@data/moby-french.ts';
 export { mobyFrequentWords } from './@data/moby-frequent-words.ts';

@@ -1,17 +1,16 @@
 // cspell:disable
 /* eslint-disable @typescript-eslint/prefer-destructuring */
-import '@
-
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import { quote, space, splitLines } from '@technobuddha/library';
 import { err, locatePackageRoot } from '@technobuddha/library/node';
 
-import { lookup } from './helpers/lookup.ts';
-import { parse } from './helpers/moby-pronunciation-parser.ts';
-import { exceptions } from './moby/data/exceptions.ts';
-import { spacedWords } from './moby/data/spaced-words.ts';
+import { lookup } from '../helpers/lookup.ts';
+import { parse } from '../helpers/moby-pronunciation-parser.ts';
+
+import { exceptions } from './data/exceptions.ts';
+import { spacedWords } from './data/spaced-words.ts';
 
 const root = await locatePackageRoot();
 if (!root) {
