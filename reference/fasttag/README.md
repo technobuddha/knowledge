@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/mark-watson/fasttag_v2/archive/refs/heads/master.zip::fasttag_v2-master/README.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/mark-watson/fasttag_v2/archive/refs/heads/master.zip::fasttag_v2-master/README.md
+     🚨
+-->
 fasttag_v2
 ==========
 

@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/hedges/archive/refs/heads/main.zip::hedges-main/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/hedges/archive/refs/heads/main.zip::hedges-main/readme.md
+     🚨
+-->
 # hedges
 
 [![Build][build-badge]][build]

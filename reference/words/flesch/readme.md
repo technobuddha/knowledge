@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/flesch/archive/refs/heads/main.zip::flesch-main/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/flesch/archive/refs/heads/main.zip::flesch-main/readme.md
+     🚨
+-->
 # flesch
 
 [![Build][build-badge]][build]

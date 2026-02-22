@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/cuss/archive/refs/heads/main.zip::cuss-main/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/cuss/archive/refs/heads/main.zip::cuss-main/readme.md
+     🚨
+-->
 # cuss
 
 [![Build][build-badge]][build]

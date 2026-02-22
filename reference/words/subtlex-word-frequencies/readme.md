@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/subtlex-word-frequencies/archive/refs/heads/master.zip::subtlex-word-frequencies-master/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/subtlex-word-frequencies/archive/refs/heads/master.zip::subtlex-word-frequencies-master/readme.md
+     🚨
+-->
 # `subtlex-word-frequencies`
 
 [![Build][build-badge]][build]

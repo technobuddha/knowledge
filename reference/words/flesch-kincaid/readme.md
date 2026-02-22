@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/flesch-kincaid/archive/refs/heads/main.zip::flesch-kincaid-main/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/flesch-kincaid/archive/refs/heads/main.zip::flesch-kincaid-main/readme.md
+     🚨
+-->
 # flesch-kincaid
 
 [![Build][build-badge]][build]

@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/automated-readability/archive/refs/heads/main.zip::automated-readability-main/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/automated-readability/archive/refs/heads/main.zip::automated-readability-main/readme.md
+     🚨
+-->
 # automated-readability
 
 [![Build][build-badge]][build]

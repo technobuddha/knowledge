@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/brill/archive/refs/heads/main.zip::brill-main/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/brill/archive/refs/heads/main.zip::brill-main/readme.md
+     🚨
+-->
 # brill
 
 [![Build][build-badge]][build]

@@ -1,3 +1,4 @@
+export { badWords as afinn } from './@data/bad-words.ts';
 export { cmuDictArpabet } from './@data/cmu-dict-arpabet.ts';
 export { cmuDictIPA } from './@data/cmu-dict-ipa.ts';
 export { hyphenation } from './@data/hyphenation.ts';

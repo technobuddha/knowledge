@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/spache/archive/refs/heads/master.zip::spache-main/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/spache/archive/refs/heads/master.zip::spache-main/readme.md
+     🚨
+-->
 # spache
 
 [![Build][build-badge]][build]

@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/rhymes/archive/refs/heads/master.zip::rhymes-master/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/rhymes/archive/refs/heads/master.zip::rhymes-master/readme.md
+     🚨
+-->
 # rhymes
 
 [![Build][build-badge]][build]

@@ -81,7 +81,12 @@ const config = {
       {
         name: 'LaTeχ Hyphenation',
         command: 'npx tsx ./scripts/ctan/hyphenation.ts',
-      }
+      },
+      {
+        name: 'Bad Words',
+        command: 'npx tsx ./scripts/bad-words/bad-words.ts',
+      },
+
 
       // {
       //   name: 'Documentation',

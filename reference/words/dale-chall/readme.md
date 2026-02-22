@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/dale-chall/archive/refs/heads/main.zip::dale-chall-main/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/dale-chall/archive/refs/heads/main.zip::dale-chall-main/readme.md
+     🚨
+-->
 # dale-chall
 
 [![Build][build-badge]][build]

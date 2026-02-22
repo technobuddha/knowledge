@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/buzzwords/archive/refs/heads/main.zip::buzzwords-main/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/buzzwords/archive/refs/heads/main.zip::buzzwords-main/readme.md
+     🚨
+-->
 # buzzwords
 
 [![Build][build-badge]][build]

@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/emoji-emotion/archive/refs/heads/main.zip::emoji-emotion-main/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/emoji-emotion/archive/refs/heads/main.zip::emoji-emotion-main/readme.md
+     🚨
+-->
 # emoji-emotion
 
 [![Build][build-badge]][build]

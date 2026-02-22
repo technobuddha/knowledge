@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/profanities/archive/refs/heads/main.zip::profanities-main/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/profanities/archive/refs/heads/main.zip::profanities-main/readme.md
+     🚨
+-->
 # profanities
 
 [![Build][build-badge]][build]

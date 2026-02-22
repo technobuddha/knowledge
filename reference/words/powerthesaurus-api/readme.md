@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/powerthesaurus-api/archive/refs/heads/master.zip::powerthesaurus-api-master/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/powerthesaurus-api/archive/refs/heads/master.zip::powerthesaurus-api-master/readme.md
+     🚨
+-->
 # powerthesaurus-api
 
 [![Build][build-badge]][build]

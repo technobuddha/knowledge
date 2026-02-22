@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/coleman-liau/archive/refs/heads/main.zip::coleman-liau-main/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/coleman-liau/archive/refs/heads/main.zip::coleman-liau-main/readme.md
+     🚨
+-->
 # coleman-liau
 
 [![Build][build-badge]][build]

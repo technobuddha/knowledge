@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/dale-chall-formula/archive/refs/heads/main.zip::dale-chall-formula-main/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/dale-chall-formula/archive/refs/heads/main.zip::dale-chall-formula-main/readme.md
+     🚨
+-->
 # dale-chall-formula
 
 [![Build][build-badge]][build]

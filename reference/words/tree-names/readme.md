@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/tree-names/archive/refs/heads/master.zip::tree-names-master/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/tree-names/archive/refs/heads/master.zip::tree-names-master/readme.md
+     🚨
+-->
 # 🌳 tree-names
 
 [![Build][build-badge]][build]

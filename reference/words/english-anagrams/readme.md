@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/english-anagrams/archive/refs/heads/master.zip::english-anagrams-master/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/english-anagrams/archive/refs/heads/master.zip::english-anagrams-master/readme.md
+     🚨
+-->
 # english-anagrams
 
 [![Build][build-badge]][build]

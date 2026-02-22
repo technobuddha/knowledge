@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/smog-formula/archive/refs/heads/master.zip::smog-formula-main/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/smog-formula/archive/refs/heads/master.zip::smog-formula-main/readme.md
+     🚨
+-->
 # smog-formula
 
 [![Build][build-badge]][build]

@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/polarity/archive/refs/heads/main.zip::polarity-main/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/polarity/archive/refs/heads/main.zip::polarity-main/readme.md
+     🚨
+-->
 # polarity
 
 [![Build][build-badge]][build]

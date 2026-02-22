@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/gunning-fog/archive/refs/heads/main.zip::gunning-fog-main/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/gunning-fog/archive/refs/heads/main.zip::gunning-fog-main/readme.md
+     🚨
+-->
 # gunning-fog
 
 [![Build][build-badge]][build]

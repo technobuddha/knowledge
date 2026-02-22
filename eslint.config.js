@@ -43,12 +43,6 @@ const config = [
     ignores: [],
     environment: 'node',
   }),
-  // reference/words/google-did-you-mean
-  app.lint({
-    files: ['reference/words/google-did-you-mean/*.config.js'],
-    ignores: [],
-    environment: 'node',
-  }),
   // src/__tests__
   app.lint({
     files: ['src/__tests__/**/*.test.ts'],

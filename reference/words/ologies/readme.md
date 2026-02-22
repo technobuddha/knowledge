@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/ologies/archive/refs/heads/master.zip::ologies-master/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/ologies/archive/refs/heads/master.zip::ologies-master/readme.md
+     🚨
+-->
 
 
 # Ologies

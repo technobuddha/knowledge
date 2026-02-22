@@ -116,11 +116,11 @@ export const remotes = [
   // Big Lou (CMU)
   {
     url: 'https://www.cs.cmu.edu/~biglou/resources/EN_SP_DICT.txt',
-    local: 'reference/cmu/biglou-en-sp-dict.txt',
+    local: 'reference/biglou/en-sp-dict.txt',
   },
   {
     url: 'https://www.cs.cmu.edu/~biglou/resources/bad-words.txt',
-    local: 'reference/cmu/biglou-bad-words.txt',
+    local: 'reference/biglou/bad-words.txt',
   },
   //#endregion
   //#region Copylists
@@ -725,11 +725,6 @@ export const remotes = [
   //#region Unicode
   // Unicode
   {
-    url: 'https://www.unicode.org/L2/L1999/UnicodeData.html',
-    local: 'reference/unicode/unicode-data.html',
-    banner: '<!->',
-  },
-  {
     url: 'https://www.unicode.org/license.txt',
     local: 'reference/unicode/license.txt',
     banner: '#',
@@ -799,48 +794,6 @@ export const remotes = [
   //#endregion
   //#region words
   {
-    url: 'https://github.com/words/afinn-96/archive/refs/heads/main.zip',
-    local: 'reference/words/afinn-96',
-    zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/*.txt'],
-    rename: (name) => name.replace(/.*?\//, empty),
-  },
-  {
-    url: 'https://github.com/words/afinn-111/archive/refs/heads/main.zip',
-    local: 'reference/words/afinn-111',
-    zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/*.txt'],
-    rename: (name) => name.replace(/.*?\//, empty),
-  },
-  {
-    url: 'https://github.com/words/afinn-165/archive/refs/heads/main.zip',
-    local: 'reference/words/afinn-165',
-    zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/*.txt'],
-    rename: (name) => name.replace(/.*?\//, empty),
-  },
-  {
-    url: 'https://github.com/words/an-array-of-english-words/archive/refs/heads/master.zip',
-    local: 'reference/words/an-array-of-english-words',
-    zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/*.txt'],
-    rename: (name) => name.replace(/.*?\//, empty),
-  },
-  {
-    url: 'https://github.com/words/an-array-of-french-words/archive/refs/heads/master.zip',
-    local: 'reference/words/an-array-of-french-words',
-    zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/*.txt'],
-    rename: (name) => name.replace(/.*?\//, empty),
-  },
-  {
-    url: 'https://github.com/words/an-array-of-spanish-words/archive/refs/heads/master.zip',
-    local: 'reference/words/an-array-of-spanish-words',
-    zip: ['*/readme.md', '*/license', "*/*.js", '*/*.json', '*/*.txt'],
-    rename: (name) => name.replace(/.*?\//, empty),
-  },
-  {
-    url: 'https://github.com/words/automated-readability/archive/refs/heads/main.zip',
-    local: 'reference/words/automated-readability',
-    zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/*.txt'],
-    rename: (name) => name.replace(/.*?\//, empty),
-  },
-  {
     url: 'https://github.com/words/brill/archive/refs/heads/main.zip',
     local: 'reference/words/brill',
     zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/*.txt'],
@@ -849,12 +802,6 @@ export const remotes = [
   {
     url: 'https://github.com/words/buzzwords/archive/refs/heads/main.zip',
     local: 'reference/words/buzzwords',
-    zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/*.txt'],
-    rename: (name) => name.replace(/.*?\//, empty),
-  },
-  {
-    url: 'https://github.com/words/cmu-pronouncing-dictionary/archive/refs/heads/master.zip',
-    local: 'reference/words/cmu-pronouncing-dictionary',
     zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/*.txt'],
     rename: (name) => name.replace(/.*?\//, empty),
   },
@@ -919,12 +866,6 @@ export const remotes = [
     rename: (name) => name.replace(/.*?\//, empty),
   },
   {
-    url: 'https://github.com/words/google-did-you-mean/archive/refs/heads/master.zip',
-    local: 'reference/words/google-did-you-mean',
-    zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/.txt'],
-    rename: (name) => name.replace(/.*?\//, empty),
-  },
-  {
     url: 'https://github.com/words/gunning-fog/archive/refs/heads/main.zip',
     local: 'reference/words/gunning-fog',
     zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/.txt'],
@@ -933,12 +874,6 @@ export const remotes = [
   {
     url: 'https://github.com/words/hedges/archive/refs/heads/main.zip',
     local: 'reference/words/hedges',
-    zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/.txt'],
-    rename: (name) => name.replace(/.*?\//, empty),
-  },
-  {
-    url: 'https://github.com/words/levenmorpher/archive/refs/heads/master.zip',
-    local: 'reference/words/levenmorpher',
     zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/.txt'],
     rename: (name) => name.replace(/.*?\//, empty),
   },
@@ -975,12 +910,6 @@ export const remotes = [
   {
     url: 'https://github.com/words/russian-given-names/archive/refs/heads/master.zip',
     local: 'reference/words/russian-given-names',
-    zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/.txt'],
-    rename: (name) => name.replace(/.*?\//, empty),
-  },
-  {
-    url: 'https://github.com/words/similar-english-words/archive/refs/heads/master.zip',
-    local: 'reference/words/similar-english-words',
     zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/.txt'],
     rename: (name) => name.replace(/.*?\//, empty),
   },
@@ -1069,6 +998,23 @@ export const remotes = [
     local: 'reference/fasttag',
     zip: '**/*',
     rename: (name) => name.replace(/.*?\//, empty),
+  },
+  //#endregion
+  //#region AFINN
+  {
+    url: 'https://github.com/fnielsen/afinn/archive/refs/heads/master.zip',
+    local: 'reference/afinn',
+    zip: ['*/README.rst', '*/LICENSE', '**/AFINN*.txt'],
+    rename: (name) => name.replace(/(?:.*?\/)+/, empty),
+  },
+  //#endregion
+  //#region Letterpress
+  {
+    url: 'https://github.com/lorenbrichter/Words/archive/refs/heads/master.zip',
+    local: 'reference/letterpress',
+    zip: ['**/*'],
+    rename: (name) => name.replace(/(?:.*?\/)+/, empty),
+
   },
   //#endregion
 ];

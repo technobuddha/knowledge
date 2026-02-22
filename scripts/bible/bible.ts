@@ -4,7 +4,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-import { empty, escapeJS, parseCsv, quote, space, unique } from '@technobuddha/library';
+import { empty, escapeJS, parseCsv, quote, unique } from '@technobuddha/library';
 import { err, locatePackageRoot } from '@technobuddha/library/node';
 
 import { header } from '../helpers/header.ts';
@@ -125,7 +125,7 @@ function readKJV(
 }
 
 const kjv: Record<string, string>[] = [];
-let doc = await readDocumentation(root, 'king-james-bible');
+let doc = await readDocumentation('king-james-bible');
 let code: string[] = [
   ...header,
   ...doc,
@@ -141,7 +141,7 @@ let code: string[] = [
 await savePretty(path.join(root, 'src', '@data', 'king-james-bible.ts'), code.join('\n'));
 
 let nkjv: Record<string, string>[] = [];
-doc = await readDocumentation(root, 'new-king-james-bible');
+doc = await readDocumentation('new-king-james-bible');
 code = [
   ...header,
   ...doc,

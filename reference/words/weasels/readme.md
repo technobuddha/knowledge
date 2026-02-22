@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/weasels/archive/refs/heads/main.zip::weasels-main/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/weasels/archive/refs/heads/main.zip::weasels-main/readme.md
+     🚨
+-->
 # weasels
 
 [![Build][build-badge]][build]

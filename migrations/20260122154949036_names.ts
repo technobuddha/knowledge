@@ -13,7 +13,8 @@ export async function up(pgm: MigrationBuilder): Promise<void> {
     normalized_last: { type: 'text' },
     sound_last: { type: 'text' },
     sex: { type: 'text' },
-    country: { type: 'text' },
+    country: { type: 'text', notNull: true },
+    is_roman: { type: 'boolean', notNull: true },
   });
 }
 

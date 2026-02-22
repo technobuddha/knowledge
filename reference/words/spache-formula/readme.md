@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://github.com/words/spache-formula/archive/refs/heads/master.zip::spache-formula-main/readme.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://github.com/words/spache-formula/archive/refs/heads/master.zip::spache-formula-main/readme.md
+     🚨
+-->
 # spache-formula
 
 [![Build][build-badge]][build]

@@ -1,6 +1,8 @@
-# 🚨
-# 🚨 Source: https://codeload.github.com/sigpwned/popular-names-by-country-dataset/zip/refs/tags/v1.2::popular-names-by-country-dataset-1.2/README.md
-# 🚨
+<!-- markdown-lint-disable MD041
+     🚨
+     🚨 Source: https://codeload.github.com/sigpwned/popular-names-by-country-dataset/zip/refs/tags/v1.2::popular-names-by-country-dataset-1.2/README.md
+     🚨
+-->
 # Popular Names by Country Dataset
 
 Human names are so ubiquitous and fundamental to our day-to-day lives that it's easy to forget how important -- and complex -- they can be. For example, did you know:
