@@ -2,7 +2,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-import { empty, parseCsv, quote, strip } from '@technobuddha/library';
+import { empty, parseCsv, quote, removeComments } from '@technobuddha/library';
 
 import { data, reference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
@@ -84,7 +84,7 @@ async function readSex(file: string): Promise<void> {
 
 async function readJson(file: string, gender: Gender): Promise<void> {
   return fs.readFile(path.join(reference, 'names', `${file}.jsonc`), 'utf-8').then((data) => {
-    for (let name of JSON.parse(strip(data, { comments: true }))) {
+    for (let name of JSON.parse(removeComments(data))) {
       name = name.toUpperCase();
       const curr = names.get(name) ?? {};
       curr[gender] = true;

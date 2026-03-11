@@ -13,7 +13,7 @@ if (!root) {
 }
 
 const countries = await fs
-  .readdir(path.join(root, '..', 'name_dataset', 'data'), { withFileTypes: true })
+  .readdir(path.join(root, '..', 'fbdb', 'data'), { withFileTypes: true })
   .then((files) =>
     files
       .filter((file) => path.extname(file.name) === '.csv')
@@ -29,21 +29,24 @@ const b1 = new cliProgress.SingleBar({
 
 b1.start(countries.length, 0);
 
-const target = path.join(root, '..', 'name_dataset', 'all.csv');
+const target = path.join(root, '..', 'fbdb', 'all.csv');
 const wl = await writeLines(target);
 
 for (const country of countries) {
   for await (const line of readLines(country)) {
     const [first, last, sex, country] = line.split(',');
 
-    const normFirst = transliterate(first).toUpperCase();
-    const normLast = transliterate(last).toUpperCase();
+    const normFirst = transliterate(first)
+      .toUpperCase()
+      .replaceAll(/['`\s\-]/gv, empty);
+    const normLast = transliterate(last)
+      .toUpperCase()
+      .replaceAll(/['`\s\-]/gv, empty);
 
     const soundFirst = normFirst ? soundex(normFirst) : empty;
     const soundLast = normLast ? soundex(normLast) : empty;
 
-    const isRoman =
-      /^[A-Z'`\s\-]+$/v.test(normFirst) && /^[A-Z'`\s\-]+$/v.test(normLast) ? 't' : 'f';
+    const isRoman = /^[A-Z]+$/v.test(normFirst) && /^[A-Z]+$/v.test(normLast) ? 't' : 'f';
 
     await wl.writeLine(
       `${escapeCsv(first)},${escapeCsv(normFirst)},${escapeCsv(soundFirst)},${escapeCsv(last)},${escapeCsv(normLast)},${escapeCsv(soundLast)},${escapeCsv(sex)},${escapeCsv(country)},${isRoman}`,

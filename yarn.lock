@@ -1962,7 +1962,7 @@ __metadata:
   resolution: "@technobuddha/knowledge@workspace:."
   dependencies:
     "@technobuddha/postgres": "npm:0.0.1-23"
-    "@technobuddha/project": "npm:0.1.0-417"
+    "@technobuddha/project": "npm:0.1.0-418"
     "@types/cli-progress": "npm:^3"
     cli-progress: "npm:3.12.0"
     ora: "npm:9.3.0"
@@ -1970,10 +1970,10 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@technobuddha/library@npm:2.1.0-84":
-  version: 2.1.0-84
-  resolution: "@technobuddha/library@npm:2.1.0-84"
-  checksum: 10c0/c956b17c0284d8355a1abd4c4387410d8dc9d436cfe5647f4e04df97f74c410c1eaa2f91fcd59b37d4122f814f8a047b26f5fb4a4102d7a0ef40fbf097789064
+"@technobuddha/library@npm:2.1.0-85":
+  version: 2.1.0-85
+  resolution: "@technobuddha/library@npm:2.1.0-85"
+  checksum: 10c0/61d5b8499c36866c0ba2b7532d0255ac007b836cbe40b9c49a11493c2bdcbabd64980607f17e1dc5309edefe060395c6489fe4ac269e004dc993c2859a052ea6
   languageName: node
   linkType: hard
 
@@ -1992,16 +1992,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@technobuddha/project@npm:0.1.0-417":
-  version: 0.1.0-417
-  resolution: "@technobuddha/project@npm:0.1.0-417"
+"@technobuddha/project@npm:0.1.0-418":
+  version: 0.1.0-418
+  resolution: "@technobuddha/project@npm:0.1.0-418"
   dependencies:
     "@dotenvx/dotenvx": "npm:1.52.0"
     "@eslint/js": "npm:9.39.2"
     "@inquirer/prompts": "npm:8.2.0"
     "@microsoft/tsdoc": "npm:0.16.0"
     "@microsoft/tsdoc-config": "npm:0.18.0"
-    "@technobuddha/library": "npm:2.1.0-84"
+    "@technobuddha/library": "npm:2.1.0-85"
     "@types/eslint": "npm:9.6.1"
     "@types/ignore-walk": "npm:4.0.3"
     "@types/jsdom": "npm:^27.0.0"
@@ -2067,7 +2067,7 @@ __metadata:
     find-unexported-files: dist/find-unexported-files/find-unexported-files.js
     sync: dist/sync/sync.js
     tb: dist/tb/tb.js
-  checksum: 10c0/4cdb548f1a484d2c27dd08555f5d8175a4268d4ef4af62e4cd2eff6491044849a1cd915812e6a3f1be90676c4b3ca65970975988ba86a492bc8355fdb1f8d555
+  checksum: 10c0/e8b3f703d1dfa1e5255c01c383cc5be792026b510cac514c6b31876b75dcc1632a4d278e9f5eb3d7f40b7c188980fb6006f71da28349b6c7548027ac876c4896
   languageName: node
   linkType: hard
 

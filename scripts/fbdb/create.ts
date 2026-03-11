@@ -1,3 +1,5 @@
+import path from 'node:path';
+
 import { err, locatePackageRoot } from '@technobuddha/library/node';
 import { db } from '@technobuddha/postgres';
 import { oraPromise } from 'ora';
@@ -8,62 +10,70 @@ if (!root) {
   process.exit(1);
 }
 
+await db.query('TRUNCATE names');
+await oraPromise(
+  db.query(`
+    COPY names (first, first_norm, first_sound, last, last_norm, last_sound, sex, country, is_roman)
+    FROM '${path.join(root, '..', 'fbdb', 'all.csv')}' WITH (format csv, header false);`),
+  { text: 'Importing names' },
+);
+
 await db.query('DROP TABLE IF EXISTS last_sound');
 await oraPromise(
   db.query(`
     CREATE TABLE last_sound
-    AS SELECT sound_last, count(*) AS count
-    FROM names GROUP BY sound_last;
+    AS SELECT last_sound, count(*) AS count
+    FROM names GROUP BY last_sound;
   `),
   { text: 'Creating last_sound table' },
+);
+
+await db.query('DROP TABLE IF EXISTS last_norm;');
+await oraPromise(
+  db.query(`
+    CREATE TABLE last_norm
+    AS SELECT last_sound, last_norm, count(*) AS count
+    FROM names GROUP BY last_sound, last_norm;
+  `),
+  { text: 'Creating last_name table' },
 );
 
 await db.query('DROP TABLE IF EXISTS last_name');
 await oraPromise(
   db.query(`
     CREATE TABLE last_name
-    AS SELECT sound_last, normalized_last, count(*) AS count
-    FROM names GROUP BY sound_last, normalized_last;
+    AS SELECT last_norm, last, count(*) AS count
+    FROM names GROUP BY last_norm, last;
   `),
   { text: 'Creating last_name table' },
-);
-
-await db.query('DROP TABLE IF EXISTS last_variation');
-await oraPromise(
-  db.query(`
-    CREATE TABLE last_variation
-    AS SELECT normalized_last, last, count(*) AS count
-    FROM names GROUP BY normalized_last, last;
-  `),
-  { text: 'Creating last_variation table' },
 );
 
 await db.query('DROP TABLE IF EXISTS first_sound');
 await oraPromise(
   db.query(`
     CREATE TABLE first_sound
-    AS SELECT sound_first, count(*) AS count
-    FROM names GROUP BY sound_first;
+    AS SELECT first_sound, count(*) AS count
+    FROM names GROUP BY first_sound;
   `),
   { text: 'Creating first_sound table' },
+);
+
+await db.query('DROP TABLE IF EXISTS first_norm');
+await oraPromise(
+  db.query(`
+    CREATE TABLE first_norm
+    AS SELECT first_sound, first_norm, count(*) AS count
+    FROM names GROUP BY first_sound, first_norm;
+  `),
+  { text: 'Creating first_norm table' },
 );
 
 await db.query('DROP TABLE IF EXISTS first_name');
 await oraPromise(
   db.query(`
     CREATE TABLE first_name
-    AS SELECT sound_first, normalized_first, count(*) AS count
-    FROM names GROUP BY sound_first, normalized_first;
+    AS SELECT first_norm, first, count(*) AS count
+    FROM names GROUP BY first_norm, first;
   `),
   { text: 'Creating first_name table' },
-);
-
-await db.query('DROP TABLE IF EXISTS first_variation');
-await oraPromise(
-  db.query(`
-    CREATE TABLE first_variation
-    AS SELECT normalized_first, first, count(*) AS count
-    FROM names GROUP BY normalized_first, first;
-  `),
-  { text: 'Creating first_variation table' },
 );
