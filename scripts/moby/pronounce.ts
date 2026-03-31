@@ -6,7 +6,7 @@ import path from 'node:path';
 import { empty, quote, space, splitLines } from '@technobuddha/library';
 
 import { parse } from '../helpers/moby-pronunciation-parser.ts';
-import { data, reference } from '../helpers/paths.ts';
+import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
 import { saveTerser } from '../helpers/save-terser.ts';
@@ -41,7 +41,7 @@ const ipaLetters: [string, string][] = [
 const docs = await readDocumentation('moby-pronunciation-ipa');
 
 await fs
-  .readFile(path.join(reference, 'moby', 'mpron', 'mobypron.unc'), 'utf-8')
+  .readFile(path.join(externalReference, 'moby', 'mpron', 'mobypron.unc'), 'utf-8')
   .then(async (buffer) => {
     const words = new Map<string, Set<string>>();
 

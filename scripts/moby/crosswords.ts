@@ -4,7 +4,7 @@ import path from 'node:path';
 
 import { empty, quote, splitLines } from '@technobuddha/library';
 
-import { data, reference } from '../helpers/paths.ts';
+import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
 import { saveTerser } from '../helpers/save-terser.ts';
@@ -17,7 +17,7 @@ const secondEdition: Set<string> = new Set();
 
 await Promise.all([
   fs
-    .readFile(path.join(reference, 'moby', 'mwords', '113809of.fic'), 'utf-8')
+    .readFile(path.join(externalReference, 'moby', 'mwords', '113809of.fic'), 'utf-8')
     .then(async (buffer) => {
       for (const line of splitLines(buffer)) {
         if (line && !line.startsWith('#')) {
@@ -28,7 +28,7 @@ await Promise.all([
       return undefined;
     }),
   fs
-    .readFile(path.join(reference, 'moby', 'mwords', '4160offi.cia'), 'utf-8')
+    .readFile(path.join(externalReference, 'moby', 'mwords', '4160offi.cia'), 'utf-8')
     .then(async (buffer) => {
       for (const line of splitLines(buffer)) {
         if (line && !line.startsWith('#')) {

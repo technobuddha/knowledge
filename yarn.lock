@@ -1933,7 +1933,7 @@ __metadata:
   resolution: "@technobuddha/knowledge@workspace:."
   dependencies:
     "@technobuddha/postgres": "npm:0.0.1-25"
-    "@technobuddha/project": "npm:0.1.0-461"
+    "@technobuddha/project": "npm:0.1.0-462"
     "@types/cli-progress": "npm:^3.11.6"
     cli-progress: "npm:3.12.0"
     ora: "npm:9.3.0"
@@ -1941,10 +1941,10 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@technobuddha/library@npm:2.1.0-98":
-  version: 2.1.0-98
-  resolution: "@technobuddha/library@npm:2.1.0-98"
-  checksum: 10c0/4a0ddd0cfbd5f9ecdd66220b723a66b07acfdecb90a5aebff7ee90fbe57e4655b8953e3608e45ddf700bd339a4ce003c17cbd12afa0982b6da01e3c76f3478eb
+"@technobuddha/library@npm:2.1.0-100":
+  version: 2.1.0-100
+  resolution: "@technobuddha/library@npm:2.1.0-100"
+  checksum: 10c0/7db4801bf1b2e0bbc2c9fc35e8bfb55011c1f13fa092e68e6fb89722fb29b6d424c110ecccc66c5c3f84e81b465594743f4af1b00bd48908880fb4f9bb7843f9
   languageName: node
   linkType: hard
 
@@ -1963,9 +1963,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@technobuddha/project@npm:0.1.0-461":
-  version: 0.1.0-461
-  resolution: "@technobuddha/project@npm:0.1.0-461"
+"@technobuddha/project@npm:0.1.0-462":
+  version: 0.1.0-462
+  resolution: "@technobuddha/project@npm:0.1.0-462"
   dependencies:
     "@dotenvx/dotenvx": "npm:1.59.1"
     "@eslint-community/eslint-plugin-eslint-comments": "npm:4.7.1"
@@ -1973,7 +1973,7 @@ __metadata:
     "@inquirer/prompts": "npm:8.3.2"
     "@microsoft/tsdoc": "npm:0.16.0"
     "@microsoft/tsdoc-config": "npm:0.18.1"
-    "@technobuddha/library": "npm:2.1.0-98"
+    "@technobuddha/library": "npm:2.1.0-100"
     "@types/eslint": "npm:9.6.1"
     "@types/ignore-walk": "npm:4.0.3"
     "@types/jsdom": "npm:^28.0.1"
@@ -2039,7 +2039,7 @@ __metadata:
     find-unexported-files: dist/find-unexported-files/find-unexported-files.js
     sync: dist/sync/sync.js
     tb: dist/tb/tb.js
-  checksum: 10c0/f2ce607255b4b0dd541394ec5cf41754788a06662821a93618eb0c3fa9bd8287b5d36af5df4729053ea7c2d2c895766819bce1e44ee4357cb51a7ae68251f0f7
+  checksum: 10c0/216f1946eb6f3e1c6849e75c13eb85338d35d6103ad06569bc9cad2dc2c7bc74d249653b3c595d0b4f5889f984c09f13b1ff1f5fddee4e794c940e6b834e96ab
   languageName: node
   linkType: hard
 

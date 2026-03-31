@@ -3,7 +3,7 @@ import path from 'node:path';
 
 import { empty, escapeJS, quote, splitLines } from '@technobuddha/library';
 
-import { data, reference } from '../helpers/paths.ts';
+import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
 import { saveTerser } from '../helpers/save-terser.ts';
@@ -13,7 +13,7 @@ const patterns: string[] = [];
 const exceptions: string[] = [];
 let mode: 'comments' | 'license' | 'patterns' | 'exceptions' = 'comments';
 
-await fs.readFile(path.join(reference, 'ctan', 'hyph-en-us.tex'), 'utf-8').then((data) => {
+await fs.readFile(path.join(externalReference, 'ctan', 'hyph-en-us.tex'), 'utf-8').then((data) => {
   const lines = splitLines(data);
   for (const line of lines) {
     if (!line.trim()) {
@@ -30,8 +30,7 @@ await fs.readFile(path.join(reference, 'ctan', 'hyph-en-us.tex'), 'utf-8').then(
       } else if (mode === 'license') {
         if (line.includes('text: >')) {
           // ignore this line
-        }
-        if (line.endsWith(':')) {
+        } else if (line.endsWith(':')) {
           // end of license section
           mode = 'comments';
         } else {

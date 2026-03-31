@@ -6,7 +6,7 @@ import path from 'node:path';
 import { empty, escapeJS, parseCsv, quote, splitLines } from '@technobuddha/library';
 import { db } from '@technobuddha/postgres';
 
-import { data, reference } from '../helpers/paths.ts';
+import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { readLicense } from '../helpers/read-license.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
@@ -15,7 +15,7 @@ import { uDisplay } from '../helpers/u-display.ts';
 import { uEscape } from '../helpers/u-escape.ts';
 
 await fs
-  .readFile(path.join(reference, 'unicode', 'unicode-data.txt'), 'utf-8')
+  .readFile(path.join(externalReference, 'unicode', 'unicode-data.txt'), 'utf-8')
   .then(async (unicodeData) => {
     const csv = parseCsv(
       splitLines(unicodeData)
@@ -26,7 +26,7 @@ await fs
 
     const doc = await readDocumentation('unicode-data');
     const license = await readLicense(
-      path.join(reference, 'unicode', 'license.txt'),
+      path.join(externalReference, 'unicode', 'license.txt'),
       'https://www.unicode.org/Public',
     );
     const code: string[] = ['export const unicodeData = {'];

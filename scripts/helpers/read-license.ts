@@ -1,6 +1,10 @@
 import fs from 'node:fs/promises';
 
-import { empty, splitLines, unbannerize } from '@technobuddha/library';
+import { splitLines, unbannerize } from '@technobuddha/library';
+
+function escapeTsDoc(content: string): string {
+  return content.replaceAll(/([<>])/gv, '\\$1');
+}
 
 export async function readLicense(filename: string, url: string): Promise<string[]> {
   return fs
@@ -8,11 +12,11 @@ export async function readLicense(filename: string, url: string): Promise<string
     .then((content) => unbannerize(content))
     .then((content) => [
       '/**',
-      `* Loosely based on concepts and portions of ${url}`,
-      '* but extensively rewritten and adapted for this library.',
-      '* ',
-      ...splitLines(content).map((l) => `* ${l}`),
-      '*/',
+      ` * Loosely based on concepts and portions of ${url}`,
+      ' * but extensively rewritten and adapted for this library.',
+      ' * ',
+      ...splitLines(content).map((l) => ` * ${escapeTsDoc(l)}`),
+      ' */',
     ])
     .catch(() => []);
 }

@@ -5,7 +5,7 @@ import path from 'node:path';
 
 import { create1dArray, empty, quote, range, space, splitLines, sum } from '@technobuddha/library';
 
-import { data, reference } from '../helpers/paths.ts';
+import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
 import { saveTerser } from '../helpers/save-terser.ts';
@@ -17,8 +17,8 @@ import { arpaPhonemes, type Phoneme } from './phonemes.ts';
 type MaskedPhoneme = string | boolean;
 const COMPOUND_PARTS_MINIMUM_LENGTH = 5;
 
-const input1 = path.join(reference, 'cmu', 'cmudict.dict');
-const input2 = path.join(reference, 'cmu', 'cmudict.vp');
+const input1 = path.join(externalReference, 'cmu', 'cmudict.dict');
+const input2 = path.join(externalReference, 'cmu', 'cmudict.vp');
 
 const cmuDict: [string, Phoneme[]][] = [
   ...(await fs.readFile(input1, { encoding: 'utf8' }).then((contents) =>

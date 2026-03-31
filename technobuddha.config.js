@@ -1,6 +1,4 @@
 //@ts-check
-import { remotes } from './remotes.config.js';
-
 /** @type import("\@technobuddha/project").TechnobuddhaConfig */
 const config = {
   directories: {
@@ -22,7 +20,6 @@ const config = {
       'unicorn/text-encoding-identifier-case': { rule: 'off' },
     }
   },
-  remotes,
 };
 
 export default config;

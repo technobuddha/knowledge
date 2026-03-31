@@ -8,6 +8,6 @@ if (!root) {
   process.exit(1);
 }
 
-export const reference = path.join(root, 'reference');
+export const externalReference = path.join(root, 'reference', 'external');
 export const documentation = path.join(root, 'documentation');
 export const data = path.join(root, 'dist', '@data');

@@ -4,7 +4,7 @@ import path from 'node:path';
 
 import { camelCase, empty, escapeJS, quote, splitLines } from '@technobuddha/library';
 
-import { data, reference } from '../helpers/paths.ts';
+import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
 import { saveTerser } from '../helpers/save-terser.ts';
@@ -17,7 +17,7 @@ await Promise.all(
     const docs = await readDocumentation(`moby-${input}`);
 
     return fs
-      .readFile(path.join(reference, 'moby', 'mlang', `${input}.txt`), 'utf-8')
+      .readFile(path.join(externalReference, 'moby', 'mlang', `${input}.txt`), 'utf-8')
       .then(async (buffer) => {
         const words: Set<string> = new Set();
 

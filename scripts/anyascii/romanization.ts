@@ -3,13 +3,13 @@ import path from 'node:path';
 
 import { empty, escapeJS, quote } from '@technobuddha/library';
 
-import { data, reference } from '../helpers/paths.ts';
+import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { readLicense } from '../helpers/read-license.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
 import { saveTerser } from '../helpers/save-terser.ts';
 
-const { default: block } = await import(path.join(reference, 'anyascii', 'block.js'));
+const { default: block } = await import(path.join(externalReference, 'anyascii', 'block.js'));
 
 const romanize: Map<number, string> = new Map();
 for (let blockNum = 0; blockNum < 0x10ff; ++blockNum) {
@@ -31,7 +31,7 @@ for (let i = 32; i < 127; ++i) {
 
 const doc = await readDocumentation('romanization');
 const license = await readLicense(
-  path.join(reference, 'anyascii', 'LICENSE'),
+  path.join(externalReference, 'anyascii', 'LICENSE'),
   'https://github.com/anyascii/anyascii',
 );
 

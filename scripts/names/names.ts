@@ -4,7 +4,7 @@ import path from 'node:path';
 
 import { empty, parseCsv, quote, removeComments } from '@technobuddha/library';
 
-import { data, reference } from '../helpers/paths.ts';
+import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
 import { saveTerser } from '../helpers/save-terser.ts';
@@ -16,7 +16,7 @@ type Genders = { [key in (typeof genders)[number]]?: boolean };
 const names = new Map<string, Genders>();
 
 async function read(file: string, gender: Gender): Promise<void> {
-  return fs.readFile(path.join(reference, 'names', `${file}.csv`), 'utf-8').then((csv) => {
+  return fs.readFile(path.join(externalReference, 'names', `${file}.csv`), 'utf-8').then((csv) => {
     for (const entry of parseCsv(csv, { lineSeparator: '\n' })) {
       const name = entry.name.toUpperCase();
       if (name) {
@@ -35,7 +35,7 @@ async function read(file: string, gender: Gender): Promise<void> {
 }
 
 async function readMFN(file: string): Promise<void> {
-  return fs.readFile(path.join(reference, 'names', `${file}.csv`), 'utf-8').then((csv) => {
+  return fs.readFile(path.join(externalReference, 'names', `${file}.csv`), 'utf-8').then((csv) => {
     for (const entry of parseCsv(csv, { lineSeparator: '\n' })) {
       if (entry.name) {
         const name = entry.name.toUpperCase();
@@ -62,7 +62,7 @@ async function readMFN(file: string): Promise<void> {
 }
 
 async function readSex(file: string): Promise<void> {
-  return fs.readFile(path.join(reference, 'names', `${file}.csv`), 'utf-8').then((csv) => {
+  return fs.readFile(path.join(externalReference, 'names', `${file}.csv`), 'utf-8').then((csv) => {
     for (const entry of parseCsv(csv, { lineSeparator: '\n' })) {
       if (entry.name) {
         const name = entry.name.toUpperCase();
@@ -83,16 +83,18 @@ async function readSex(file: string): Promise<void> {
 }
 
 async function readJson(file: string, gender: Gender): Promise<void> {
-  return fs.readFile(path.join(reference, 'names', `${file}.jsonc`), 'utf-8').then((data) => {
-    for (let name of JSON.parse(removeComments(data))) {
-      name = name.toUpperCase();
-      const curr = names.get(name) ?? {};
-      curr[gender] = true;
-      names.set(name, curr);
-    }
+  return fs
+    .readFile(path.join(externalReference, 'names', `${file}.jsonc`), 'utf-8')
+    .then((data) => {
+      for (let name of JSON.parse(removeComments(data))) {
+        name = name.toUpperCase();
+        const curr = names.get(name) ?? {};
+        curr[gender] = true;
+        names.set(name, curr);
+      }
 
-    return undefined;
-  });
+      return undefined;
+    });
 }
 const files: [string, Gender][] = [
   ['catNames', 'cat'],

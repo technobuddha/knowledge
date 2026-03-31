@@ -4,7 +4,7 @@ import path from 'node:path';
 
 import { empty, quote, splitLines } from '@technobuddha/library';
 
-import { data, reference } from '../helpers/paths.ts';
+import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
 import { saveTerser } from '../helpers/save-terser.ts';
@@ -12,7 +12,7 @@ import { saveTerser } from '../helpers/save-terser.ts';
 const docs = await readDocumentation('moby-hyphenation');
 
 await fs
-  .readFile(path.join(reference, 'moby', 'mhyph', 'mhyph.txt'), 'utf-8')
+  .readFile(path.join(externalReference, 'moby', 'mhyph', 'mhyph.txt'), 'utf-8')
   .then(async (buffer) => {
     const hyphenation: Map<string, Set<string>> = new Map();
 

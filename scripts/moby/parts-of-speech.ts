@@ -4,7 +4,7 @@ import path from 'node:path';
 
 import { empty, quote, splitLines } from '@technobuddha/library';
 
-import { data, reference } from '../helpers/paths.ts';
+import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
 import { saveTerser } from '../helpers/save-terser.ts';
@@ -12,7 +12,7 @@ import { saveTerser } from '../helpers/save-terser.ts';
 const docs = await readDocumentation('moby-parts-of-speech');
 
 await fs
-  .readFile(path.join(reference, 'moby', 'mpos', 'mobyposi.i'), 'utf-8')
+  .readFile(path.join(externalReference, 'moby', 'mpos', 'mobyposi.i'), 'utf-8')
   .then(async (buffer) => {
     const words = new Map<string, string>();
 

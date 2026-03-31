@@ -4,7 +4,7 @@ import path from 'node:path';
 import { empty, escapeJS, parseCsv, quote } from '@technobuddha/library';
 import { readLines } from '@technobuddha/library/node';
 
-import { data, reference } from '../helpers/paths.ts';
+import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
 import { saveTerser } from '../helpers/save-terser.ts';
@@ -24,7 +24,7 @@ type BadWord = { afinn?: number; biglou?: true };
 const badWords: Map<string, BadWord> = new Map();
 
 for (const { name } of files) {
-  await fs.readFile(path.join(reference, 'afinn', name), 'utf-8').then((data) => {
+  await fs.readFile(path.join(externalReference, 'afinn', name), 'utf-8').then((data) => {
     for (const line of parseCsv(data, { delimiter: '\t', comment: '#', hasHeaders: false })) {
       const { 0: word, 1: score } = line;
 
@@ -35,7 +35,7 @@ for (const { name } of files) {
   });
 }
 
-for await (const line of readLines(path.join(reference, 'biglou', 'bad-words.txt'))) {
+for await (const line of readLines(path.join(externalReference, 'biglou', 'bad-words.txt'))) {
   const word = line.trim();
 
   if (word && !word.startsWith('#')) {

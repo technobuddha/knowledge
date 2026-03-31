@@ -4,7 +4,7 @@ import path from 'node:path';
 
 import { cleanEnd, emDash, empty, quote, splitLines } from '@technobuddha/library';
 
-import { data, reference } from '../helpers/paths.ts';
+import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
 import { saveTerser } from '../helpers/save-terser.ts';
@@ -15,7 +15,7 @@ const correction = /\u2500/gv; // box drawings light horizontal
 const doc = await readDocumentation('moby-constitution');
 
 await fs
-  .readFile(path.join(reference, 'moby', 'mwords', 'usaconst.itu'), 'utf-8')
+  .readFile(path.join(externalReference, 'moby', 'mwords', 'usaconst.itu'), 'utf-8')
   .then(async (raw) => {
     const code: string[] = ['export const mobyConstitution = ['];
 

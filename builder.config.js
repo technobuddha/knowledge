@@ -74,7 +74,7 @@ const config = {
       },
       {
         name: 'Romanization',
-        command: 'npx tsx ./scripts/romanization/anyascii.ts',
+        command: 'npx tsx ./scripts/anyascii/romanization.ts',
       },
       {
         name: 'LaTeχ Hyphenation',

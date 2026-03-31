@@ -4,7 +4,7 @@ import path from 'node:path';
 
 import { empty, quote, splitLines } from '@technobuddha/library';
 
-import { data, reference } from '../helpers/paths.ts';
+import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
 import { saveTerser } from '../helpers/save-terser.ts';
@@ -12,7 +12,7 @@ import { saveTerser } from '../helpers/save-terser.ts';
 const docs = await readDocumentation('moby-thesaurus');
 
 await fs
-  .readFile(path.join(reference, 'moby', 'mthes', 'mobythes.aur'), 'utf-8')
+  .readFile(path.join(externalReference, 'moby', 'mthes', 'mobythes.aur'), 'utf-8')
   .then(async (buffer) => {
     const thesaurus: Map<string, number[]> = new Map();
 

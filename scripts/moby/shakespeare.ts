@@ -12,7 +12,7 @@ import {
   untabify,
 } from '@technobuddha/library';
 
-import { data, reference } from '../helpers/paths.ts';
+import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { saveRaw } from '../helpers/save-raw.ts';
 import { saveTerser } from '../helpers/save-terser.ts';
@@ -84,7 +84,7 @@ function shake(name: string, content: string[]): void {
 }
 
 await fs
-  .readFile(path.join(reference, 'moby', 'mshak', 'shakespe.are'), 'ascii')
+  .readFile(path.join(externalReference, 'moby', 'mshak', 'shakespe.are'), 'ascii')
   .then(async (raw) => {
     const text = untabify(raw, 20);
 
