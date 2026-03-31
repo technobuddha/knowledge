@@ -1,0 +1,276 @@
+#!/usr/bin/perl -CS
+use warnings;
+use strict;
+use autodie;
+if (@ARGV < 1 || @ARGV > 3) {
+    print <<"__END__";
+Syntax: $0 VOC OUT1 OUT2
+Syntax: $0 DIRECTORY [OUT2]
+
+If a DIRECTORY is specified, VOC is DIRECTORY/voc.txt and OUT1 is
+DIRECTORY/output.txt.  If OUT2 is omitted, it defaults to ../snowball/tmp.txt
+(which is where the output is left in the snowball testsuite fails).
+
+Compare the outputs OUT1 and OUT2 from stemming input VOC with a stemmer and
+with a modified version of that stemmer.
+
+Example usage for evaluating a change made in a sibling snowball checkout:
+
+../snowball/stemwords -l english < english/voc.txt > tmp.english.output.txt
+$0 english/voc.txt english/output.txt tmp.english.output.txt
+__END__
+    exit(1);
+}
+
+if (@ARGV <= 2) {
+    my $directory = shift @ARGV;
+    unshift @ARGV, "$directory/voc.txt", "$directory/output.txt";
+    if (@ARGV == 2) {
+        push @ARGV, "../snowball/tmp.txt";
+    }
+}
+
+# 'svgz' would seem the best option, except it requires the web server to
+# be configured to send the right headers, and doesn't seem to work for
+# file: URLs in firefox.
+#
+# 'svg' works but is larger than 'svgz' (but smaller than PNG options).
+#
+# 'png' works, but typically seems to give a larger file, and above a certain
+# size the output is scaled down and can become unreadable:
+#
+# dot: graph is too large for cairo-renderer bitmaps. Scaling by 0.370127 to fit
+#
+# 'png:gd' works, but typically seems to give a larger file.  Also Firefox does
+# not seem to like really tall PNGs made with gd.
+my $image_format = 'svg';
+
+# Inline image into HTML.
+#
+# Currently ignored unless $image_format is 'svg'.
+my $image_inline = 1;
+
+sub encode_entities {
+    my $s = shift;
+    $s =~ s/&/&amp;/g;
+    $s =~ s/</&lt;/g;
+    $s =~ s/>/&gt;/g;
+    return $s;
+}
+
+my ($voc, $out1, $out2) = @ARGV;
+my (%v, %o1, %o2);
+my $changed_stem = 0;
+my ($VOC, $OUT1, $OUT2);
+open $VOC, '<:encoding(UTF-8)', $voc;
+open $OUT1, '<:encoding(UTF-8)', $out1;
+open $OUT2, '<:encoding(UTF-8)', $out2;
+while (<$VOC>) {
+    chomp(my $v = $_);
+    my $o1 = <$OUT1>;
+    if (!defined $o1) {
+        warn "$voc: Contains more lines than '$out1', ignoring from word '$v'\n";
+        last;
+    }
+    my $o2 = <$OUT2>;
+    if (!defined $o2) {
+        warn "$voc: Contains more lines than '$out2', ignoring from word '$v'\n";
+        last;
+    }
+    chomp($o1);
+    chomp($o2);
+    if (exists $v{$v}) {
+        warn "$voc: Ignoring duplicate of word '$v'\n";
+        next;
+    }
+    $v{$v} = [$o1, $o2];
+    ++$changed_stem if $o1 ne $o2;
+    push @{$o1{$o1}}, $v;
+    push @{$o2{$o2}}, $v;
+}
+if (defined(my $o1 = <$OUT1>)) {
+    warn "$out1: Contains more lines than '$voc', ignoring from stem '$o1'\n";
+}
+if (defined(my $o2 = <$OUT2>)) {
+    warn "$out2: Contains more lines than '$voc', ignoring from stem '$o2'\n";
+}
+
+# Now:
+#
+# $v{WORD} -> [OLDSTEM, NEWSTEM]
+# $o1{STEM} -> [WORD for which oldstem(WORD) == STEM]
+# $o2{STEM} -> [WORD for which newstem(WORD) == STEM]
+
+my %reported;
+my (@boring, @merges, @splits, %changes);
+for my $v (sort keys %v) {
+    my ($s1, $s2) = @{$v{$v}};
+    if (scalar(@{$o1{$s1}}) == scalar(@{$o2{$s2}}) &&
+        join("\0", @{$o1{$s1}}) eq join("\0", @{$o2{$s2}})) {
+        # The same set of words map together before and after.
+        # If the stem they map to is the same that's of no interest.
+        # If the stem they map to have changed, that's a boring change.
+        push @boring, $v if $s1 ne $s2;
+        next;
+    }
+
+    # Check for a merge.  This is the case if:
+    #
+    # For each word which now stems to $s2, all the words which
+    # used to stem to its old stem now also stem to $s2.
+    my %m = ();
+    M: for my $w (@{$o2{$s2}}) {
+        # $w is a word which now stems to $s2, $os is its old stem.
+        my $os = ${$v{$w}}[0];
+        $m{$os}++;
+        for my $x (@{$o1{$os}}) {
+            # $x is a word which used to stem to $os.
+            if (${$v{$x}}[1] ne $s2) {
+                %m = ();
+                last M;
+            }
+        }
+    }
+    if (scalar keys %m > 1) {
+        my @k = sort keys %m;
+        if ($v eq ${$o1{$k[0]}}[0]) {
+            # We find the merge for every word in it, so only report once for
+            # the first word of the first stem.
+            push @merges, [$s2, join(' + ', map {'{ ' . join(' . ', @{$o1{$_}}) . ' }'} @k)];
+        }
+        next;
+    } elsif (scalar keys %m == 1) {
+        die "Solitary stem: " . (keys %m)[0];
+    }
+
+    # Check for a split.  This is the case if:
+    #
+    # For each word which used to stem to $s1, all the words which
+    # now stem to its new stem also used to stem to $s1.
+    my %s = ();
+    S: for my $w (@{$o1{$s1}}) {
+        # $w is a word which used to stem to $s1, $ns is its new stem.
+        my $ns = ${$v{$w}}[1];
+        $s{$ns}++;
+        for my $x (@{$o2{$ns}}) {
+            # $x is a word which now stems to $ns.
+            if (${$v{$x}}[0] ne $s1) {
+                %s = ();
+                last S;
+            }
+        }
+    }
+    if (scalar keys %s > 1) {
+        my @k = sort keys %s;
+        if ($v eq ${$o2{$k[0]}}[0]) {
+            # We find the split for every word in it, so only report once for
+            # the first word of the first stem.
+            push @splits, [map {($_, join(' . ', @{$o2{$_}}))} @k];
+        }
+        next;
+    } elsif (scalar keys %s == 1) {
+        die "Solitary stem: " . (keys %s)[0];
+    }
+
+    push @{$changes{"$s1\0$s2"}}, $v;# if $s1 ne $s2;
+}
+
+open HTML, '>:encoding(UTF-8)', 'compare.html';
+
+print HTML "<html><head><meta charset='utf-8'><title>";
+print HTML encode_entities("stemmer-compare $voc $out1 $out2");
+print HTML "</title></head>\n<body>\n";
+
+print HTML "<ul>\n";
+printf HTML "<li>A total of %d words changed stem\n", $changed_stem;
+
+if (scalar @boring) {
+    printf HTML "<li>%d words changed stem but aren't interesting\n", scalar(@boring);
+    #print "  ", join(' ', @boring), "\n" if $verbose;
+}
+
+if (@merges) {
+    printf HTML "<li>%d merges of groups of stems:\n", scalar(@merges);
+    print HTML "<ol>\n";
+    for (@merges) {
+        print HTML "<li title=\"", encode_entities($_->[0]), "\">", encode_entities($_->[1]), "</li>\n";
+    }
+    print HTML "</ol>\n";
+}
+
+if (@splits) {
+    printf HTML "<li>%d splits of groups of stems:\n", scalar(@splits);
+    print HTML "<ol>\n";
+    for (@splits) {
+        my @list = @{$_};
+        my $inter = "<li>{ ";
+        while (scalar @list) {
+            my $stem = shift @list;
+            my $group = shift @list;
+            print HTML $inter;
+            print HTML "<span title=\"", encode_entities($stem), "\">", encode_entities($group), "</span>";
+            $inter = " | ";
+        }
+        print HTML " }</li>";
+    }
+    print HTML "</ol>\n";
+}
+
+sub dot_id {
+    local $_ = shift;
+    return $_ unless /^[0-9]/ || /[^a-zA-Z0-9_\x80-\xff]/;
+    s/"/\\"/g;
+    return '"' . $_ . '"';
+}
+
+my ($ext) = ($image_format =~ /^([^:]+)/);
+my $image_file = "compare.$ext";
+if (keys %changes) {
+    printf HTML "<li>%d words moving between stem groups:\n", scalar(keys %changes);
+    open DOT, "|-:encoding(UTF-8)", "dot -T$image_format -o \Q$image_file\E";
+    print DOT "digraph {\nrankdir=LR\nnode [shape=box]\n";
+    for (reverse sort keys %changes) {
+        my ($s1, $s2) = split /\0/;
+        my $old_ref = $o1{$s1};
+        my $new_ref = $o2{$s2};
+        $s1 = dot_id("o_$s1");
+        $s2 = dot_id("n_$s2");
+        print DOT "$s1 [label=\"";
+        for (@$old_ref) {
+            print DOT "\Q$_\E\\l";
+        }
+        print DOT "\"]\n";
+        print DOT "$s2 [label=\"";
+        for (@$new_ref) {
+            print DOT "\Q$_\E\\l";
+        }
+        print DOT "\"]\n";
+        print DOT "$s1 -> $s2\n"
+    }
+    print DOT "}\n";
+    close DOT;
+    if ($image_inline && $image_format eq 'svg') {
+        print HTML "<br>";
+        open my $SVG, '<:encoding(UTF-8)', $image_file;
+        while (<$SVG>) {
+            last if /<svg/;
+        }
+        print HTML $_;
+        while (<$SVG>) {
+            next if /^<!--.*-->$/;
+            # Improve labels on arrows.
+            s!^<title>o_([^<]*)(?:\&#45;|-)\&gt;n_\1</title>!<title>$1</title>!;
+            s!^<title>o_([^<]*)(?:\&#45;|-)\&gt;n_([^<]*)</title>!<title>$1\x{2192}$2</title>!;
+            # Improve labels on nodes.
+            s/<title>[on]_/<title>/g;
+            print HTML $_;
+        }
+        close $SVG;
+        unlink $image_file;
+    } else {
+        print HTML "<br><img src=\"", encode_entities($image_file), "\">\n";
+    }
+}
+
+print HTML "</ul>\n";
+print HTML "</body></html>\n";
