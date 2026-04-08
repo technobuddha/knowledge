@@ -3,16 +3,11 @@
 const config = {
   directories: {
     src: {
-      environment: 'node',
+      platform: 'node',
     },
     reference: {
-      environment: 'none',
+      platform: 'none',
     },
-    // scripts: {
-    //   tsconfig: {
-    //     references: ['./src'],
-    //   },
-    // },
   },
   lint: {
     rules: {

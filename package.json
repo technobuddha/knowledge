@@ -1,24 +1,15 @@
 {
   "name": "@technobuddha/knowledge",
-  "version": "0.0.1",
   "description": "Resources from the Moby Project",
-  "packageManager": "yarn@4.12.0",
-  "devDependencies": {
-    "@technobuddha/postgres": "0.0.1-25",
-    "@technobuddha/project": "0.1.0-462",
-    "@types/cli-progress": "^3.11.6",
-    "cli-progress": "3.12.0",
-    "ora": "9.3.0",
-    "terser": "5.46.1"
-  },
-  "technobuddhaProject": {
-    "created": "2025-12-21T22:32:31.378Z"
-  },
+  "version": "0.0.1",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": {
     "name": "Phil Hill",
     "email": "phil@technobuddha.com"
   },
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/technobuddha/knowledge"
@@ -27,10 +18,6 @@
     "url": "https://github.com/technobuddha/knowledge/issues"
   },
   "homepage": "https://github.com/technobuddha/knowledge#readme",
-  "type": "module",
-  "engines": {
-    "node": ">=25.0.0"
-  },
   "scripts": {
     "start": "build dev",
     "build": "build default",
@@ -43,6 +30,24 @@
     "preinstall": "git config core.hooksPath git-hooks",
     "migrate": "npx db migrate"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts"
+  "dependencies": {
+    "@technobuddha/library": "2.1.0-102",
+    "jest-extended": "7.0.0",
+    "jest-matcher-deep-close-to": "3.0.2"
+  },
+  "devDependencies": {
+    "@technobuddha/postgres": "0.0.1-25",
+    "@technobuddha/project": "0.1.0-507",
+    "@types/cli-progress": "^3.11.6",
+    "cli-progress": "3.12.0",
+    "ora": "9.3.0",
+    "terser": "5.46.1"
+  },
+  "engines": {
+    "node": ">=25.0.0"
+  },
+  "technobuddhaProject": {
+    "created": "2025-12-21T22:32:31.378Z"
+  },
+  "packageManager": "yarn@4.12.0"
 }
