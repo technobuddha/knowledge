@@ -1,11 +1,12 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "@technobuddha/knowledge",
   "description": "Resources from the Moby Project",
   "version": "0.0.1",
   "license": "MIT",
   "type": "module",
-  "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "main": "dist/index.js",
   "author": {
     "name": "Phil Hill",
     "email": "phil@technobuddha.com"
@@ -14,10 +15,10 @@
     "type": "git",
     "url": "https://github.com/technobuddha/knowledge"
   },
+  "homepage": "https://github.com/technobuddha/knowledge#readme",
   "bugs": {
     "url": "https://github.com/technobuddha/knowledge/issues"
   },
-  "homepage": "https://github.com/technobuddha/knowledge#readme",
   "scripts": {
     "start": "build dev",
     "build": "build default",
@@ -36,8 +37,8 @@
     "jest-matcher-deep-close-to": "3.0.2"
   },
   "devDependencies": {
-    "@technobuddha/postgres": "0.0.1-25",
-    "@technobuddha/project": "0.1.0-507",
+    "@technobuddha/postgres": "0.0.1-28",
+    "@technobuddha/project": "0.1.0-512",
     "@types/cli-progress": "^3.11.6",
     "cli-progress": "3.12.0",
     "ora": "9.3.0",
