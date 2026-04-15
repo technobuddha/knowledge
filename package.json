@@ -11,6 +11,9 @@
     "name": "Phil Hill",
     "email": "phil@technobuddha.com"
   },
+  "imports": {
+    "#env": "./src/config/env.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/technobuddha/knowledge"
