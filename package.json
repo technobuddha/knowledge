@@ -11,9 +11,6 @@
     "name": "Phil Hill",
     "email": "phil@technobuddha.com"
   },
-  "imports": {
-    "#env": "./src/config/env.js"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/technobuddha/knowledge"
@@ -35,17 +32,28 @@
     "migrate": "npx db migrate"
   },
   "dependencies": {
-    "@technobuddha/library": "2.1.0-102",
-    "jest-extended": "7.0.0",
-    "jest-matcher-deep-close-to": "3.0.2"
+    "@dotenvx/dotenvx": "1.61.1",
+    "@technobuddha/library": "2.1.0-111",
+    "prettier": "3.8.3",
+    "terser": "5.46.1"
   },
   "devDependencies": {
-    "@technobuddha/postgres": "0.0.1-28",
-    "@technobuddha/project": "0.1.0-512",
-    "@types/cli-progress": "^3.11.6",
+    "@dotenvx/dotenvx": "1.61.1",
+    "@technobuddha/postgres": "0.0.1-30",
+    "@technobuddha/project": "1.0.0-5",
+    "@types/cli-progress": "3.11.6",
+    "@types/node": "25.6.0",
+    "@vitest/coverage-v8": "4.1.4",
+    "ansi-escapes": "7.3.0",
+    "chalk": "5.6.2",
     "cli-progress": "3.12.0",
+    "cspell": "10.0.0",
+    "jsdom": "29.0.2",
+    "node-pg-migrate": "8.0.4",
     "ora": "9.3.0",
-    "terser": "5.46.1"
+    "tsx": "4.21.0",
+    "typescript": "6.0.3",
+    "vitest": "4.1.4"
   },
   "engines": {
     "node": ">=25.0.0"

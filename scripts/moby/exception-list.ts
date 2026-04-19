@@ -7,9 +7,10 @@ import {
   DIFFERENCE_EQUAL,
   DIFFERENCE_INSERT,
   empty,
+  err,
   escapeHTML,
+  locatePackageRoot,
 } from '@technobuddha/library';
-import { err, locatePackageRoot } from '@technobuddha/library/node';
 
 import { exceptions } from './data/exceptions.ts';
 

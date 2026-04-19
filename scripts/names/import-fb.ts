@@ -4,13 +4,14 @@ import path from 'node:path';
 import {
   clean,
   collapseWhitespace,
-  formatNumber,
+  err,
   isLowerCase,
+  locatePackageRoot,
+  out,
+  readLines,
   removeDiacritics,
-  soundex,
   space,
 } from '@technobuddha/library';
-import { err, locatePackageRoot, out, readLines, writeLines } from '@technobuddha/library/node';
 import ansi from 'ansi-escapes';
 
 const root = await locatePackageRoot();

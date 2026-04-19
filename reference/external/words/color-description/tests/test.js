@@ -1,21 +1,25 @@
-# 🚨
-# 🚨 Source: https://github.com/words/color-description/archive/refs/heads/main.zip::color-description-main/tests/test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/color-description/archive/refs/heads/main.zip::color-description-main/tests/test.js
+// 🚨
 import ColorDescription from "../src/index";
 
 const HUE_NOUNS = new Set([
   "red",
+  "maroon",
   "orange",
   "brown",
   "yellow",
+  "olive",
   "lime",
   "green",
+  "teal",
   "cyan",
   "sky blue",
   "blue",
+  "navy",
   "indigo",
-  "violet",
   "purple",
+  "lavender",
   "magenta",
   "pink",
 ]);

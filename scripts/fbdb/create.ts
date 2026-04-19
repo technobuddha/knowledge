@@ -1,6 +1,6 @@
 import path from 'node:path';
 
-import { err, locatePackageRoot } from '@technobuddha/library/node';
+import { err, locatePackageRoot } from '@technobuddha/library';
 import { db } from '@technobuddha/postgres';
 import { oraPromise } from 'ora';
 

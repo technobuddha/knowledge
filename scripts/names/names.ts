@@ -3,11 +3,10 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import { empty, parseCsv, quote, removeComments } from '@technobuddha/library';
+import { saveRaw, saveTerser } from '@technobuddha/project';
 
 import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { saveRaw } from '../helpers/save-raw.ts';
-import { saveTerser } from '../helpers/save-terser.ts';
 
 const genders = ['cat', 'dog', 'bunny', 'fake', 'female', 'male', 'surname'] as const;
 type Gender = (typeof genders)[number];
@@ -144,6 +143,6 @@ const decl = [
 ];
 
 await Promise.all([
-  saveTerser(path.join(data, 'names.js'), code, { quiet: true }),
-  saveRaw(path.join(data, 'names.d.ts'), decl, { quiet: true }),
+  saveTerser(path.join(data, 'names.js'), code),
+  saveRaw(path.join(data, 'names.d.ts'), decl),
 ]);

@@ -1,18 +1,19 @@
-import '#env';
+import '../env.ts';
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import { empty, escapeJS, parseCsv, quote, splitLines } from '@technobuddha/library';
 import { db } from '@technobuddha/postgres';
+import { saveRaw, saveTerser } from '@technobuddha/project';
 
 import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { readLicense } from '../helpers/read-license.ts';
-import { saveRaw } from '../helpers/save-raw.ts';
-import { saveTerser } from '../helpers/save-terser.ts';
-import { uDisplay } from '../helpers/u-display.ts';
-import { uEscape } from '../helpers/u-escape.ts';
+
+import { decodeCsv } from './decode-csv.ts';
+
+const typedef = await fs.readFile(path.join(import.meta.dirname, 'unicode-data.ts'), 'utf-8');
 
 await fs
   .readFile(path.join(externalReference, 'unicode', 'unicode-data.txt'), 'utf-8')
@@ -34,31 +35,30 @@ await fs
     await db.tx(async (t) => {
       await t.query('TRUNCATE unicode_data;');
 
-      for (const entry of csv) {
-        const codePoint = Number.parseInt(entry[0], 16);
-        const character = String.fromCodePoint(codePoint);
-        const name = entry[1];
-        const category = entry[2];
-        const combining = Number(entry[3]);
-        const bidirectional = entry[4];
-        const decomposition = entry[5];
-        const decimalDigit = entry[6] === empty ? undefined : Number(entry[6]);
-        const digit = entry[7] === empty ? undefined : Number(entry[7]);
-        const numeric = entry[8] === empty ? undefined : entry[8];
-        const mirrored = entry[9] === 'Y';
-        const unicode1Name = entry[10] === empty ? undefined : entry[10];
-        const comment = entry[11] === empty ? undefined : entry[11];
-        const upperCase =
-          entry[12] ? String.fromCodePoint(Number.parseInt(entry[12], 16)) : undefined;
-        const lowerCase =
-          entry[13] ? String.fromCodePoint(Number.parseInt(entry[13], 16)) : undefined;
-        const titleCase =
-          entry[14] ? String.fromCodePoint(Number.parseInt(entry[14], 16)) : undefined;
-
+      for (const {
+        codePoint,
+        character,
+        name,
+        display,
+        category,
+        combining,
+        bidirectional,
+        decomposition,
+        decimalDigit,
+        digit,
+        numeric,
+        mirrored,
+        unicode1Name,
+        comment,
+        upperCase,
+        lowerCase,
+        titleCase,
+      } of csv.map(decodeCsv)) {
         code.push(
-          `${quote(uEscape(codePoint))}: {`,
-          `character: ${quote(combining ? uEscape(codePoint) : escapeJS(character))}, ${uDisplay({ category, combining, character })}`,
+          `${quote(`\\u{${codePoint.toString(16).toUpperCase()}}`)}: {`,
+          `character: ${quote(escapeJS(character))},`,
           `name: ${quote(name)},`,
+          `display: ${quote(display)},`,
           `codePoint: 0x${codePoint.toString(16)},`,
           `category: ${quote(category)},`,
         );
@@ -161,33 +161,14 @@ await fs
     const decl = [
       ...license,
       empty,
-      'export type UnicodeData = {',
-      '  character: string;',
-      '  codePoint: number;',
-      '  name: string;',
-      '  category: string;',
-      '  combining?: number;',
-      '  bidirectional: string;',
-      '  decomposition?: string;',
-      '  decimalDigit?: number;',
-      '  digit?: number;',
-      '  numeric?: string;',
-      '  mirrored?: boolean;',
-      '  unicode1Name?: string;',
-      '  comment?: string;',
-      '  upperCase?: string;',
-      '  lowerCase?: string;',
-      '  titleCase?: string;',
-      '};',
+      typedef,
       empty,
       ...doc,
       'export declare const unicodeData: Record<string, UnicodeData>;',
     ];
 
     return Promise.all([
-      saveTerser(path.join(data, 'unicode-data.js'), code.join('\n'), {
-        quiet: true,
-      }),
-      saveRaw(path.join(data, 'unicode-data.d.ts'), decl, { quiet: true }),
+      saveTerser(path.join(data, 'unicode-data.js'), code.join('\n')),
+      saveRaw(path.join(data, 'unicode-data.d.ts'), decl),
     ]);
   });

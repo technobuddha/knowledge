@@ -3,14 +3,12 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-import { quote, space, splitLines } from '@technobuddha/library';
-import { err, locatePackageRoot } from '@technobuddha/library/node';
-
-import { lookup } from '../helpers/lookup.ts';
-import { parse } from '../helpers/moby-pronunciation-parser.ts';
+import { err, locatePackageRoot, quote, space, splitLines } from '@technobuddha/library';
 
 import { exceptions } from './data/exceptions.ts';
 import { spacedWords } from './data/spaced-words.ts';
+import { lookup } from './lookup.ts';
+import { parse } from './moby-pronunciation-parser.ts';
 
 const root = await locatePackageRoot();
 if (!root) {

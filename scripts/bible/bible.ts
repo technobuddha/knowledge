@@ -1,15 +1,13 @@
-/* eslint-disable no-console */
 /* eslint-disable no-return-assign */
 // cspell:disable
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-import { empty, escapeJS, parseCsv, quote, unique } from '@technobuddha/library';
-import { err, locatePackageRoot } from '@technobuddha/library/node';
+import { empty, err, escapeJS, locatePackageRoot, parseCsv, quote } from '@technobuddha/library';
+import { savePretty } from '@technobuddha/project';
 
 import { header } from '../helpers/header.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { savePretty } from '../helpers/save-pretty.ts';
 
 const root = await locatePackageRoot();
 if (!root) {
@@ -17,71 +15,71 @@ if (!root) {
   process.exit(1);
 }
 
-const codeToBook: Record<string, string> = {
-  'GEN': 'Genesis',
-  'EXO': 'Exodus',
-  'LEV': 'Leviticus',
-  'NUM': 'Numbers',
-  'DUE': 'Deuteronomy',
-  'JOS': 'Joshua',
-  'JDG': 'Judges',
-  'RUT': 'Ruth',
-  '1SA': '1 Samuel',
-  '2SA': '2 Samuel',
-  '1KI': '1 Kings',
-  '1Ki': '1 Kings', // case
-  '2KI': '2 Kings',
-  '1CH': '1 Chronicles',
-  '2CH': '2 Chronicles',
-  'EZR': 'Ezra',
-  'NEH': 'Nehemiah',
-  'EST': 'Esther',
-  'JOB': 'Job',
-  'Psalm': 'Psalms',
-  'PRO': 'Proverbs',
-  'ECC': 'Ecclesiastes',
-  'SOS': 'Song of Songs',
-  'ISA': 'Isaiah',
-  'JER': 'Jeremiah',
-  'EZK': 'Ezekiel',
-  'DAN': 'Daniel',
-  'HOS': 'Hosea',
-  'JOL': 'Joel',
-  'AMO': 'Amos',
-  'OBA': 'Obadiah',
-  'JON': 'Jonah',
-  'NAH': 'Nahum',
-  'HAB': 'Habakkuk',
-  'ZEP': 'Zephaniah',
-  'HAG': 'Haggai',
-  'ZEC': 'Zechariah',
-  'MAL': 'Malachi',
-  'MAT': 'Matthew',
-  'MRK': 'Mark',
-  'LUK': 'Luke',
-  'JHN': 'John',
-  'ACT': 'Acts',
-  'ROM': 'Romans',
-  '1CO': '1 Corinthians',
-  '2CO': '2 Corinthians',
-  'GAL': 'Galatians',
-  'EPH': 'Ephesians',
-  'PHP': 'Philippians',
-  'COL': 'Colossians',
-  '1TI': '1 Timothy',
-  '2TI': '2 Timothy',
-  'TIT': 'Titus',
-  'PHM': 'Philemon',
-  'HEB': 'Hebrews',
-  'JAS': 'James',
-  '1PE': '1 Peter',
-  '2PE': '2 Peter',
-  '1JN': '1 John',
-  '2JN': '2 John',
-  '3JN': '3 John',
-  'JUD': 'Jude',
-  'REV': 'Revelation',
-};
+// const codeToBook: Record<string, string> = {
+//   'GEN': 'Genesis',
+//   'EXO': 'Exodus',
+//   'LEV': 'Leviticus',
+//   'NUM': 'Numbers',
+//   'DUE': 'Deuteronomy',
+//   'JOS': 'Joshua',
+//   'JDG': 'Judges',
+//   'RUT': 'Ruth',
+//   '1SA': '1 Samuel',
+//   '2SA': '2 Samuel',
+//   '1KI': '1 Kings',
+//   '1Ki': '1 Kings', // case
+//   '2KI': '2 Kings',
+//   '1CH': '1 Chronicles',
+//   '2CH': '2 Chronicles',
+//   'EZR': 'Ezra',
+//   'NEH': 'Nehemiah',
+//   'EST': 'Esther',
+//   'JOB': 'Job',
+//   'Psalm': 'Psalms',
+//   'PRO': 'Proverbs',
+//   'ECC': 'Ecclesiastes',
+//   'SOS': 'Song of Songs',
+//   'ISA': 'Isaiah',
+//   'JER': 'Jeremiah',
+//   'EZK': 'Ezekiel',
+//   'DAN': 'Daniel',
+//   'HOS': 'Hosea',
+//   'JOL': 'Joel',
+//   'AMO': 'Amos',
+//   'OBA': 'Obadiah',
+//   'JON': 'Jonah',
+//   'NAH': 'Nahum',
+//   'HAB': 'Habakkuk',
+//   'ZEP': 'Zephaniah',
+//   'HAG': 'Haggai',
+//   'ZEC': 'Zechariah',
+//   'MAL': 'Malachi',
+//   'MAT': 'Matthew',
+//   'MRK': 'Mark',
+//   'LUK': 'Luke',
+//   'JHN': 'John',
+//   'ACT': 'Acts',
+//   'ROM': 'Romans',
+//   '1CO': '1 Corinthians',
+//   '2CO': '2 Corinthians',
+//   'GAL': 'Galatians',
+//   'EPH': 'Ephesians',
+//   'PHP': 'Philippians',
+//   'COL': 'Colossians',
+//   '1TI': '1 Timothy',
+//   '2TI': '2 Timothy',
+//   'TIT': 'Titus',
+//   'PHM': 'Philemon',
+//   'HEB': 'Hebrews',
+//   'JAS': 'James',
+//   '1PE': '1 Peter',
+//   '2PE': '2 Peter',
+//   '1JN': '1 John',
+//   '2JN': '2 John',
+//   '3JN': '3 John',
+//   'JUD': 'Jude',
+//   'REV': 'Revelation',
+// };
 
 function noVowels(s: string): string {
   return s.replaceAll(/[aeiou]/giv, '*');
@@ -132,13 +130,18 @@ let code: string[] = [
   empty,
   'export const kingJamesBible: Record<string, Record<number, Record<number, string>>> = {',
   ...(await fs
-    .readFile(path.join(root, 'reference', 'bible', 'kjv.csv'), 'utf-8')
+    .readFile(path.join(root, 'reference', 'external', 'bible', 'kjv.csv'), 'utf-8')
     .then((content) => parseCsv(content, { comment: '#' }))
     .then(readKJV(kjv))),
   '};',
   empty,
 ];
-await savePretty(path.join(root, 'src', '@data', 'king-james-bible.ts'), code.join('\n'));
+await savePretty(
+  path.join(root, 'src', '@data', 'king-james-bible.ts'),
+  code.join('\n'),
+  'typescript',
+  '//',
+);
 
 let nkjv: Record<string, string>[] = [];
 doc = await readDocumentation('new-king-james-bible');
@@ -148,17 +151,23 @@ code = [
   empty,
   'export const newKingJamesBible: Record<string, Record<number, Record<number, string>>> = {',
   ...(await fs
-    .readFile(path.join(root, 'reference', 'bible', 'nkjv.csv'), 'utf-8')
+    .readFile(path.join(root, 'reference', 'external', 'bible', 'nkjv.csv'), 'utf-8')
     .then((content) => parseCsv(content, { comment: '#' }))
     .then((csv) => (nkjv = csv))
     .then(readKJV(nkjv))),
   '};',
   empty,
 ];
-await savePretty(path.join(root, 'src', '@data', 'new-king-james-bible.ts'), code.join('\n'));
+
+await savePretty(
+  path.join(root, 'src', '@data', 'new-king-james-bible.ts'),
+  code.join('\n'),
+  'typescript',
+  '//',
+);
 
 const hitchcock = await fs
-  .readFile(path.join(root, 'reference', 'bible', 'hitchcock-names.csv'), 'utf-8')
+  .readFile(path.join(root, 'reference', 'external', 'bible', 'hitchcock-names.csv'), 'utf-8')
   .then((content) =>
     parseCsv(content, { comment: '#' }).reduce((acc, cur) => {
       acc[cur.Name] = cur.Meaning;
@@ -184,7 +193,7 @@ type Person = {
 };
 
 const person = await fs
-  .readFile(path.join(root, 'reference', 'bible', 'person.csv'), 'utf-8')
+  .readFile(path.join(root, 'reference', 'external', 'bible', 'person.csv'), 'utf-8')
   .then((content) =>
     parseCsv(content, { comment: '#' }).map(
       (p) =>
@@ -234,7 +243,10 @@ for (const c of Object.keys(check)) {
 }
 
 await fs
-  .readFile(path.join(root, 'reference', 'copylists', 'biblical-female-names.csv'), 'utf-8')
+  .readFile(
+    path.join(root, 'reference', 'external', 'copylists', 'biblical-female-names.csv'),
+    'utf-8',
+  )
   .then((content) => parseCsv(content, { comment: '#', hasHeaders: false }))
   .then((data) => {
     for (const row of data) {
@@ -244,7 +256,10 @@ await fs
   });
 
 await fs
-  .readFile(path.join(root, 'reference', 'copylists', 'biblical-male-names.csv'), 'utf-8')
+  .readFile(
+    path.join(root, 'reference', 'external', 'copylists', 'biblical-male-names.csv'),
+    'utf-8',
+  )
   .then((content) => parseCsv(content, { comment: '#', hasHeaders: false }))
   .then((data) => {
     for (const row of data) {
@@ -254,7 +269,7 @@ await fs
   });
 
 await fs
-  .readFile(path.join(root, 'reference', 'copylists', 'angel-names.csv'), 'utf-8')
+  .readFile(path.join(root, 'reference', 'external', 'copylists', 'angel-names.csv'), 'utf-8')
   .then((content) => parseCsv(content, { comment: '#', hasHeaders: false }))
   .then((data) => {
     for (const row of data) {
@@ -275,13 +290,13 @@ await fs
 //   Object.entries(check).filter(([n, c]) => !n.includes(space) && c.person && !c.nvHitchcock),
 // );
 
-console.log(
-  unique(
-    Object.values(person).flatMap(
-      ({ uniqueAttribute }) => uniqueAttribute?.match(/([A-Z0-9]+)(?: *\(?\d+:\d+)/iv)?.[1] ?? '',
-    ),
-  ),
-);
+// console.log(
+//   unique(
+//     Object.values(person).flatMap(
+//       ({ uniqueAttribute }) => uniqueAttribute?.match(/([A-Z0-9]+)(?: *\(?\d+:\d+)/iv)?.[1] ?? '',
+//     ),
+//   ),
+// );
 
 /*
 

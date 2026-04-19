@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/color-description/archive/refs/heads/main.zip::color-description-main/src/index.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/color-description/archive/refs/heads/main.zip::color-description-main/src/index.js
+// 🚨
 import { rgb2temperature, isInRange, randomizeArr, rgbToCMYK } from "./utils";
 import { wcagContrast, parse, converter, formatHex } from "culori";
 import wordsEN from "./en";
@@ -8,6 +8,7 @@ import wordsEN from "./en";
 const converters = {
   rgb: converter("rgb"),
   hsl: converter("hsl"),
+  oklch: converter("oklch"),
 };
 
 const formatComponents = {
@@ -37,6 +38,7 @@ class ColorDescription {
     const rgb = converters["rgb"](this.currentColor);
     this.formats.rgb = rgb;
     this.formats.hsl = converters["hsl"](this.currentColor);
+    this.formats.oklch = converters["oklch"](this.currentColor);
     this.formats.cmyk = rgbToCMYK(rgb);
   }
 
@@ -122,11 +124,9 @@ class ColorDescription {
         return rem;
       }
 
-      const scopeWords = Array.isArray(current[scope])
-        ? current[scope].filter(
-            (w) => typeof w === "string" && w.trim().length > 0,
-          )
-        : [];
+      const scopeWords = current[scope].filter(
+        (w) => typeof w === "string" && w.trim().length > 0,
+      );
 
       const colorModels = Object.keys(current.criteria);
 
@@ -140,13 +140,18 @@ class ColorDescription {
         return Object.entries(current.criteria[colorModel]).every(
           ([key, criterium]) => {
             // Check if the key exists in colorAsModel
+            // null criteria = wildcard, always matches
+            if (criterium === null) return true;
+
+            // If the criterion requires a specific value but the color
+            // doesn't have this component (e.g. hue on achromatic colors),
+            // this entry should NOT match.
             if (
               !(key in colorAsModel) ||
               colorAsModel[key] === undefined ||
-              colorAsModel[key] === null ||
-              criterium === null
+              colorAsModel[key] === null
             )
-              return true; // Skip if the component doesn't exist
+              return false;
 
             let value = colorAsModel[key];
 
@@ -190,6 +195,10 @@ class ColorDescription {
 
   get meanings() {
     return this.#getWords("meanings");
+  }
+
+  get effects() {
+    return this.#getWords("effects");
   }
 
   get usage() {

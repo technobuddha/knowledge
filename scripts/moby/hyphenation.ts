@@ -3,11 +3,10 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import { empty, quote, splitLines } from '@technobuddha/library';
+import { saveRaw, saveTerser } from '@technobuddha/project';
 
 import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { saveRaw } from '../helpers/save-raw.ts';
-import { saveTerser } from '../helpers/save-terser.ts';
 
 const docs = await readDocumentation('moby-hyphenation');
 
@@ -42,7 +41,7 @@ await fs
     const decl = [...docs, 'export declare const mobyHyphenation: Record<string, string[][]>;'];
 
     return Promise.all([
-      saveTerser(path.join(data, 'moby-hyphenation.js'), code, { quiet: true }),
-      saveRaw(path.join(data, 'moby-hyphenation.d.ts'), decl, { quiet: true }),
+      saveTerser(path.join(data, 'moby-hyphenation.js'), code),
+      saveRaw(path.join(data, 'moby-hyphenation.d.ts'), decl),
     ]);
   });

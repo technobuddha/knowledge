@@ -1,13 +1,11 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-import { empty, escapeJS, parseCsv, quote } from '@technobuddha/library';
-import { readLines } from '@technobuddha/library/node';
+import { empty, escapeJS, parseCsv, quote, readLines } from '@technobuddha/library';
+import { saveRaw, saveTerser } from '@technobuddha/project';
 
 import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { saveRaw } from '../helpers/save-raw.ts';
-import { saveTerser } from '../helpers/save-terser.ts';
 
 const files = [
   { name: 'AFINN-en-165.txt', language: 'en' },
@@ -62,6 +60,6 @@ const decl = [
 ];
 
 await Promise.all([
-  saveTerser(path.join(data, 'bad-words.js'), code, { quiet: true }),
-  saveRaw(path.join(data, 'bad-words.d.ts'), decl, { quiet: true }),
+  saveTerser(path.join(data, 'bad-words.js'), code),
+  saveRaw(path.join(data, 'bad-words.d.ts'), decl),
 ]);

@@ -2,11 +2,10 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import { empty, escapeJS, quote, splitLines } from '@technobuddha/library';
+import { saveRaw, saveTerser } from '@technobuddha/project';
 
 import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { saveRaw } from '../helpers/save-raw.ts';
-import { saveTerser } from '../helpers/save-terser.ts';
 
 const copyright: string[] = [];
 const patterns: string[] = [];
@@ -97,6 +96,6 @@ const decl = [
 ];
 
 await Promise.all([
-  saveTerser(path.join(data, 'hyphenation.js'), code, { quiet: true }),
-  saveRaw(path.join(data, 'hyphenation.d.ts'), decl, { quiet: true }),
+  saveTerser(path.join(data, 'hyphenation.js'), code),
+  saveRaw(path.join(data, 'hyphenation.d.ts'), decl),
 ]);

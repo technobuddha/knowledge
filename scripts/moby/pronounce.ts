@@ -4,16 +4,15 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import { empty, quote, space, splitLines } from '@technobuddha/library';
+import { saveRaw, saveTerser } from '@technobuddha/project';
 
-import { parse } from '../helpers/moby-pronunciation-parser.ts';
 import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { saveRaw } from '../helpers/save-raw.ts';
-import { saveTerser } from '../helpers/save-terser.ts';
 
 import { exceptions } from './data/exceptions.ts';
 import { ipaPhones } from './data/phonemes.ts';
 import { spacedWords } from './data/spaced-words.ts';
+import { parse } from './moby-pronunciation-parser.ts';
 
 function toIPA(phone: string): string {
   const ipaPhone = ipaPhones[phone];
@@ -23,20 +22,20 @@ function toIPA(phone: string): string {
   return ipaPhone.ipa;
 }
 
-const ipaLetters: [string, string][] = [
-  ['@', 'ʌ'], // sounds like the "u" in "cup":          kʌp
-  ['A', 'æ'], // AE
-  ['E', 'e'], // ??
-  ['O', 'ɔ'], // AO
-  ['N', 'n'], // N
-  ['R', 'r'], // R?
-  ['S', 's'], // S
-  ['W', 'w'], // W
-  ['V', 'v'], // V
-  ['U', 'u'], // UW
-  ['Y', 'u'], // ??
-  ['Z', 'z'], // Zq
-];
+// const ipaLetters: [string, string][] = [
+//   ['@', 'ʌ'], // sounds like the "u" in "cup":          kʌp
+//   ['A', 'æ'], // AE
+//   ['E', 'e'], // ??
+//   ['O', 'ɔ'], // AO
+//   ['N', 'n'], // N
+//   ['R', 'r'], // R?
+//   ['S', 's'], // S
+//   ['W', 'w'], // W
+//   ['V', 'v'], // V
+//   ['U', 'u'], // UW
+//   ['Y', 'u'], // ??
+//   ['Z', 'z'], // Zq
+// ];
 
 const docs = await readDocumentation('moby-pronunciation-ipa');
 
@@ -92,11 +91,7 @@ await fs
     const decl = [...docs, 'export declare const mobyPronunciationIPA: Record<string, string[]>;'];
 
     return Promise.all([
-      saveTerser(path.join(data, 'moby-pronunciation-ipa.js'), code, {
-        quiet: true,
-      }),
-      saveRaw(path.join(data, 'moby-pronunciation-ipa.d.ts'), decl, {
-        quiet: true,
-      }),
+      saveTerser(path.join(data, 'moby-pronunciation-ipa.js'), code),
+      saveRaw(path.join(data, 'moby-pronunciation-ipa.d.ts'), decl),
     ]);
   });

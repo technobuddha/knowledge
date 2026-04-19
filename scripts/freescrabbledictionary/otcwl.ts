@@ -3,11 +3,10 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import { empty, quote, range, removeComments } from '@technobuddha/library';
+import { saveRaw, saveTerser } from '@technobuddha/project';
 
 import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { saveRaw } from '../helpers/save-raw.ts';
-import { saveTerser } from '../helpers/save-terser.ts';
 
 const doc = await readDocumentation('freescrabbledictionary');
 
@@ -32,6 +31,6 @@ code.push('];', empty);
 const decl = [...doc, 'export declare const fsd: string[];'];
 
 await Promise.all([
-  saveTerser(path.join(data, 'fsd.js'), code, { quiet: true }),
-  saveRaw(path.join(data, 'fsd.d.ts'), decl, { quiet: true }),
+  saveTerser(path.join(data, 'fsd.js'), code),
+  saveRaw(path.join(data, 'fsd.d.ts'), decl),
 ]);

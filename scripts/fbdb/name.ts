@@ -1,5 +1,4 @@
-import { randomWeightedPick } from '@technobuddha/library';
-import { out } from '@technobuddha/library/node';
+import { out, randomWeightedPick } from '@technobuddha/library';
 import { db } from '@technobuddha/postgres';
 import chalk from 'chalk';
 

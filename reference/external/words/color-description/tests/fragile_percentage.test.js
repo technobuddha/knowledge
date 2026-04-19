@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/color-description/archive/refs/heads/main.zip::color-description-main/tests/fragile_percentage.test.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/color-description/archive/refs/heads/main.zip::color-description-main/tests/fragile_percentage.test.js
+// 🚨
 import ColorDescription from "../src/index";
 
 describe("Fragile Percentage Logic", () => {

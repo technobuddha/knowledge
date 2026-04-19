@@ -1,6 +1,6 @@
-# 🚨
-# 🚨 Source: https://github.com/words/color-description/archive/refs/heads/main.zip::color-description-main/src/utils.js
-# 🚨
+// 🚨
+// 🚨 Source: https://github.com/words/color-description/archive/refs/heads/main.zip::color-description-main/src/utils.js
+// 🚨
 const { round, min, max, log, floor, random } = Math;
 
 const temperature2rgb = (kelvin) => {
@@ -44,11 +44,27 @@ const temperature2rgb = (kelvin) => {
 };
 
 /**
- * Calculate color temperature from RGB
- * Based on standard algorithms for CCT (Correlated Color Temperature)
+ * Estimate correlated color temperature (CCT) from RGB via binary search
+ * against the Tanner Helland approximation of the Planckian locus.
+ *
+ * Limitations:
+ * - Uses only the B/R ratio, so the green channel is ignored. Saturated
+ *   greens, purples, and other colors far from the blackbody curve will
+ *   produce approximate results at best.
+ * - Accurate primarily for near-white / near-grey colors that lie close
+ *   to the Planckian locus (e.g. incandescent, daylight, overcast).
+ * - For the purposes of this library the coarse temperature buckets
+ *   (ultra warm → cool) tolerate this imprecision.
  */
 export const rgb2temperature = (rgb) => {
   const { r, g, b } = rgb;
+
+  // When r is 0 or near-zero, the b/r ratio is undefined or infinite.
+  // Return boundary temperatures for these degenerate cases.
+  if (r < 1e-10) {
+    return b > r ? 40000 : 1000;
+  }
+
   let minTemp = 1000;
   let maxTemp = 40000;
   const eps = 0.4;

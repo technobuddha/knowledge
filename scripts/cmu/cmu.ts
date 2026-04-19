@@ -4,11 +4,10 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import { create1dArray, empty, quote, range, space, splitLines, sum } from '@technobuddha/library';
+import { saveRaw, saveTerser } from '@technobuddha/project';
 
 import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { saveRaw } from '../helpers/save-raw.ts';
-import { saveTerser } from '../helpers/save-terser.ts';
 
 import { compounds } from './compounds.ts';
 import { onsets } from './onsets.ts';
@@ -108,10 +107,10 @@ arpaCode.push('};', empty);
 const arpaDecl = [...docsArpabet, 'export declare const cmuDictArpabet: Record<string, string[]>;'];
 
 await Promise.all([
-  saveTerser(path.join(data, 'cmu-dict-ipa.js'), ipaCode, { quiet: true }),
-  saveRaw(path.join(data, 'cmu-dict-ipa.d.ts'), ipaDecl, { quiet: true }),
-  saveTerser(path.join(data, 'cmu-dict-arpabet.js'), arpaCode, { quiet: true }),
-  saveRaw(path.join(data, 'cmu-dict-arpabet.d.ts'), arpaDecl, { quiet: true }),
+  saveTerser(path.join(data, 'cmu-dict-ipa.js'), ipaCode),
+  saveRaw(path.join(data, 'cmu-dict-ipa.d.ts'), ipaDecl),
+  saveTerser(path.join(data, 'cmu-dict-arpabet.js'), arpaCode),
+  saveRaw(path.join(data, 'cmu-dict-arpabet.d.ts'), arpaDecl),
 ]);
 
 //------------------------------------------------------------------------------------------------//

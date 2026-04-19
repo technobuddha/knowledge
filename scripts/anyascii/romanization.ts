@@ -2,12 +2,11 @@
 import path from 'node:path';
 
 import { empty, escapeJS, quote } from '@technobuddha/library';
+import { saveRaw, saveTerser } from '@technobuddha/project';
 
 import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 import { readLicense } from '../helpers/read-license.ts';
-import { saveRaw } from '../helpers/save-raw.ts';
-import { saveTerser } from '../helpers/save-terser.ts';
 
 const { default: block } = await import(path.join(externalReference, 'anyascii', 'block.js'));
 
@@ -51,6 +50,6 @@ const decl = [
 ];
 
 await Promise.all([
-  saveTerser(path.join(data, 'romanization.js'), code, { quiet: true }),
-  saveRaw(path.join(data, 'romanization.d.ts'), decl, { quiet: true }),
+  saveTerser(path.join(data, 'romanization.js'), code),
+  saveRaw(path.join(data, 'romanization.d.ts'), decl),
 ]);

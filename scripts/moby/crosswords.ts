@@ -3,11 +3,10 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import { empty, quote, splitLines } from '@technobuddha/library';
+import { saveRaw, saveTerser } from '@technobuddha/project';
 
 import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { saveRaw } from '../helpers/save-raw.ts';
-import { saveTerser } from '../helpers/save-terser.ts';
 
 const docFirst = await readDocumentation('moby-scrabble-first');
 const docSecond = await readDocumentation('moby-scrabble-second');
@@ -59,16 +58,8 @@ code2.push('];', empty);
 const decl2 = [...docSecond, 'export declare const mobyCrosswords2ndEdition: string[];', empty];
 
 await Promise.all([
-  saveTerser(path.join(data, 'moby-crosswords-1st-edition.js'), code1, {
-    quiet: true,
-  }),
-  saveTerser(path.join(data, 'moby-crosswords-2nd-edition.js'), code2, {
-    quiet: true,
-  }),
-  saveRaw(path.join(data, 'moby-crosswords-1st-edition.d.ts'), decl1, {
-    quiet: true,
-  }),
-  saveRaw(path.join(data, 'moby-crosswords-2nd-edition.d.ts'), decl2, {
-    quiet: true,
-  }),
+  saveTerser(path.join(data, 'moby-crosswords-1st-edition.js'), code1),
+  saveTerser(path.join(data, 'moby-crosswords-2nd-edition.js'), code2),
+  saveRaw(path.join(data, 'moby-crosswords-1st-edition.d.ts'), decl1),
+  saveRaw(path.join(data, 'moby-crosswords-2nd-edition.d.ts'), decl2),
 ]);

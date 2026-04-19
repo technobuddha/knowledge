@@ -1,8 +1,16 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-import { empty, escapeCsv, soundex, transliterate } from '@technobuddha/library';
-import { err, locatePackageRoot, readLines, writeLines } from '@technobuddha/library/node';
+import {
+  empty,
+  err,
+  escapeCsv,
+  locatePackageRoot,
+  readLines,
+  soundex,
+  transliterate,
+  writeLines,
+} from '@technobuddha/library';
 import chalk from 'chalk';
 import cliProgress from 'cli-progress';
 

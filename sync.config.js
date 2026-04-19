@@ -38,7 +38,21 @@ export default [
       {
         url: 'https://raw.githubusercontent.com/SergioBoySV/Bible-Datasets/refs/heads/main/nkjv/entire_nkjv.csv',
         local: 'reference/external/bible/nkjv.csv',
-      },]
+      },
+      {
+        url: 'https://copylists.com/downloads/names/angels/angel_names.csv',
+        local: 'reference/external/copylists/angel-names.csv',
+      },
+      {
+        url: 'https://copylists.com/downloads/names/biblical/female/biblical_female_names.csv',
+        local: 'reference/external/copylists/biblical-female-names.csv',
+      },
+      {
+        url: 'https://copylists.com/downloads/names/biblical/male/biblical_male_names.csv',
+        local: 'reference/external/copylists/biblical-male-names.csv',
+      },
+    ],
+    onUpdate: 'npx tsx scripts/bible/bible.ts',
   },
   //#endregion
   //#region boost
@@ -195,18 +209,6 @@ export default [
   //#region copylists
   {
     transfers: [
-      {
-        url: 'https://copylists.com/downloads/names/angels/angel_names.csv',
-        local: 'reference/external/copylists/angel-names.csv',
-      },
-      {
-        url: 'https://copylists.com/downloads/names/biblical/female/biblical_female_names.csv',
-        local: 'reference/external/copylists/biblical-female-names.csv',
-      },
-      {
-        url: 'https://copylists.com/downloads/names/biblical/male/biblical_male_names.csv',
-        local: 'reference/external/copylists/biblical-male-names.csv',
-      },
       {
         url: 'https://copylists.com/downloads/names/boys/boys_names.csv',
         local: 'reference/external/copylists/boys-names.csv',
@@ -1010,7 +1012,7 @@ export default [
       {
         url: 'https://github.com/words/color-description/archive/refs/heads/main.zip',
         local: 'reference/external/words/color-description',
-        zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/*.txt'],
+        zip: ['*/README.md', '*/LICENSE', '*/src/*', '*/tests/*', '*/tools/*', '*/utils/*', '*/index.d.ts', '*/package.json'],
         rename: (name) => name.replace(/.*?\//, empty),
       },
       {
@@ -1150,7 +1152,8 @@ export default [
         local: 'reference/external/words/wordnet',
         zip: ['*/readme.md', '*/license', '*/*.js', '*/*.json', '*/.txt'],
         rename: (name) => name.replace(/.*?\//, empty),
-      },]
+      },
+    ]
   },
   //#endregion
   //#region breider-morse

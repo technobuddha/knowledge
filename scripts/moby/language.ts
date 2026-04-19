@@ -3,11 +3,10 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import { camelCase, empty, escapeJS, quote, splitLines } from '@technobuddha/library';
+import { saveRaw, saveTerser } from '@technobuddha/project';
 
 import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
-import { saveRaw } from '../helpers/save-raw.ts';
-import { saveTerser } from '../helpers/save-terser.ts';
 
 // prettier-ignore
 const files: string[] = ['french','german', 'italian', 'japanese', 'spanish'];
@@ -77,8 +76,8 @@ await Promise.all(
         const decl = [...docs, `export declare const ${camelCase(`moby-${input}`)}: string[];`];
 
         return Promise.all([
-          saveTerser(path.join(data, `moby-${input}.js`), code, { quiet: true }),
-          saveRaw(path.join(data, `moby-${input}.d.ts`), decl, { quiet: true }),
+          saveTerser(path.join(data, `moby-${input}.js`), code),
+          saveRaw(path.join(data, `moby-${input}.d.ts`), decl),
         ]);
       });
   }),
