@@ -84,12 +84,6 @@ const config = {
         name: 'Bad Words',
         command: 'npx tsx ./scripts/bad-words/bad-words.ts',
       },
-
-
-      // {
-      //   name: 'Documentation',
-      //   command: 'npx tsx ./scripts/moby/exception-list.ts',
-      // }
     ],
   },
   prod: {
