@@ -1,0 +1,16 @@
+[user]
+  email = phill@tetrascience.com
+  name = Phil Hill
+[alias]
+  alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+  boot = !git fetch --all && git checkout \"$(git main)\" && git reset --hard \"origin/$(git main)\" && yarn install
+  gl = config --global -l
+  ll = config -l
+  main = !git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'
+  # Push the current branch to the remote "origin", and set it to track the upstream branch
+  publish = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
+  sync = !echo > .sync && git stash push -u -q && git fetch --all && git checkout \"$(git main)\" && git reset --hard \"origin/$(git main)\" && git checkout - && git stash pop -q && rm -rf .sync && git rebase \"$(git main)\" && yarn install
+  uncommit = reset --soft HEAD~1
+
+[core]
+  editor = code --wait

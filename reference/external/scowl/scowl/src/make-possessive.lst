@@ -1,0 +1,14 @@
+#!/bin/sh
+# 🚨
+# 🚨 Source: https://netactuate.dl.sourceforge.net/project/wordlist/SCOWL/2020.12.07/scowl-2020.12.07.zip?viasf=1::src/make-possessive.lst
+# 🚨
+
+cat working/proper-names.lst                 \
+  | comm -23 - r/special/not-possessive      \
+  | grep -v "'"                              \
+  | src/remove-plurals                       \
+  | cat - r/special/add-possessive           \
+  | cat - `for d in l/add-possessive/*; do echo $d/*; done` \
+  | src/filter                               \
+  | sort | uniq > working/possessive-also.lst
+

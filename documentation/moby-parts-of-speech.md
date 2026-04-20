@@ -5,7 +5,7 @@
 ## Usage
 
 ```typescript
-import { partsOfSpeech } from '@technobuddha/moby';
+import { partsOfSpeech } from '@technobuddha/knowledge';
 
 partsOfSpeech['engineer']; // "Nt"
 Object.keys(partsOfSpeech); // Array of all 233,339 words
@@ -13,6 +13,12 @@ Object.entries(partsOfSpeech)
   .filter(([, pos]) => pos.includes('A'))
   .map(([word]) => word); // All 50,471 adjectives
 ```
+
+::: warning
+The full parts of speech dataset, is almost 5MB in size, and can take several seconds to transmit
+and load into memory. This may not be suitable for all applications, in particular web applications
+where load time is critical.
+:::
 
 ## Parts of Speech
 
@@ -88,3 +94,6 @@ It was created by Grady Ward and released as part of the Moby Project into the p
 | ------------ | -------------- | --------- |
 | shari'ah     | 182305         | shari"ah  |
 | marinade     | 116908, 116979 | mari,nade |
+
+@group Parts of Speech
+@category Datasets

@@ -1,0 +1,9 @@
+# 🚨
+# 🚨 Source: https://netactuate.dl.sourceforge.net/project/wordlist/SCOWL/2020.12.07/scowl-2020.12.07.zip?viasf=1::speller/aspell/en.dat
+# 🚨
+name en
+charset iso8859-1
+special ' -*-
+soundslike en
+affix en
+#repl-table en_affix.dat

@@ -1,0 +1,2277 @@
+﻿ID,Color,RGB,Source
+1,Black,000000,W3C
+2,Silver,C0C0C0,W3C
+3,Gray,808080,W3C
+4,White,FFFFFF,W3C
+5,Maroon,800000,W3C
+6,Red,FF0000,W3C
+7,Purple,800080,W3C
+8,Fuchsia,FF00FF,W3C
+9,Green,008000,W3C
+10,Lime,00FF00,W3C
+11,Olive,808000,W3C
+12,Yellow,FFFF00,W3C
+13,Navy,000080,W3C
+14,Blue,0000FF,W3C
+15,Teal,008080,W3C
+16,Aqua,00FFFF,W3C
+17,ActiveBorder,B4B4B4,system
+18,ActiveCaption,99B4D1,system
+19,AppWorkspace,ABABAB,system
+20,Background,000000,system
+21,ButtonFace,F0F0F0,system
+22,ButtonHighlight,FFFFFF,system
+23,ButtonShadow,A0A0A0,system
+24,ButtonText,000000,system
+25,CaptionText,000000,system
+26,GrayText,6D6D6D,system
+27,Highlight,3399FF,system
+28,HighlightText,FFFFFF,system
+29,InactiveBorder,F4F7FC,system
+30,InactiveCaption,BFCDDB,system
+31,InactiveCaptionText,434E54,system
+32,InfoBackground,FFFFE1,system
+33,InfoText,000000,system
+34,Menu,F0F0F0,system
+35,MenuText,000000,system
+36,Scrollbar,C8C8C8,system
+37,TreeDDarkShadow,696969,system
+38,ThreeDFace,F0F0F0,system
+39,ThreeDHighlight,FFFFFF,system
+40,ThreeDLightShadow,E3E3E3,system
+41,ThreeDShadow,A0A0A0,system
+42,Window,FFFFFF,system
+43,WindowFrame,646464,system
+44,WindowText,000000,system
+45,currentColor,NULL,NULL
+46,transparent,NULL,NULL
+47,AliceBlue,F0F8FF,W3C
+48,AntiqueWhite,FAEBD7,W3C
+49,Aquamarine,7FFFD4,W3C
+50,Azure,F0FFFF,W3C
+51,Beige,F5F5DC,W3C
+52,Bisque,FFE4C4,W3C
+53,BlanchedAlmond,FFEBCD,W3C
+54,BlueViolet,8A2BE2,W3C
+55,Brown,A52A2A,W3C
+56,Burlywood,DEB887,W3C
+57,CadetBlue,5F9EA0,W3C
+58,Chartreuse,7FFF00,W3C
+59,Chocolate,D2691E,W3C
+60,Coral,FF7F50,W3C
+61,CornflowerBlue,6495ED,W3C
+62,Cornsilk,FFF8DC,W3C
+63,Crimson,DC143C,W3C
+64,Cyan,00FFFF,W3C
+65,DarkBlue,00008B,W3C
+66,DarkCyan,008B8B,W3C
+67,DarkGoldenrod,B8860B,W3C
+68,DarkGray,A9A9A9,W3C
+69,DarkGreen,006400,W3C
+70,DarkGrey,A9A9A9,W3C
+71,DarkKhaki,BDB76B,W3C
+72,DarkMagenta,8B008B,W3C
+73,DarkOliveGreen,556B2F,W3C
+74,DarkOrange,FF8C00,W3C
+75,DarkOrchid,9932CC,W3C
+76,DarkRed,8B0000,W3C
+77,DarkSalmon,E9967A,W3C
+78,DarkSeaGreen,8FBC8F,W3C
+79,DarkSlateBlue,483D8B,W3C
+80,DarkSlateGray,2F4F4F,W3C
+81,DarkSlateGrey,2F4F4F,W3C
+82,DarkTurquoise,00CED1,W3C
+83,DarkViolet,9400D3,W3C
+84,DeepPink,FF1493,W3C
+85,DeepSkyBlue,00BFFF,W3C
+86,DimGray,696969,W3C
+87,DimGrey,696969,W3C
+88,DodgerBlue,1E90FF,W3C
+89,Firebrick,B22222,W3C
+90,FloralWhite,FFFAF0,W3C
+91,ForestGreen,228B22,W3C
+92,Gainsboro,DCDCDC,W3C
+93,GhostWhite,F8F8FF,W3C
+94,Gold,FFD700,W3C
+95,Goldenrod,DAA520,W3C
+96,GreenYellow,ADFF2F,W3C
+97,Grey,808080,W3C
+98,Honeydew,F0FFF0,W3C
+99,HotPink,FF69B4,W3C
+100,IndianRed,CD5C5C,W3C
+101,Indigo,4B0082,W3C
+102,Ivory,FFFFF0,W3C
+103,Khaki,F0E68C,W3C
+104,Lavender,E6E6FA,W3C
+105,LavenderBlush,FFF0F5,W3C
+106,LawnGreen,7CFC00,W3C
+107,LemonChiffon,FFFACD,W3C
+108,LightBlue,ADD8E6,W3C
+109,LightCoral,F08080,W3C
+110,LightCyan,E0FFFF,W3C
+111,LightGoldenrodYellow,FAFAD2,W3C
+112,LightGray,D3D3D3,W3C
+113,LightGreen,90EE90,W3C
+114,LightGrey,D3D3D3,W3C
+115,LightPink,FFB6C1,W3C
+116,LightSalmon,FFA07A,W3C
+117,LightSeaGreen,20B2AA,W3C
+118,LightSkyBlue,87CEFA,W3C
+119,LightSlateGray,778899,W3C
+120,LightSlateGrey,778899,W3C
+121,LightSteelBlue,B0C4DE,W3C
+122,LightYellow,FFFFE0,W3C
+123,LimeGreen,32CD32,W3C
+124,Linen,FAF0E6,W3C
+125,Magenta,FF00FF,W3C
+126,MediumAquamarine,66CDAA,W3C
+127,MediumBlue,0000CD,W3C
+128,MediumOrchid,BA55D3,W3C
+129,MediumPurple,9370DB,W3C
+130,MediumSeaGreen,3CB371,W3C
+131,MediumSlateBlue,7B68EE,W3C
+132,MediumSpringGreen,00FA9A,W3C
+133,MediumTurquoise,48D1CC,W3C
+134,MediumVioletRed,C71585,W3C
+135,MidnightBlue,191970,W3C
+136,MintCream,F5FFFA,W3C
+137,MistyRose,FFE4E1,W3C
+138,Moccasin,FFE4B5,W3C
+139,NavajoWhite,FFDEAD,W3C
+140,OldLace,FDF5E6,W3C
+141,OliveDrab,6B8E23,W3C
+142,Orange,FFA500,W3C
+143,OrangeRed,FF4500,W3C
+144,Orchid,DA70D6,W3C
+145,PaleGoldenrod,EEE8AA,W3C
+146,PaleGreen,98FB98,W3C
+147,PaleTurquoise,AFEEEE,W3C
+148,PaleVioletRed,DB7093,W3C
+149,PapayaWhip,FFEFD5,W3C
+150,PeachPuff,FFDAB9,W3C
+151,Peru,CD853F,W3C
+152,Pink,FFC0CB,W3C
+153,Plum,DDA0DD,W3C
+154,PowderBlue,B0E0E6,W3C
+155,RosyBrown,BC8F8F,W3C
+156,RoyalBlue,4169E1,W3C
+157,SaddleBrown,8B4513,W3C
+158,Salmon,FA8072,W3C
+159,SandyBrown,F4A460,W3C
+160,SeaGreen,2E8B57,W3C
+161,Seashell,FFF5EE,W3C
+162,Sienna,A0522D,W3C
+163,SkyBlue,87CEEB,W3C
+164,SlateBlue,6A5ACD,W3C
+165,SlateGray,708090,W3C
+166,SlateGrey,708090,W3C
+167,Snow,FFFAFA,W3C
+168,SpringGreen,00FF7F,W3C
+169,SteelBlue,4682B4,W3C
+170,Tan,D2B48C,W3C
+171,Thistle,D8BFD8,W3C
+172,Tomato,FF6347,W3C
+173,Turquoise,40E0D0,W3C
+174,Violet,EE82EE,W3C
+175,Wheat,F5DEB3,W3C
+176,WhiteSmoke,F5F5F5,W3C
+177,YellowGreen,9ACD32,W3C
+178,Snow,FFFAFA,X11
+179,GhostWhite,F8F8FF,X11
+180,WhiteSmoke,F5F5F5,X11
+181,Gainsboro,DCDCDC,X11
+182,FloralWhite,FFFAF0,X11
+183,OldLace,FDF5E6,X11
+184,Linen,FAF0E6,X11
+185,AntiqueWhite,FAEBD7,X11
+186,PapayaWhip,FFEFD5,X11
+187,BlanchedAlmond,FFEBCD,X11
+188,Bisque,FFE4C4,X11
+189,PeachPuff,FFDAB9,X11
+190,NavajoWhite,FFDEAD,X11
+191,Moccasin,FFE4B5,X11
+192,Cornsilk,FFF8DC,X11
+193,Ivory,FFFFF0,X11
+194,LemonChiffon,FFFACD,X11
+195,Seashell,FFF5EE,X11
+196,Honeydew,F0FFF0,X11
+197,MintCream,F5FFFA,X11
+198,Azure,F0FFFF,X11
+199,AliceBlue,F0F8FF,X11
+200,Lavender,E6E6FA,X11
+201,LavenderBlush,FFF0F5,X11
+202,MistyRose,FFE4E1,X11
+203,White,FFFFFF,X11
+204,Black,000000,X11
+205,DarkSlateGray,2F4F4F,X11
+206,DarkSlateGrey,2F4F4F,X11
+207,DimGray,696969,X11
+208,DimGrey,696969,X11
+209,SlateGray,708090,X11
+210,SlateGrey,708090,X11
+211,LightSlateGray,778899,X11
+212,LightSlateGrey,778899,X11
+213,Gray,BEBEBE,X11
+214,Grey,BEBEBE,X11
+215,LightGrey,D3D3D3,X11
+216,LightGray,D3D3D3,X11
+217,MidnightBlue,191970,X11
+218,Navy,000080,X11
+219,NavyBlue,000080,X11
+220,CornflowerBlue,6495ED,X11
+221,DarkSlateBlue,483D8B,X11
+222,SlateBlue,6A5ACD,X11
+223,MediumSlateBlue,7B68EE,X11
+224,LightSlateBlue,8470FF,X11
+225,MediumBlue,0000CD,X11
+226,RoyalBlue,4169E1,X11
+227,Blue,0000FF,X11
+228,DodgerBlue,1E90FF,X11
+229,DeepSkyBlue,00BFFF,X11
+230,SkyBlue,87CEEB,X11
+231,LightSkyBlue,87CEFA,X11
+232,SteelBlue,4682B4,X11
+233,LightSteelBlue,B0C4DE,X11
+234,LightBlue,ADD8E6,X11
+235,PowderBlue,B0E0E6,X11
+236,PaleTurquoise,AFEEEE,X11
+237,DarkTurquoise,00CED1,X11
+238,MediumTurquoise,48D1CC,X11
+239,Turquoise,40E0D0,X11
+240,Cyan,00FFFF,X11
+241,LightCyan,E0FFFF,X11
+242,CadetBlue,5F9EA0,X11
+243,MediumAquamarine,66CDAA,X11
+244,Aquamarine,7FFFD4,X11
+245,DarkGreen,006400,X11
+246,DarkOliveGreen,556B2F,X11
+247,DarkSeaGreen,8FBC8F,X11
+248,SeaGreen,2E8B57,X11
+249,MediumSeaGreen,3CB371,X11
+250,LightSeaGreen,20B2AA,X11
+251,PaleGreen,98FB98,X11
+252,SpringGreen,00FF7F,X11
+253,LawnGreen,7CFC00,X11
+254,Green,00FF00,X11
+255,Chartreuse,7FFF00,X11
+256,MediumSpringGreen,00FA9A,X11
+257,GreenYellow,ADFF2F,X11
+258,LimeGreen,32CD32,X11
+259,YellowGreen,9ACD32,X11
+260,ForestGreen,228B22,X11
+261,OliveDrab,6B8E23,X11
+262,DarkKhaki,BDB76B,X11
+263,Khaki,F0E68C,X11
+264,PaleGoldenrod,EEE8AA,X11
+265,LightGoldenrodYellow,FAFAD2,X11
+266,LightYellow,FFFFE0,X11
+267,Yellow,FFFF00,X11
+268,Gold,FFD700,X11
+269,LightGoldenrod,EEDD82,X11
+270,Goldenrod,DAA520,X11
+271,DarkGoldenrod,B8860B,X11
+272,RosyBrown,BC8F8F,X11
+273,IndianRed,CD5C5C,X11
+274,SaddleBrown,8B4513,X11
+275,Sienna,A0522D,X11
+276,Peru,CD853F,X11
+277,Burlywood,DEB887,X11
+278,Beige,F5F5DC,X11
+279,Wheat,F5DEB3,X11
+280,SandyBrown,F4A460,X11
+281,Tan,D2B48C,X11
+282,Chocolate,D2691E,X11
+283,Firebrick,B22222,X11
+284,Brown,A52A2A,X11
+285,DarkSalmon,E9967A,X11
+286,Salmon,FA8072,X11
+287,LightSalmon,FFA07A,X11
+288,Orange,FFA500,X11
+289,DarkOrange,FF8C00,X11
+290,Coral,FF7F50,X11
+291,LightCoral,F08080,X11
+292,Tomato,FF6347,X11
+293,OrangeRed,FF4500,X11
+294,Red,FF0000,X11
+295,HotPink,FF69B4,X11
+296,DeepPink,FF1493,X11
+297,Pink,FFC0CB,X11
+298,LightPink,FFB6C1,X11
+299,PaleVioletRed,DB7093,X11
+300,Maroon,B03060,X11
+301,MediumVioletRed,C71585,X11
+302,VioletRed,D02090,X11
+303,Magenta,FF00FF,X11
+304,Violet,EE82EE,X11
+305,Plum,DDA0DD,X11
+306,Orchid,DA70D6,X11
+307,MediumOrchid,BA55D3,X11
+308,DarkOrchid,9932CC,X11
+309,DarkViolet,9400D3,X11
+310,BlueViolet,8A2BE2,X11
+311,Purple,A020F0,X11
+312,MediumPurple,9370DB,X11
+313,Thistle,D8BFD8,X11
+314,Snow1,FFFAFA,X11
+315,Snow2,EEE9E9,X11
+316,Snow3,CDC9C9,X11
+317,Snow4,8B8989,X11
+318,Seashell1,FFF5EE,X11
+319,Seashell2,EEE5DE,X11
+320,Seashell3,CDC5BF,X11
+321,Seashell4,8B8682,X11
+322,AntiqueWhite1,FFEFDB,X11
+323,AntiqueWhite2,EEDFCC,X11
+324,AntiqueWhite3,CDC0B0,X11
+325,AntiqueWhite4,8B8378,X11
+326,Bisque1,FFE4C4,X11
+327,Bisque2,EED5B7,X11
+328,Bisque3,CDB79E,X11
+329,Bisque4,8B7D6B,X11
+330,PeachPuff1,FFDAB9,X11
+331,PeachPuff2,EECBAD,X11
+332,PeachPuff3,CDAF95,X11
+333,PeachPuff4,8B7765,X11
+334,NavajoWhite1,FFDEAD,X11
+335,NavajoWhite2,EECFA1,X11
+336,NavajoWhite3,CDB38B,X11
+337,NavajoWhite4,8B795E,X11
+338,LemonChiffon1,FFFACD,X11
+339,LemonChiffon2,EEE9BF,X11
+340,LemonChiffon3,CDC9A5,X11
+341,LemonChiffon4,8B8970,X11
+342,Cornsilk1,FFF8DC,X11
+343,Cornsilk2,EEE8CD,X11
+344,Cornsilk3,CDC8B1,X11
+345,Cornsilk4,8B8878,X11
+346,Ivory1,FFFFF0,X11
+347,Ivory2,EEEEE0,X11
+348,Ivory3,CDCDC1,X11
+349,Ivory4,8B8B83,X11
+350,Honeydew1,F0FFF0,X11
+351,Honeydew2,E0EEE0,X11
+352,Honeydew3,C1CDC1,X11
+353,Honeydew4,838B83,X11
+354,LavenderBlush1,FFF0F5,X11
+355,LavenderBlush2,EEE0E5,X11
+356,LavenderBlush3,CDC1C5,X11
+357,LavenderBlush4,8B8386,X11
+358,MistyRose1,FFE4E1,X11
+359,MistyRose2,EED5D2,X11
+360,MistyRose3,CDB7B5,X11
+361,MistyRose4,8B7D7B,X11
+362,Azure1,F0FFFF,X11
+363,Azure2,E0EEEE,X11
+364,Azure3,C1CDCD,X11
+365,Azure4,838B8B,X11
+366,SlateBlue1,836FFF,X11
+367,SlateBlue2,7A67EE,X11
+368,SlateBlue3,6959CD,X11
+369,SlateBlue4,473C8B,X11
+370,RoyalBlue1,4876FF,X11
+371,RoyalBlue2,436EEE,X11
+372,RoyalBlue3,3A5FCD,X11
+373,RoyalBlue4,27408B,X11
+374,Blue1,0000FF,X11
+375,Blue2,0000EE,X11
+376,Blue3,0000CD,X11
+377,Blue4,00008B,X11
+378,DodgerBlue1,1E90FF,X11
+379,DodgerBlue2,1C86EE,X11
+380,DodgerBlue3,1874CD,X11
+381,DodgerBlue4,104E8B,X11
+382,SteelBlue1,63B8FF,X11
+383,SteelBlue2,5CACEE,X11
+384,SteelBlue3,4F94CD,X11
+385,SteelBlue4,36648B,X11
+386,DeepSkyBlue1,00BFFF,X11
+387,DeepSkyBlue2,00B2EE,X11
+388,DeepSkyBlue3,009ACD,X11
+389,DeepSkyBlue4,00688B,X11
+390,SkyBlue1,87CEFF,X11
+391,SkyBlue2,7EC0EE,X11
+392,SkyBlue3,6CA6CD,X11
+393,SkyBlue4,4A708B,X11
+394,LightSkyBlue1,B0E2FF,X11
+395,LightSkyBlue2,A4D3EE,X11
+396,LightSkyBlue3,8DB6CD,X11
+397,LightSkyBlue4,607B8B,X11
+398,SlateGray1,C6E2FF,X11
+399,SlateGray2,B9D3EE,X11
+400,SlateGray3,9FB6CD,X11
+401,SlateGray4,6C7B8B,X11
+402,LightSteelBlue1,CAE1FF,X11
+403,LightSteelBlue2,BCD2EE,X11
+404,LightSteelBlue3,A2B5CD,X11
+405,LightSteelBlue4,6E7B8B,X11
+406,LightBlue1,BFEFFF,X11
+407,LightBlue2,B2DFEE,X11
+408,LightBlue3,9AC0CD,X11
+409,LightBlue4,68838B,X11
+410,LightCyan1,E0FFFF,X11
+411,LightCyan2,D1EEEE,X11
+412,LightCyan3,B4CDCD,X11
+413,LightCyan4,7A8B8B,X11
+414,PaleTurquoise1,BBFFFF,X11
+415,PaleTurquoise2,AEEEEE,X11
+416,PaleTurquoise3,96CDCD,X11
+417,PaleTurquoise4,668B8B,X11
+418,CadetBlue1,98F5FF,X11
+419,CadetBlue2,8EE5EE,X11
+420,CadetBlue3,7AC5CD,X11
+421,CadetBlue4,53868B,X11
+422,Turquoise1,00F5FF,X11
+423,Turquoise2,00E5EE,X11
+424,Turquoise3,00C5CD,X11
+425,Turquoise4,00868B,X11
+426,Cyan1,00FFFF,X11
+427,Cyan2,00EEEE,X11
+428,Cyan3,00CDCD,X11
+429,Cyan4,008B8B,X11
+430,DarkSlateGray1,97FFFF,X11
+431,DarkSlateGray2,8DEEEE,X11
+432,DarkSlateGray3,79CDCD,X11
+433,DarkSlateGray4,528B8B,X11
+434,Aquamarine1,7FFFD4,X11
+435,Aquamarine2,76EEC6,X11
+436,Aquamarine3,66CDAA,X11
+437,Aquamarine4,458B74,X11
+438,DarkSeaGreen1,C1FFC1,X11
+439,DarkSeaGreen2,B4EEB4,X11
+440,DarkSeaGreen3,9BCD9B,X11
+441,DarkSeaGreen4,698B69,X11
+442,SeaGreen1,54FF9F,X11
+443,SeaGreen2,4EEE94,X11
+444,SeaGreen3,43CD80,X11
+445,SeaGreen4,2E8B57,X11
+446,PaleGreen1,9AFF9A,X11
+447,PaleGreen2,90EE90,X11
+448,PaleGreen3,7CCD7C,X11
+449,PaleGreen4,548B54,X11
+450,SpringGreen1,00FF7F,X11
+451,SpringGreen2,00EE76,X11
+452,SpringGreen3,00CD66,X11
+453,SpringGreen4,008B45,X11
+454,Green1,00FF00,X11
+455,Green2,00EE00,X11
+456,Green3,00CD00,X11
+457,Green4,008B00,X11
+458,Chartreuse1,7FFF00,X11
+459,Chartreuse2,76EE00,X11
+460,Chartreuse3,66CD00,X11
+461,Chartreuse4,458B00,X11
+462,OliveDrab1,C0FF3E,X11
+463,OliveDrab2,B3EE3A,X11
+464,OliveDrab3,9ACD32,X11
+465,OliveDrab4,698B22,X11
+466,DarkOliveGreen1,CAFF70,X11
+467,DarkOliveGreen2,BCEE68,X11
+468,DarkOliveGreen3,A2CD5A,X11
+469,DarkOliveGreen4,6E8B3D,X11
+470,Khaki1,FFF68F,X11
+471,Khaki2,EEE685,X11
+472,Khaki3,CDC673,X11
+473,Khaki4,8B864E,X11
+474,LightGoldenrod1,FFEC8B,X11
+475,LightGoldenrod2,EEDC82,X11
+476,LightGoldenrod3,CDBE70,X11
+477,LightGoldenrod4,8B814C,X11
+478,LightYellow1,FFFFE0,X11
+479,LightYellow2,EEEED1,X11
+480,LightYellow3,CDCDB4,X11
+481,LightYellow4,8B8B7A,X11
+482,Yellow1,FFFF00,X11
+483,Yellow2,EEEE00,X11
+484,Yellow3,CDCD00,X11
+485,Yellow4,8B8B00,X11
+486,Gold1,FFD700,X11
+487,Gold2,EEC900,X11
+488,Gold3,CDAD00,X11
+489,Gold4,8B7500,X11
+490,Goldenrod1,FFC125,X11
+491,Goldenrod2,EEB422,X11
+492,Goldenrod3,CD9B1D,X11
+493,Goldenrod4,8B6914,X11
+494,DarkGoldenrod1,FFB90F,X11
+495,DarkGoldenrod2,EEAD0E,X11
+496,DarkGoldenrod3,CD950C,X11
+497,DarkGoldenrod4,8B6508,X11
+498,RosyBrown1,FFC1C1,X11
+499,RosyBrown2,EEB4B4,X11
+500,RosyBrown3,CD9B9B,X11
+501,RosyBrown4,8B6969,X11
+502,IndianRed1,FF6A6A,X11
+503,IndianRed2,EE6363,X11
+504,IndianRed3,CD5555,X11
+505,IndianRed4,8B3A3A,X11
+506,Sienna1,FF8247,X11
+507,Sienna2,EE7942,X11
+508,Sienna3,CD6839,X11
+509,Sienna4,8B4726,X11
+510,Burlywood1,FFD39B,X11
+511,Burlywood2,EEC591,X11
+512,Burlywood3,CDAA7D,X11
+513,Burlywood4,8B7355,X11
+514,Wheat1,FFE7BA,X11
+515,Wheat2,EED8AE,X11
+516,Wheat3,CDBA96,X11
+517,Wheat4,8B7E66,X11
+518,Tan1,FFA54F,X11
+519,Tan2,EE9A49,X11
+520,Tan3,CD853F,X11
+521,Tan4,8B5A2B,X11
+522,Chocolate1,FF7F24,X11
+523,Chocolate2,EE7621,X11
+524,Chocolate3,CD661D,X11
+525,Chocolate4,8B4513,X11
+526,Firebrick1,FF3030,X11
+527,Firebrick2,EE2C2C,X11
+528,Firebrick3,CD2626,X11
+529,Firebrick4,8B1A1A,X11
+530,Brown1,FF4040,X11
+531,Brown2,EE3B3B,X11
+532,Brown3,CD3333,X11
+533,Brown4,8B2323,X11
+534,Salmon1,FF8C69,X11
+535,Salmon2,EE8262,X11
+536,Salmon3,CD7054,X11
+537,Salmon4,8B4C39,X11
+538,LightSalmon1,FFA07A,X11
+539,LightSalmon2,EE9572,X11
+540,LightSalmon3,CD8162,X11
+541,LightSalmon4,8B5742,X11
+542,Orange1,FFA500,X11
+543,Orange2,EE9A00,X11
+544,Orange3,CD8500,X11
+545,Orange4,8B5A00,X11
+546,DarkOrange1,FF7F00,X11
+547,DarkOrange2,EE7600,X11
+548,DarkOrange3,CD6600,X11
+549,DarkOrange4,8B4500,X11
+550,Coral1,FF7256,X11
+551,Coral2,EE6A50,X11
+552,Coral3,CD5B45,X11
+553,Coral4,8B3E2F,X11
+554,Tomato1,FF6347,X11
+555,Tomato2,EE5C42,X11
+556,Tomato3,CD4F39,X11
+557,Tomato4,8B3626,X11
+558,OrangeRed1,FF4500,X11
+559,OrangeRed2,EE4000,X11
+560,OrangeRed3,CD3700,X11
+561,OrangeRed4,8B2500,X11
+562,Red1,FF0000,X11
+563,Red2,EE0000,X11
+564,Red3,CD0000,X11
+565,Red4,8B0000,X11
+566,DeepPink1,FF1493,X11
+567,DeepPink2,EE1289,X11
+568,DeepPink3,CD1076,X11
+569,DeepPink4,8B0A50,X11
+570,HotPink1,FF6EB4,X11
+571,HotPink2,EE6AA7,X11
+572,HotPink3,CD6090,X11
+573,HotPink4,8B3A62,X11
+574,Pink1,FFB5C5,X11
+575,Pink2,EEA9B8,X11
+576,Pink3,CD919E,X11
+577,Pink4,8B636C,X11
+578,LightPink1,FFAEB9,X11
+579,LightPink2,EEA2AD,X11
+580,LightPink3,CD8C95,X11
+581,LightPink4,8B5F65,X11
+582,PaleVioletRed1,FF82AB,X11
+583,PaleVioletRed2,EE799F,X11
+584,PaleVioletRed3,CD6889,X11
+585,PaleVioletRed4,8B475D,X11
+586,Maroon1,FF34B3,X11
+587,Maroon2,EE30A7,X11
+588,Maroon3,CD2990,X11
+589,Maroon4,8B1C62,X11
+590,VioletRed1,FF3E96,X11
+591,VioletRed2,EE3A8C,X11
+592,VioletRed3,CD3278,X11
+593,VioletRed4,8B2252,X11
+594,Magenta1,FF00FF,X11
+595,Magenta2,EE00EE,X11
+596,Magenta3,CD00CD,X11
+597,Magenta4,8B008B,X11
+598,Orchid1,FF83FA,X11
+599,Orchid2,EE7AE9,X11
+600,Orchid3,CD69C9,X11
+601,Orchid4,8B4789,X11
+602,Plum1,FFBBFF,X11
+603,Plum2,EEAEEE,X11
+604,Plum3,CD96CD,X11
+605,Plum4,8B668B,X11
+606,MediumOrchid1,E066FF,X11
+607,MediumOrchid2,D15FEE,X11
+608,MediumOrchid3,B452CD,X11
+609,MediumOrchid4,7A378B,X11
+610,DarkOrchid1,BF3EFF,X11
+611,DarkOrchid2,B23AEE,X11
+612,DarkOrchid3,9A32CD,X11
+613,DarkOrchid4,68228B,X11
+614,Purple1,9B30FF,X11
+615,Purple2,912CEE,X11
+616,Purple3,7D26CD,X11
+617,Purple4,551A8B,X11
+618,MediumPurple1,AB82FF,X11
+619,MediumPurple2,9F79EE,X11
+620,MediumPurple3,8968CD,X11
+621,MediumPurple4,5D478B,X11
+622,Thistle1,FFE1FF,X11
+623,Thistle2,EED2EE,X11
+624,Thistle3,CDB5CD,X11
+625,Thistle4,8B7B8B,X11
+626,Gray0,000000,X11
+627,Grey0,000000,X11
+628,Gray1,030303,X11
+629,Grey1,030303,X11
+630,Gray2,050505,X11
+631,Grey2,050505,X11
+632,Gray3,080808,X11
+633,Grey3,080808,X11
+634,Gray4,0A0A0A,X11
+635,Grey4,0A0A0A,X11
+636,Gray5,0D0D0D,X11
+637,Grey5,0D0D0D,X11
+638,Gray6,0F0F0F,X11
+639,Grey6,0F0F0F,X11
+640,Gray7,121212,X11
+641,Grey7,121212,X11
+642,Gray8,141414,X11
+643,Grey8,141414,X11
+644,Gray9,171717,X11
+645,Grey9,171717,X11
+646,Gray10,1A1A1A,X11
+647,Grey10,1A1A1A,X11
+648,Gray11,1C1C1C,X11
+649,Grey11,1C1C1C,X11
+650,Gray12,1F1F1F,X11
+651,Grey12,1F1F1F,X11
+652,Gray13,212121,X11
+653,Grey13,212121,X11
+654,Gray14,242424,X11
+655,Grey14,242424,X11
+656,Gray15,262626,X11
+657,Grey15,262626,X11
+658,Gray16,292929,X11
+659,Grey16,292929,X11
+660,Gray17,2B2B2B,X11
+661,Grey17,2B2B2B,X11
+662,Gray18,2E2E2E,X11
+663,Grey18,2E2E2E,X11
+664,Gray19,303030,X11
+665,Grey19,303030,X11
+666,Gray20,333333,X11
+667,Grey20,333333,X11
+668,Gray21,363636,X11
+669,Grey21,363636,X11
+670,Gray22,383838,X11
+671,Grey22,383838,X11
+672,Gray23,3B3B3B,X11
+673,Grey23,3B3B3B,X11
+674,Gray24,3D3D3D,X11
+675,Grey24,3D3D3D,X11
+676,Gray25,404040,X11
+677,Grey25,404040,X11
+678,Gray26,424242,X11
+679,Grey26,424242,X11
+680,Gray27,454545,X11
+681,Grey27,454545,X11
+682,Gray28,474747,X11
+683,Grey28,474747,X11
+684,Gray29,4A4A4A,X11
+685,Grey29,4A4A4A,X11
+686,Gray30,4D4D4D,X11
+687,Grey30,4D4D4D,X11
+688,Gray31,4F4F4F,X11
+689,Grey31,4F4F4F,X11
+690,Gray32,525252,X11
+691,Grey32,525252,X11
+692,Gray33,545454,X11
+693,Grey33,545454,X11
+694,Gray34,575757,X11
+695,Grey34,575757,X11
+696,Gray35,595959,X11
+697,Grey35,595959,X11
+698,Gray36,5C5C5C,X11
+699,Grey36,5C5C5C,X11
+700,Gray37,5E5E5E,X11
+701,Grey37,5E5E5E,X11
+702,Gray38,616161,X11
+703,Grey38,616161,X11
+704,Gray39,636363,X11
+705,Grey39,636363,X11
+706,Gray40,666666,X11
+707,Grey40,666666,X11
+708,Gray41,696969,X11
+709,Grey41,696969,X11
+710,Gray42,6B6B6B,X11
+711,Grey42,6B6B6B,X11
+712,Gray43,6E6E6E,X11
+713,Grey43,6E6E6E,X11
+714,Gray44,707070,X11
+715,Grey44,707070,X11
+716,Gray45,737373,X11
+717,Grey45,737373,X11
+718,Gray46,757575,X11
+719,Grey46,757575,X11
+720,Gray47,787878,X11
+721,Grey47,787878,X11
+722,Gray48,7A7A7A,X11
+723,Grey48,7A7A7A,X11
+724,Gray49,7D7D7D,X11
+725,Grey49,7D7D7D,X11
+726,Gray50,7F7F7F,X11
+727,Grey50,7F7F7F,X11
+728,Gray51,828282,X11
+729,Grey51,828282,X11
+730,Gray52,858585,X11
+731,Grey52,858585,X11
+732,Gray53,878787,X11
+733,Grey53,878787,X11
+734,Gray54,8A8A8A,X11
+735,Grey54,8A8A8A,X11
+736,Gray55,8C8C8C,X11
+737,Grey55,8C8C8C,X11
+738,Gray56,8F8F8F,X11
+739,Grey56,8F8F8F,X11
+740,Gray57,919191,X11
+741,Grey57,919191,X11
+742,Gray58,949494,X11
+743,Grey58,949494,X11
+744,Gray59,969696,X11
+745,Grey59,969696,X11
+746,Gray60,999999,X11
+747,Grey60,999999,X11
+748,Gray61,9C9C9C,X11
+749,Grey61,9C9C9C,X11
+750,Gray62,9E9E9E,X11
+751,Grey62,9E9E9E,X11
+752,Gray63,A1A1A1,X11
+753,Grey63,A1A1A1,X11
+754,Gray64,A3A3A3,X11
+755,Grey64,A3A3A3,X11
+756,Gray65,A6A6A6,X11
+757,Grey65,A6A6A6,X11
+758,Gray66,A8A8A8,X11
+759,Grey66,A8A8A8,X11
+760,Gray67,ABABAB,X11
+761,Grey67,ABABAB,X11
+762,Gray68,ADADAD,X11
+763,Grey68,ADADAD,X11
+764,Gray69,B0B0B0,X11
+765,Grey69,B0B0B0,X11
+766,Gray70,B3B3B3,X11
+767,Grey70,B3B3B3,X11
+768,Gray71,B5B5B5,X11
+769,Grey71,B5B5B5,X11
+770,Gray72,B8B8B8,X11
+771,Grey72,B8B8B8,X11
+772,Gray73,BABABA,X11
+773,Grey73,BABABA,X11
+774,Gray74,BDBDBD,X11
+775,Grey74,BDBDBD,X11
+776,Gray75,BFBFBF,X11
+777,Grey75,BFBFBF,X11
+778,Gray76,C2C2C2,X11
+779,Grey76,C2C2C2,X11
+780,Gray77,C4C4C4,X11
+781,Grey77,C4C4C4,X11
+782,Gray78,C7C7C7,X11
+783,Grey78,C7C7C7,X11
+784,Gray79,C9C9C9,X11
+785,Grey79,C9C9C9,X11
+786,Gray80,CCCCCC,X11
+787,Grey80,CCCCCC,X11
+788,Gray81,CFCFCF,X11
+789,Grey81,CFCFCF,X11
+790,Gray82,D1D1D1,X11
+791,Grey82,D1D1D1,X11
+792,Gray83,D4D4D4,X11
+793,Grey83,D4D4D4,X11
+794,Gray84,D6D6D6,X11
+795,Grey84,D6D6D6,X11
+796,Gray85,D9D9D9,X11
+797,Grey85,D9D9D9,X11
+798,Gray86,DBDBDB,X11
+799,Grey86,DBDBDB,X11
+800,Gray87,DEDEDE,X11
+801,Grey87,DEDEDE,X11
+802,Gray88,E0E0E0,X11
+803,Grey88,E0E0E0,X11
+804,Gray89,E3E3E3,X11
+805,Grey89,E3E3E3,X11
+806,Gray90,E5E5E5,X11
+807,Grey90,E5E5E5,X11
+808,Gray91,E8E8E8,X11
+809,Grey91,E8E8E8,X11
+810,Gray92,EBEBEB,X11
+811,Grey92,EBEBEB,X11
+812,Gray93,EDEDED,X11
+813,Grey93,EDEDED,X11
+814,Gray94,F0F0F0,X11
+815,Grey94,F0F0F0,X11
+816,Gray95,F2F2F2,X11
+817,Grey95,F2F2F2,X11
+818,Gray96,F5F5F5,X11
+819,Grey96,F5F5F5,X11
+820,Gray97,F7F7F7,X11
+821,Grey97,F7F7F7,X11
+822,Gray98,FAFAFA,X11
+823,Grey98,FAFAFA,X11
+824,Gray99,FCFCFC,X11
+825,Grey99,FCFCFC,X11
+826,Gray100,FFFFFF,X11
+827,Grey100,FFFFFF,X11
+828,DarkGrey,A9A9A9,X11
+829,DarkGray,A9A9A9,X11
+830,DarkBlue,00008B,X11
+831,DarkCyan,008B8B,X11
+832,DarkMagenta,8B008B,X11
+833,DarkRed,8B0000,X11
+834,LightGreen,90EE90,X11
+835,White,FFFFFF,Netscape
+836,Ivory,FFFFF0,Netscape
+837,Ivory1,FFFFF0,Netscape
+838,LightYellow,FFFFE0,Netscape
+839,LightYellow1,FFFFE0,Netscape
+840,Yellow,FFFF00,Netscape
+841,Yellow1,FFFF00,Netscape
+842,Snow,FFFAFA,Netscape
+843,Snow1,FFFAFA,Netscape
+844,FloralWhite,FFFAF0,Netscape
+845,LemonChiffon,FFFACD,Netscape
+846,LemonChiffon1,FFFACD,Netscape
+847,Cornsilk,FFF8DC,Netscape
+848,Cornsilk1,FFF8DC,Netscape
+849,Khaki1,FFF68F,Netscape
+850,Seashell,FFF5EE,Netscape
+851,Seashell1,FFF5EE,Netscape
+852,LavenderBlush,FFF0F5,Netscape
+853,LavenderBlush1,FFF0F5,Netscape
+854,AntiqueWhite1,FFEFDB,Netscape
+855,PapayaWhip,FFEFD5,Netscape
+856,LightGoldenrod1,FFEC8B,Netscape
+857,BlanchedAlmond,FFEBCD,Netscape
+858,Wheat1,FFE7BA,Netscape
+859,MistyRose,FFE4E1,Netscape
+860,MistyRose1,FFE4E1,Netscape
+861,Bisque,FFE4C4,Netscape
+862,Bisque1,FFE4C4,Netscape
+863,Moccasin,FFE4B5,Netscape
+864,Thistle1,FFE1FF,Netscape
+865,NavajoWhite,FFDEAD,Netscape
+866,NavajoWhite1,FFDEAD,Netscape
+867,PeachPuff,FFDAB9,Netscape
+868,PeachPuff1,FFDAB9,Netscape
+869,Gold,FFD700,Netscape
+870,Gold1,FFD700,Netscape
+871,Burlywood1,FFD39B,Netscape
+872,RosyBrown1,FFC1C1,Netscape
+873,Goldenrod1,FFC125,Netscape
+874,Pink,FFC0CB,Netscape
+875,Plum1,FFBBFF,Netscape
+876,DarkGoldenrod1,FFB90F,Netscape
+877,LightPink,FFB6C1,Netscape
+878,Pink1,FFB5C5,Netscape
+879,LightPink1,FFAEB9,Netscape
+880,Tan1,FFA54F,Netscape
+881,Orange,FFA500,Netscape
+882,Orange1,FFA500,Netscape
+883,LightSalmon,FFA07A,Netscape
+884,LightSalmon1,FFA07A,Netscape
+885,Salmon1,FF8C69,Netscape
+886,DarkOrange,FF8C00,Netscape
+887,Orchid1,FF83FA,Netscape
+888,PaleVioletRed1,FF82AB,Netscape
+889,Sienna1,FF8247,Netscape
+890,Coral,FF7F50,Netscape
+891,Chocolate1,FF7F24,Netscape
+892,DarkOrange1,FF7F00,Netscape
+893,Coral1,FF7256,Netscape
+894,HotPink1,FF6EB4,Netscape
+895,IndianRed1,FF6A6A,Netscape
+896,HotPink,FF69B4,Netscape
+897,Tomato,FF6347,Netscape
+898,Tomato1,FF6347,Netscape
+899,Black,000000,Encycolorpedia
+900,Smoky black,100C08,Encycolorpedia
+901,Navy blue,000080,Encycolorpedia
+902,Dark blue,00008B,Encycolorpedia
+903,Duke blue,00009C,Encycolorpedia
+904,Licorice,1A1110,Encycolorpedia
+905,Medium blue,0000CD,Encycolorpedia
+906,Phthalo blue,000F89,Encycolorpedia
+907,Black bean,3D0C02,Encycolorpedia
+908,Bulgarian rose,480607,Encycolorpedia
+909,Zinnwaldite brown,2C1608,Encycolorpedia
+910,Oxford Blue,002147,Encycolorpedia
+911,Ultramarine,120A8F,Encycolorpedia
+912,Seal brown,321414,Encycolorpedia
+913,Blue,0000FF,Encycolorpedia
+914,Dark scarlet,560319,Encycolorpedia
+915,Zaffre,0014A8,Encycolorpedia
+916,Rosewood,65000B,Encycolorpedia
+917,Dark sienna,3C1414,Encycolorpedia
+918,Royal blue (traditional),002366,Encycolorpedia
+919,Dark jungle green,1A2421,Encycolorpedia
+920,Dark green,013220,Encycolorpedia
+921,Midnight blue,191970,Encycolorpedia
+922,Resolution blue,002387,Encycolorpedia
+923,Indigo,4B0082,Encycolorpedia
+924,Imperial blue,002395,Encycolorpedia
+925,Prussian blue,003153,Encycolorpedia
+926,Maroon,800000,Encycolorpedia
+927,Cool black,002E63,Encycolorpedia
+928,Tyrian purple,66023C,Encycolorpedia
+929,Yankees blue,1C2841,Encycolorpedia
+930,Persian indigo,32127A,Encycolorpedia
+931,Catalina blue,062A78,Encycolorpedia
+932,Phthalo green,123524,Encycolorpedia
+933,Charleston green,232B2B,Encycolorpedia
+934,Dark red,8B0000,Encycolorpedia
+935,Dark midnight blue,003366,Encycolorpedia
+936,Burgundy,800020,Encycolorpedia
+937,Space cadet,1D2951,Encycolorpedia
+938,Red devil,860111,Encycolorpedia
+939,British racing green,004225,Encycolorpedia
+940,Barn red,7C0A02,Encycolorpedia
+941,Forest green (traditional),014421,Encycolorpedia
+942,UP Forest green,014421,Encycolorpedia
+943,Air Force blue (USAF),00308F,Encycolorpedia
+944,Medium jungle green,1C352D,Encycolorpedia
+945,Sangria,92000A,Encycolorpedia
+946,Rich black,004040,Encycolorpedia
+947,OU Crimson Red,990000,Encycolorpedia
+948,Stizza,990000,Encycolorpedia
+949,USC Cardinal,990000,Encycolorpedia
+950,Warm black,004242,Encycolorpedia
+951,International Klein Blue,002FA7,Encycolorpedia
+952,Black leather jacket,253529,Encycolorpedia
+953,Bistre,3D2B1F,Encycolorpedia
+954,Dark powder blue,003399,Encycolorpedia
+955,Smalt,003399,Encycolorpedia
+956,Carmine,960018,Encycolorpedia
+957,Electric ultramarine,3F00FF,Encycolorpedia
+958,St. Patrick's blue,23297A,Encycolorpedia
+959,UP Maroon,7B1113,Encycolorpedia
+960,Dark candy apple red,A40000,Encycolorpedia
+961,UA blue,0033AA,Encycolorpedia
+962,Dark imperial blue,00416A,Encycolorpedia
+963,Indigo (dye),00416A,Encycolorpedia
+964,Olive Drab #7,3C341F,Encycolorpedia
+965,Jet,343434,Encycolorpedia
+966,Royal azure,0038A8,Encycolorpedia
+967,Myrtle,21421E,Encycolorpedia
+968,Bluebonnet,1C1CF0,Encycolorpedia
+969,Midnight green (eagle green),004953,Encycolorpedia
+970,Deep jungle green,004B49,Encycolorpedia
+971,Patriarch,800080,Encycolorpedia
+972,Purple,800080,Encycolorpedia
+973,Persian plum,701C1C,Encycolorpedia
+974,Prune,701C1C,Encycolorpedia
+975,Caput mortuum,592720,Encycolorpedia
+976,Old burgundy,43302E,Encycolorpedia
+977,Kenyan copper,7C1C05,Encycolorpedia
+978,Egyptian blue,1034A6,Encycolorpedia
+979,MSU Green,18453B,Encycolorpedia
+980,Falu red,801818,Encycolorpedia
+981,Onyx,353839,Encycolorpedia
+982,Diamond,7D1242,Encycolorpedia
+983,Mardi Gras,880085,Encycolorpedia
+984,Dark cerulean,08457E,Encycolorpedia
+985,Claret,7F1734,Encycolorpedia
+986,Dark magenta,8B008B,Encycolorpedia
+987,Castleton green,00563F,Encycolorpedia
+988,Sacramento State green,00563F,Encycolorpedia
+989,Café noir,4B3621,Encycolorpedia
+990,Pansy purple,78184A,Encycolorpedia
+991,Black olive,3B3C36,Encycolorpedia
+992,Mordant red 19,AE0C00,Encycolorpedia
+993,Cal Poly green,1E4D2B,Encycolorpedia
+994,Ruby red,9B111E,Encycolorpedia
+995,Pakistan green,006600,Encycolorpedia
+996,Lincoln green,195905,Encycolorpedia
+997,Brunswick green,1B4D3E,Encycolorpedia
+998,English green,1B4D3E,Encycolorpedia
+999,Antique ruby,841B2D,Encycolorpedia
+1000,Violet (RYB),8601AF,Encycolorpedia
+1001,Boston University Red,CC0000,Encycolorpedia
+1002,Cobalt,0047AB,Encycolorpedia
+1003,Electric indigo,6F00FF,Encycolorpedia
+1004,Indigo,6F00FF,Encycolorpedia
+1005,Dark lava,483C32,Encycolorpedia
+1006,Dark taupe,483C32,Encycolorpedia
+1007,Taupe,483C32,Encycolorpedia
+1008,Crimson glory,BE0032,Encycolorpedia
+1009,Harvard crimson,C90016,Encycolorpedia
+1010,OrangeRed,FF4500,Netscape
+1011,OrangeRed1,FF4500,Netscape
+1012,Brown1,FF4040,Netscape
+1013,VioletRed1,FF3E96,Netscape
+1014,Maroon1,FF34B3,Netscape
+1015,Firebrick1,FF3030,Netscape
+1016,DeepPink,FF1493,Netscape
+1017,DeepPink1,FF1493,Netscape
+1018,Magenta,FF00FF,Netscape
+1019,Magenta1,FF00FF,Netscape
+1020,Red,FF0000,Netscape
+1021,Red1,FF0000,Netscape
+1022,OldLace,FDF5E6,Netscape
+1023,LtGoldenrodYello,FAFAD2,Netscape
+1024,Linen,FAF0E6,Netscape
+1025,AntiqueWhite,FAEBD7,Netscape
+1026,Salmon,FA8072,Netscape
+1027,GhostWhite,F8F8FF,Netscape
+1028,MintCream,F5FFFA,Netscape
+1029,WhiteSmoke,F5F5F5,Netscape
+1030,Beige,F5F5DC,Netscape
+1031,Wheat,F5DEB3,Netscape
+1032,SandyBrown,F4A460,Netscape
+1033,Azure,F0FFFF,Netscape
+1034,Azure1,F0FFFF,Netscape
+1035,Honeydew,F0FFF0,Netscape
+1036,Honeydew1,F0FFF0,Netscape
+1037,AliceBlue,F0F8FF,Netscape
+1038,LightCoral,F08080,Netscape
+1039,Ivory2,EEEEE0,Netscape
+1040,LightYellow2,EEEED1,Netscape
+1041,Yellow2,EEEE00,Netscape
+1042,Snow2,EEE9E9,Netscape
+1043,LemonChiffon2,EEE9BF,Netscape
+1044,Cornsilk2,EEE8CD,Netscape
+1045,PaleGoldenrod,EEE8AA,Netscape
+1046,Khaki2,EEE685,Netscape
+1047,Seashell2,EEE5DE,Netscape
+1048,LavenderBlush2,EEE0E5,Netscape
+1049,AntiqueWhite2,EEDFCC,Netscape
+1050,LightGoldenrod,EEDD82,Netscape
+1051,LightGoldenrod2,EEDC82,Netscape
+1052,Wheat2,EED8AE,Netscape
+1053,MistyRose2,EED5D2,Netscape
+1054,Bisque2,EED5B7,Netscape
+1055,Thistle2,EED2EE,Netscape
+1056,NavajoWhite2,EECFA1,Netscape
+1057,PeachPuff2,EECBAD,Netscape
+1058,Gold2,EEC900,Netscape
+1059,Burlywood2,EEC591,Netscape
+1060,RosyBrown2,EEB4B4,Netscape
+1061,Goldenrod2,EEB422,Netscape
+1062,Plum2,EEAEEE,Netscape
+1063,DarkGoldenrod2,EEAD0E,Netscape
+1064,Pink2,EEA9B8,Netscape
+1065,LightPink2,EEA2AD,Netscape
+1066,Tan2,EE9A49,Netscape
+1067,Orange2,EE9A00,Netscape
+1068,LightSalmon2,EE9572,Netscape
+1069,Violet,EE82EE,Netscape
+1070,Salmon2,EE8262,Netscape
+1071,Orchid2,EE7AE9,Netscape
+1072,PaleVioletRed2,EE799F,Netscape
+1073,Sienna2,EE7942,Netscape
+1074,Chocolate2,EE7621,Netscape
+1075,DarkOrange2,EE7600,Netscape
+1076,HotPink2,EE6AA7,Netscape
+1077,Coral2,EE6A50,Netscape
+1078,IndianRed2,EE6363,Netscape
+1079,Tomato2,EE5C42,Netscape
+1080,OrangeRed2,EE4000,Netscape
+1081,Brown2,EE3B3B,Netscape
+1082,VioletRed2,EE3A8C,Netscape
+1083,Maroon2,EE30A7,Netscape
+1084,Firebrick2,EE2C2C,Netscape
+1085,DeepPink2,EE1289,Netscape
+1086,Magenta2,EE00EE,Netscape
+1087,Red2,EE0000,Netscape
+1088,DarkSalmon,E9967A,Netscape
+1089,Gray91,E8E8E8,Netscape
+1090,Lavender,E6E6FA,Netscape
+1091,LightCyan,E0FFFF,Netscape
+1092,LightCyan1,E0FFFF,Netscape
+1093,Azure2,E0EEEE,Netscape
+1094,Honeydew2,E0EEE0,Netscape
+1095,MediumOrchid1,E066FF,Netscape
+1096,Burlywood,DEB887,Netscape
+1097,Plum,DDA0DD,Netscape
+1098,Gainsboro,DCDCDC,Netscape
+1099,PaleVioletRed,DB7093,Netscape
+1100,Goldenrod,DAA520,Netscape
+1101,Orchid,DA70D6,Netscape
+1102,Thistle,D8BFD8,Netscape
+1103,LightGray,D3D3D3,Netscape
+1104,Tan,D2B48C,Netscape
+1105,Chocolate,D2691E,Netscape
+1106,LightCyan2,D1EEEE,Netscape
+1107,MediumOrchid2,D15FEE,Netscape
+1108,VioletRed,D02090,Netscape
+1109,Gray81,CFCFCF,Netscape
+1110,Ivory3,CDCDC1,Netscape
+1111,LightYellow3,CDCDB4,Netscape
+1112,Yellow3,CDCD00,Netscape
+1113,Snow3,CDC9C9,Netscape
+1114,LemonChiffon3,CDC9A5,Netscape
+1115,Cornsilk3,CDC8B1,Netscape
+1116,Khaki3,CDC673,Netscape
+1117,Seashell3,CDC5BF,Netscape
+1118,LavenderBlush3,CDC1C5,Netscape
+1119,AntiqueWhite3,CDC0B0,Netscape
+1120,LightGoldenrod3,CDBE70,Netscape
+1121,Wheat3,CDBA96,Netscape
+1122,MistyRose3,CDB7B5,Netscape
+1123,Bisque3,CDB79E,Netscape
+1124,Thistle3,CDB5CD,Netscape
+1125,NavajoWhite3,CDB38B,Netscape
+1126,PeachPuff3,CDAF95,Netscape
+1127,Gold3,CDAD00,Netscape
+1128,Burlywood3,CDAA7D,Netscape
+1129,RosyBrown3,CD9B9B,Netscape
+1130,Goldenrod3,CD9B1D,Netscape
+1131,Plum3,CD96CD,Netscape
+1132,DarkGoldenrod3,CD950C,Netscape
+1133,Pink3,CD919E,Netscape
+1134,LightPink3,CD8C95,Netscape
+1135,Peru,CD853F,Netscape
+1136,Tan3,CD853F,Netscape
+1137,Orange3,CD8500,Netscape
+1138,LightSalmon3,CD8162,Netscape
+1139,Salmon3,CD7054,Netscape
+1140,Orchid3,CD69C9,Netscape
+1141,PaleVioletRed3,CD6889,Netscape
+1142,Sienna3,CD6839,Netscape
+1143,Chocolate3,CD661D,Netscape
+1144,DarkOrange3,CD6600,Netscape
+1145,HotPink3,CD6090,Netscape
+1146,IndianRed,CD5C5C,Netscape
+1147,Coral3,CD5B45,Netscape
+1148,IndianRed3,CD5555,Netscape
+1149,Tomato3,CD4F39,Netscape
+1150,OrangeRed3,CD3700,Netscape
+1151,Brown3,CD3333,Netscape
+1152,VioletRed3,CD3278,Netscape
+1153,Maroon3,CD2990,Netscape
+1154,Firebrick3,CD2626,Netscape
+1155,DeepPink3,CD1076,Netscape
+1156,Magenta3,CD00CD,Netscape
+1157,Red3,CD0000,Netscape
+1158,DarkOliveGreen1,CAFF70,Netscape
+1159,LightSteelBlue1,CAE1FF,Netscape
+1160,MediumVioletRed,C71585,Netscape
+1161,SlateGray1,C6E2FF,Netscape
+1162,DarkSeaGreen1,C1FFC1,Netscape
+1163,Azure3,C1CDCD,Netscape
+1164,Honeydew3,C1CDC1,Netscape
+1165,OliveDrab1,C0FF3E,Netscape
+1166,LightBlue1,BFEFFF,Netscape
+1167,DarkOrchid1,BF3EFF,Netscape
+1168,Grey,BEBEBE,Netscape
+1169,DarkKhaki,BDB76B,Netscape
+1170,DarkOliveGreen2,BCEE68,Netscape
+1171,LightSteelBlue2,BCD2EE,Netscape
+1172,RosyBrown,BC8F8F,Netscape
+1173,PaleTurquoise1,BBFFFF,Netscape
+1174,MediumOrchid,BA55D3,Netscape
+1175,SlateGray2,B9D3EE,Netscape
+1176,DarkGoldenrod,B8860B,Netscape
+1177,Grey71,B5B5B5,Netscape
+1178,DarkSeaGreen2,B4EEB4,Netscape
+1179,LightCyan3,B4CDCD,Netscape
+1180,MediumOrchid3,B452CD,Netscape
+1181,OliveDrab2,B3EE3A,Netscape
+1182,LightBlue2,B2DFEE,Netscape
+1183,DarkOrchid2,B23AEE,Netscape
+1184,Firebrick,B22222,Netscape
+1185,LightSkyBlue1,B0E2FF,Netscape
+1186,PowderBlue,B0E0E6,Netscape
+1187,LightSteelBlue,B0C4DE,Netscape
+1188,Maroon,B03060,Netscape
+1189,PaleTurquoise,AFEEEE,Netscape
+1190,PaleTurquoise2,AEEEEE,Netscape
+1191,GreenYellow,ADFF2F,Netscape
+1192,LightBlue,ADD8E6,Netscape
+1193,MediumPurple1,AB82FF,Netscape
+1194,DarkGrey,A9A9A9,Netscape
+1195,Brown,A52A2A,Netscape
+1196,LightSkyBlue2,A4D3EE,Netscape
+1197,DarkOliveGreen3,A2CD5A,Netscape
+1198,LightSteelBlue3,A2B5CD,Netscape
+1199,Sienna,A0522D,Netscape
+1200,Purple,A020F0,Netscape
+1201,SlateGray3,9FB6CD,Netscape
+1202,MediumPurple2,9F79EE,Netscape
+1203,Grey61,9C9C9C,Netscape
+1204,DarkSeaGreen3,9BCD9B,Netscape
+1205,Purple1,9B30FF,Netscape
+1206,PaleGreen1,9AFF9A,Netscape
+1207,YellowGreen,9ACD32,Netscape
+1208,OliveDrab3,9ACD32,Netscape
+1209,LightBlue3,9AC0CD,Netscape
+1210,DarkOrchid3,9A32CD,Netscape
+1211,DarkOrchid,9932CC,Netscape
+1212,PaleGreen,98FB98,Netscape
+1213,CadetBlue1,98F5FF,Netscape
+1214,DarkSlateGray1,97FFFF,Netscape
+1215,PaleTurquoise3,96CDCD,Netscape
+1216,DarkViolet,9400D3,Netscape
+1217,MediumPurple,9370DB,Netscape
+1218,Purple2,912CEE,Netscape
+1219,PaleGreen2,90EE90,Netscape
+1220,LightGreen,90EE90,Netscape
+1221,DarkSeaGreen,8FBC8F,Netscape
+1222,CadetBlue2,8EE5EE,Netscape
+1223,DarkSlateGray2,8DEEEE,Netscape
+1224,LightSkyBlue3,8DB6CD,Netscape
+1225,Ivory4,8B8B83,Netscape
+1226,LightYellow4,8B8B7A,Netscape
+1227,Yellow4,8B8B00,Netscape
+1228,Snow4,8B8989,Netscape
+1229,LemonChiffon4,8B8970,Netscape
+1230,Cornsilk4,8B8878,Netscape
+1231,Seashell4,8B8682,Netscape
+1232,Khaki4,8B864E,Netscape
+1233,LavenderBlush4,8B8386,Netscape
+1234,AntiqueWhite4,8B8378,Netscape
+1235,LightGoldenrod4,8B814C,Netscape
+1236,Wheat4,8B7E66,Netscape
+1237,MistyRose4,8B7D7B,Netscape
+1238,Bisque4,8B7D6B,Netscape
+1239,Thistle4,8B7B8B,Netscape
+1240,NavajoWhite4,8B795E,Netscape
+1241,PeachPuff4,8B7765,Netscape
+1242,Gold4,8B7500,Netscape
+1243,Burlywood4,8B7355,Netscape
+1244,RosyBrown4,8B6969,Netscape
+1245,Goldenrod4,8B6914,Netscape
+1246,Plum4,8B668B,Netscape
+1247,DarkGoldenrod4,8B658B,Netscape
+1248,Pink4,8B636C,Netscape
+1249,LightPink4,8B5F65,Netscape
+1250,Tan4,8B5A2B,Netscape
+1251,Orange4,8B5A00,Netscape
+1252,LightSalmon4,8B5742,Netscape
+1253,Salmon4,8B4C39,Netscape
+1254,Orchid4,8B4789,Netscape
+1255,PaleVioletRed4,8B475D,Netscape
+1256,Sienna4,8B4726,Netscape
+1257,SaddleBrown,8B4513,Netscape
+1258,Chocolate4,8B4513,Netscape
+1259,DarkOrange4,8B4500,Netscape
+1260,Coral4,8B3E2F,Netscape
+1261,HotPink4,8B3A62,Netscape
+1262,IndianRed4,8B3A3A,Netscape
+1263,Tomato4,8B3626,Netscape
+1264,OrangeRed4,8B2500,Netscape
+1265,Brown4,8B2323,Netscape
+1266,VioletRed4,8B2252,Netscape
+1267,Maroon4,8B1C62,Netscape
+1268,Firebrick4,8B1A1A,Netscape
+1269,DeepPink4,8B0A50,Netscape
+1270,Magenta4,8B008B,Netscape
+1271,DarkMagenta,8B008B,Netscape
+1272,Red4,8B0000,Netscape
+1273,DarkRed,8B0000,Netscape
+1274,BlueViolet,8A2BE2,Netscape
+1275,MediumPurple3,8968CD,Netscape
+1276,SkyBlue1,87CEFF,Netscape
+1277,LightSkyBlue,87CEFA,Netscape
+1278,SkyBlue,87CEEB,Netscape
+1279,LightSlateBlue,8470FF,Netscape
+1280,Azure4,838B8B,Netscape
+1281,Honeydew4,838B83,Netscape
+1282,SlateBlue1,836FFF,Netscape
+1283,Grey51,828282,Netscape
+1284,Aquamarine,7FFFD4,Netscape
+1285,Aquamarine1,7FFFD4,Netscape
+1286,Chartreuse,7FFF00,Netscape
+1287,Chartreuse1,7FFF00,Netscape
+1288,SkyBlue2,7EC0EE,Netscape
+1289,Purple3,7D26CD,Netscape
+1290,LawnGreen,7CFC00,Netscape
+1291,PaleGreen3,7CCD7C,Netscape
+1292,MediumSlateBlue,7B68EE,Netscape
+1293,CadetBlue3,7AC5CD,Netscape
+1294,LightCyan4,7A8B8B,Netscape
+1295,SlateBlue2,7A67EE,Netscape
+1296,MediumOrchid4,7A378B,Netscape
+1297,DarkSlateGray3,79CDCD,Netscape
+1298,LightSlateGray,778899,Netscape
+1299,Aquamarine2,76EEC6,Netscape
+1300,Chartreuse2,76EE00,Netscape
+1301,SlateGrey,708090,Netscape
+1302,DarkOliveGreen4,6E8B3D,Netscape
+1303,LightSteelBlue4,6E7B8B,Netscape
+1304,SkyBlue3,6CA6CD,Netscape
+1305,SlateGray4,6C7B8B,Netscape
+1306,OliveDrab,6B8E23,Netscape
+1307,SlateBlue,6A5ACD,Netscape
+1308,DarkSeaGreen4,698B69,Netscape
+1309,OliveDrab4,698B22,Netscape
+1310,DimGrey,696969,Netscape
+1311,Grey41,696969,Netscape
+1312,SlateBlue3,6959CD,Netscape
+1313,LightBlue4,68838B,Netscape
+1314,DarkOrchid4,68228B,Netscape
+1315,MediumAquamarine,66CDAA,Netscape
+1316,Aquamarine3,66CDAA,Netscape
+1317,Chartreuse3,66CD00,Netscape
+1318,PaleTurquoise4,668B8B,Netscape
+1319,CornflowerBlue,6495ED,Netscape
+1320,SteelBlue1,63B8FF,Netscape
+1321,LightSkyBlue4,607B8B,Netscape
+1322,CadetBlue,5F9EA0,Netscape
+1323,MediumPurple4,5D478B,Netscape
+1324,SteelBlue2,5CACEE,Netscape
+1325,DarkOliveGreen,556B2F,Netscape
+1326,Purple4,551A8B,Netscape
+1327,SeaGreen1,54FF9F,Netscape
+1328,PaleGreen4,548B54,Netscape
+1329,CadetBlue4,53868B,Netscape
+1330,DarkSlateGray4,528B8B,Netscape
+1331,SteelBlue3,4F94CD,Netscape
+1332,Grey31,4F4F4F,Netscape
+1333,SeaGreen2,4EEE94,Netscape
+1334,SkyBlue4,4A708B,Netscape
+1335,MediumTurquoise,48D1CC,Netscape
+1336,RoyalBlue1,4876FF,Netscape
+1337,DarkSlateBlue,483D8B,Netscape
+1338,SlateBlue4,473C8B,Netscape
+1339,SteelBlue,4682B4,Netscape
+1340,Aquamarine4,458B74,Netscape
+1341,Chartreuse4,458B00,Netscape
+1342,SeaGreen3,43CD80,Netscape
+1343,RoyalBlue2,436EEE,Netscape
+1344,RoyalBlue,4169E1,Netscape
+1345,Turquoise,40E0D0,Netscape
+1346,MediumSeaGreen,3CB371,Netscape
+1347,RoyalBlue3,3A5FCD,Netscape
+1348,SteelBlue4,36648B,Netscape
+1349,Grey21,363636,Netscape
+1350,LimeGreen,32CD32,Netscape
+1351,DarkSlateGray,2F4F4F,Netscape
+1352,SeaGreen,2E8B57,Netscape
+1353,SeaGreen4,2E8B57,Netscape
+1354,RoyalBlue4,27408B,Netscape
+1355,ForestGreen,228B22,Netscape
+1356,LightSeaGreen,20B2AA,Netscape
+1357,DodgerBlue,1E90FF,Netscape
+1358,DodgerBlue1,1E90FF,Netscape
+1359,DodgerBlue2,1C86EE,Netscape
+1360,Grey11,1C1C1C,Netscape
+1361,MidnightBlue,191970,Netscape
+1362,DodgerBlue3,1874CD,Netscape
+1363,DodgerBlue4,104E8B,Netscape
+1364,Cyan,00FFFF,Netscape
+1365,Cyan1,00FFFF,Netscape
+1366,SpringGreen,00FF7F,Netscape
+1367,SpringGreen1,00FF7F,Netscape
+1368,Green,00FF00,Netscape
+1369,Green1,00FF00,Netscape
+1370,MedSpringGreen,00FA9A,Netscape
+1371,Turquoise1,00F5FF,Netscape
+1372,Cyan2,00EEEE,Netscape
+1373,SpringGreen2,00EE76,Netscape
+1374,Green2,00EE00,Netscape
+1375,Turquoise2,00E5EE,Netscape
+1376,DarkTurquoise,00CED1,Netscape
+1377,Cyan3,00CDCD,Netscape
+1378,SpringGreen3,00CD66,Netscape
+1379,Green3,00CD00,Netscape
+1380,Turquoise3,00C5CD,Netscape
+1381,DeepSkyBlue,00BFFF,Netscape
+1382,DeepSkyBlue1,00BFFF,Netscape
+1383,DeepSkyBlue2,00B2EE,Netscape
+1384,DeepSkyBlue3,009ACD,Netscape
+1385,Cyan4,008B8B,Netscape
+1386,DarkCyan,008B8B,Netscape
+1387,SpringGreen4,008B45,Netscape
+1388,Green4,008B00,Netscape
+1389,Turquoise4,00868B,Netscape
+1390,DeepSkyBlue4,00688B,Netscape
+1391,DarkGreen,006400,Netscape
+1392,Blue,0000FF,Netscape
+1393,Blue1,0000FF,Netscape
+1394,Blue2,0000EE,Netscape
+1395,MediumBlue,0000CD,Netscape
+1396,Blue3,0000CD,Netscape
+1397,Blue4,00008B,Netscape
+1398,DarkBlue,00008B,Netscape
+1399,NavyBlue,000080,Netscape
+1400,Black,000000,Netscape
+1401,Blue (pigment),333399,Encycolorpedia
+1402,Persian blue,1C39BB,Encycolorpedia
+1403,Rosso corsa,D40000,Encycolorpedia
+1404,USAFA blue,004F98,Encycolorpedia
+1405,Medium electric blue,035096,Encycolorpedia
+1406,Palatinate purple,682860,Encycolorpedia
+1407,Regalia,522D80,Encycolorpedia
+1408,Red (NCS),C40233,Encycolorpedia
+1409,Charcoal,36454F,Encycolorpedia
+1410,Arsenic,3B444B,Encycolorpedia
+1411,Yale Blue,0F4D92,Encycolorpedia
+1412,Jazzberry jam,A50B5E,Encycolorpedia
+1413,Venetian red,C80815,Encycolorpedia
+1414,Violet,7F00FF,Encycolorpedia
+1415,Han purple,5218FA,Encycolorpedia
+1416,Rufous,A81C07,Encycolorpedia
+1417,Rifle green,414833,Encycolorpedia
+1418,Old mauve,673147,Encycolorpedia
+1419,Wine dregs,673147,Encycolorpedia
+1420,Wine,722F37,Encycolorpedia
+1421,Dark violet,9400D3,Encycolorpedia
+1422,Imperial,602F6B,Encycolorpedia
+1423,Byzantium,702963,Encycolorpedia
+1424,Dark slate gray,2F4F4F,Encycolorpedia
+1425,Cadmium green,006B3C,Encycolorpedia
+1426,Kobe,882D17,Encycolorpedia
+1427,Sienna,882D17,Encycolorpedia
+1428,International orange (engineering),BA160C,Encycolorpedia
+1429,Purple (Munsell),9F00C5,Encycolorpedia
+1430,Purple taupe,50404D,Encycolorpedia
+1431,Utah Crimson,D3003F,Encycolorpedia
+1432,Spanish carmine,D10047,Encycolorpedia
+1433,Vivid burgundy,9F1D35,Encycolorpedia
+1434,Vivid auburn,922724,Encycolorpedia
+1435,Dark byzantium,5D3954,Encycolorpedia
+1436,KU Crimson,E8000D,Encycolorpedia
+1437,Bottle green,006A4E,Encycolorpedia
+1438,Blue (RYB),0247FE,Encycolorpedia
+1439,Outer Space,414A4C,Encycolorpedia
+1440,Carmine (M&P),D70040,Encycolorpedia
+1441,Rich carmine,D70040,Encycolorpedia
+1442,Cadmium red,E30022,Encycolorpedia
+1443,Electric violet,8F00FF,Encycolorpedia
+1444,Violet,8F00FF,Encycolorpedia
+1445,Palatinate blue,273BE2,Encycolorpedia
+1446,Rubine red,D10056,Encycolorpedia
+1447,Carnelian,B31B1B,Encycolorpedia
+1448,Cornell Red,B31B1B,Encycolorpedia
+1449,Dartmouth green,00703C,Encycolorpedia
+1450,Dark raspberry,872657,Encycolorpedia
+1451,Halayá úbe,663854,Encycolorpedia
+1452,Dark slate blue,483D8B,Encycolorpedia
+1453,Dark brown,654321,Encycolorpedia
+1454,Otter brown,654321,Encycolorpedia
+1455,UA red,D9004C,Encycolorpedia
+1456,Pictorial carmine,C30B4E,Encycolorpedia
+1457,Chocolate (traditional),7B3F00,Encycolorpedia
+1458,Sapphire,0F52BA,Encycolorpedia
+1459,Sepia,704214,Encycolorpedia
+1460,Army green,4B5320,Encycolorpedia
+1461,Lava,CF1020,Encycolorpedia
+1462,Ao,008000,Encycolorpedia
+1463,Green,654321,Encycolorpedia
+1464,Office green,654321,Encycolorpedia
+1465,Burnt umber,8A3324,Encycolorpedia
+1466,Upsdell red,AE2029,Encycolorpedia
+1467,Quartz,51484F,Encycolorpedia
+1468,Eggplant,614051,Encycolorpedia
+1469,Big dip o'ruby,9C2542,Encycolorpedia
+1470,Brown-nose,6B4423,Encycolorpedia
+1471,Flattery,6B4423,Encycolorpedia
+1472,Medium candy apple red,E2062C,Encycolorpedia
+1473,Red,FF0000,Encycolorpedia
+1474,Deep carmine,A9203E,Encycolorpedia
+1475,Vivid violet,9F00FF,Encycolorpedia
+1476,French wine,AC1E44,Encycolorpedia
+1477,Blue sapphire,126180,Encycolorpedia
+1478,Firebrick,B22222,Encycolorpedia
+1479,Alabama Crimson,A32638,Encycolorpedia
+1480,Hunter green,355E3B,Encycolorpedia
+1481,Liver,534B4F,Encycolorpedia
+1482,Deep Tuscan red,66424D,Encycolorpedia
+1483,La Salle Green,087830,Encycolorpedia
+1484,Sea blue,006994,Encycolorpedia
+1485,Violet-blue,324AB2,Encycolorpedia
+1486,Grape,6F2DA8,Encycolorpedia
+1487,Auburn,A52A2A,Encycolorpedia
+1488,Brown,A52A2A,Encycolorpedia
+1489,Red-brown,A52A2A,Encycolorpedia
+1490,New Car,214FC6,Encycolorpedia
+1491,Cyber Grape,58427C,Encycolorpedia
+1492,Red (Munsell),F2003C,Encycolorpedia
+1493,Medium Persian blue,0067A5,Encycolorpedia
+1494,Sapphire blue,0067A5,Encycolorpedia
+1495,Tropical rain forest,00755E,Encycolorpedia
+1496,Debian red,D70A53,Encycolorpedia
+1497,Deep coffee,704241,Encycolorpedia
+1498,Purple Heart,69359C,Encycolorpedia
+1499,Boysenberry,873260,Encycolorpedia
+1500,Ruddy,FF0028,Encycolorpedia
+1501,Candy apple red,FF0800,Encycolorpedia
+1502,Gray-asparagus,465945,Encycolorpedia
+1503,Rose ebony,674846,Encycolorpedia
+1504,Skobeloff,007474,Encycolorpedia
+1505,Dark spring green,177245,Encycolorpedia
+1506,B'dazzled Blue,2E5894,Encycolorpedia
+1507,Mexican pink,E4007C,Encycolorpedia
+1508,Cerulean blue,2A52BE,Encycolorpedia
+1509,Russet,80461B,Encycolorpedia
+1510,Carmine red,FF0038,Encycolorpedia
+1511,Bole,79443B,Encycolorpedia
+1512,Medium Tuscan red,79443B,Encycolorpedia
+1513,Cardinal,C41E3A,Encycolorpedia
+1514,Electric crimson,FF003F,Encycolorpedia
+1515,Medium taupe,674C47,Encycolorpedia
+1516,Pine green,01796F,Encycolorpedia
+1517,Honolulu blue,006DB0,Encycolorpedia
+1518,Denim,1560BD,Encycolorpedia
+1519,Saddle brown,8B4513,Encycolorpedia
+1520,Deep magenta,CC00CC,Encycolorpedia
+1521,Crimson,DC143C,Encycolorpedia
+1522,Islamic green,009000,Encycolorpedia
+1523,Raspberry,E30B5D,Encycolorpedia
+1524,Davy's grey,555555,Encycolorpedia
+1525,Field drab,6C541E,Encycolorpedia
+1526,Fire engine red,CE2029,Encycolorpedia
+1527,American rose,FF033E,Encycolorpedia
+1528,Umber,635147,Encycolorpedia
+1529,Coffee,6F4E37,Encycolorpedia
+1530,Tuscan brown,6F4E37,Encycolorpedia
+1531,Folly,FF004F,Encycolorpedia
+1532,Cordovan,893F45,Encycolorpedia
+1533,Bright maroon,C32148,Encycolorpedia
+1534,Maroon (Crayola),C32148,Encycolorpedia
+1535,Lapis lazuli,26619C,Encycolorpedia
+1536,Electric purple,BF00FF,Encycolorpedia
+1537,India green,138808,Encycolorpedia
+1538,Deep ruby,843F5B,Encycolorpedia
+1539,Medium violet-red,C71585,Encycolorpedia
+1540,Red-violet,C71585,Encycolorpedia
+1541,Feldgrau,4D5D53,Encycolorpedia
+1542,Chinese red,AA381E,Encycolorpedia
+1543,Smokey topaz,933D41,Encycolorpedia
+1544,Tuscan red,7C4848,Encycolorpedia
+1545,Napier green,2A8000,Encycolorpedia
+1546,Ruby,E0115F,Encycolorpedia
+1547,French blue,0072BB,Encycolorpedia
+1548,Antique bronze,665D1E,Encycolorpedia
+1549,Wenge,645452,Encycolorpedia
+1550,Brown (traditional),964B00,Encycolorpedia
+1551,Ebony,555D50,Encycolorpedia
+1552,Teal,008080,Encycolorpedia
+1553,Scarlet (Crayola),FD0E35,Encycolorpedia
+1554,Tractor red,FD0E35,Encycolorpedia
+1555,Vivid orchid,CC00FF,Encycolorpedia
+1556,Dogwood rose,D71868,Encycolorpedia
+1557,CG Blue,007AA5,Encycolorpedia
+1558,Bright pink,FF007F,Encycolorpedia
+1559,Rose,FF007F,Encycolorpedia
+1560,Teal green,00827F,Encycolorpedia
+1561,Chestnut,954535,Encycolorpedia
+1562,True Blue,0073CF,Encycolorpedia
+1563,Lust,E62020,Encycolorpedia
+1564,Celadon Blue,007BA7,Encycolorpedia
+1565,Cerulean,007BA7,Encycolorpedia
+1566,Fashion fuchsia,F400A1,Encycolorpedia
+1567,Hollywood cerise,F400A1,Encycolorpedia
+1568,Red (pigment),ED1C24,Encycolorpedia
+1569,Ocean Boat Blue,0077BE,Encycolorpedia
+1570,Maroon (X11),B03060,Encycolorpedia
+1571,Rich maroon,B03060,Encycolorpedia
+1572,North Texas Green,059033,Encycolorpedia
+1573,Blue-violet,8A2BE2,Encycolorpedia
+1574,Spanish crimson,E51A4C,Encycolorpedia
+1575,Magenta (dye),CA1F7B,Encycolorpedia
+1576,Magenta (process),FF0090,Encycolorpedia
+1577,Metallic Seaweed,0A7E8C,Encycolorpedia
+1578,Deep Space Sparkle,4A646C,Encycolorpedia
+1579,Star command blue,007BBB,Encycolorpedia
+1580,French raspberry,C72C48,Encycolorpedia
+1581,Dark olive green,556B2F,Encycolorpedia
+1582,Purple (X11),A020F0,Encycolorpedia
+1583,Veronica,A020F0,Encycolorpedia
+1584,International orange (Golden Gate Bridge),C0362C,Encycolorpedia
+1585,Rust,B7410E,Encycolorpedia
+1586,Brandeis blue,0070FF,Encycolorpedia
+1587,Mahogany,C04000,Encycolorpedia
+1588,Stormcloud,4F666A,Encycolorpedia
+1589,Forest green,228B22,Encycolorpedia
+1590,Phlox,DF00FF,Encycolorpedia
+1591,Psychedelic purple,DF00FF,Encycolorpedia
+1592,Medium carmine,AF4035,Encycolorpedia
+1593,Pale carmine,AF4035,Encycolorpedia
+1594,Twilight lavender,8A496B,Encycolorpedia
+1595,Alizarin crimson,E32636,Encycolorpedia
+1596,Rose madder,E32636,Encycolorpedia
+1597,Dark pastel red,C23B22,Encycolorpedia
+1598,Persian red,CC3333,Encycolorpedia
+1599,Iris,5A4FCF,Encycolorpedia
+1600,Vivid cerise,DA1D81,Encycolorpedia
+1601,Scarlet,FF2400,Encycolorpedia
+1602,Dark cyan,008B8B,Encycolorpedia
+1603,Dark lavender,734F96,Encycolorpedia
+1604,Plum (traditional),8E4585,Encycolorpedia
+1605,Dark orchid,9932CC,Encycolorpedia
+1606,Rusty red,DA2C43,Encycolorpedia
+1607,Cadet,536872,Encycolorpedia
+1608,Amazon,3B7A57,Encycolorpedia
+1609,Dark electric blue,536878,Encycolorpedia
+1610,Payne's grey,536878,Encycolorpedia
+1611,Fandango,B53389,Encycolorpedia
+1612,Ferrari Red,FF2800,Encycolorpedia
+1613,Queen blue,436B95,Encycolorpedia
+1614,Sinopia,CB410B,Encycolorpedia
+1615,Bronze Yellow,737000,Encycolorpedia
+1616,Teal blue,367588,Encycolorpedia
+1617,Medium ruby,AA4069,Encycolorpedia
+1618,Majorelle Blue,6050DC,Encycolorpedia
+1619,Blue (NCS),0087BD,Encycolorpedia
+1620,Red (RYB),FE2712,Encycolorpedia
+1621,Medium red-violet,BB3385,Encycolorpedia
+1622,Razzmatazz,E3256B,Encycolorpedia
+1623,Sap green,507D2A,Encycolorpedia
+1624,Fern green,4F7942,Encycolorpedia
+1625,Avocado,568203,Encycolorpedia
+1626,Steel pink,CC3366,Encycolorpedia
+1627,Royal purple,7851A9,Encycolorpedia
+1628,Amaranth,E52B50,Encycolorpedia
+1629,UCLA Blue,536895,Encycolorpedia
+1630,Royal fuchsia,CA2C92,Encycolorpedia
+1631,Razzmic Berry,8D4E85,Encycolorpedia
+1632,Azure,007FFF,Encycolorpedia
+1633,Shamrock green,009E60,Encycolorpedia
+1634,Deep Taupe,7E5E60,Encycolorpedia
+1635,English red,AB4B52,Encycolorpedia
+1636,Deep pink,FF1493,Encycolorpedia
+1637,Fluorescent pink,FF1493,Encycolorpedia
+1638,Coconut,965A3E,Encycolorpedia
+1639,Dim gray,696969,Encycolorpedia
+1640,Hooker's green,49796B,Encycolorpedia
+1641,Byzantine,BD33A4,Encycolorpedia
+1642,Sea green,2E8B57,Encycolorpedia
+1643,Fuchsia,FF00FF,Encycolorpedia
+1644,Magenta,FF00FF,Encycolorpedia
+1645,Green (NCS),009F6B,Encycolorpedia
+1646,Celadon Green,2F847C,Encycolorpedia
+1647,Irresistible,B3446C,Encycolorpedia
+1648,Raspberry rose,B3446C,Encycolorpedia
+1649,Telemagenta,CF3476,Encycolorpedia
+1650,Green (pigment),00A550,Encycolorpedia
+1651,Jasper,D73B3E,Encycolorpedia
+1652,Deep carmine pink,EF3038,Encycolorpedia
+1653,Shocking pink,FC0FC0,Encycolorpedia
+1654,Blue (Munsell),0093AF,Encycolorpedia
+1655,Redwood,AB4E52,Encycolorpedia
+1656,Rose vale,AB4E52,Encycolorpedia
+1657,Cerise,DE3163,Encycolorpedia
+1658,Cherry,DE3163,Encycolorpedia
+1659,Raw umber,826644,Encycolorpedia
+1660,Royal blue,4169E1,Encycolorpedia
+1661,Blue (Crayola),1F75FE,Encycolorpedia
+1662,Ultramarine blue,4166F5,Encycolorpedia
+1663,Han blue,446CCF,Encycolorpedia
+1664,Golden brown,996515,Encycolorpedia
+1665,CG Red,E03C31,Encycolorpedia
+1666,Dark blue-gray,666699,Encycolorpedia
+1667,Viridian,40826D,Encycolorpedia
+1668,Slate blue,6A5ACD,Encycolorpedia
+1669,Bondi blue,0095B6,Encycolorpedia
+1670,Rose taupe,905D5D,Encycolorpedia
+1671,Brick red,CB4154,Encycolorpedia
+1672,Coquelicot,FF3800,Encycolorpedia
+1673,Deep chestnut,B94E48,Encycolorpedia
+1674,Deep cerise,DA3287,Encycolorpedia
+1675,Pastel brown,836953,Encycolorpedia
+1676,China rose,A8516E,Encycolorpedia
+1677,Jade,00A86B,Encycolorpedia
+1678,Burnt orange,CC5500,Encycolorpedia
+1679,Old lavender,796878,Encycolorpedia
+1680,Mauve taupe,915F6D,Encycolorpedia
+1681,Raspberry glace,915F6D,Encycolorpedia
+1682,Rich electric blue,0892D0,Encycolorpedia
+1683,Ginger,B06500,Encycolorpedia
+1684,GO green,00AB66,Encycolorpedia
+1685,Fuchsia rose,C74375,Encycolorpedia
+1686,Green (Munsell),00A877,Encycolorpedia
+1687,Antique fuchsia,915C83,Encycolorpedia
+1688,Tenné (Tawny),CD5700,Encycolorpedia
+1689,French bistre,856D4D,Encycolorpedia
+1690,Cinnabar,E34234,Encycolorpedia
+1691,Vermilion (cinnabar),E34234,Encycolorpedia
+1692,French lilac,86608E,Encycolorpedia
+1693,Pomp and Power,86608E,Encycolorpedia
+1694,Bittersweet shimmer,BF4F51,Encycolorpedia
+1695,Smitten,C84186,Encycolorpedia
+1696,Illuminating Emerald,319177,Encycolorpedia
+1697,Heart Gold,808000,Encycolorpedia
+1698,Olive,808000,Encycolorpedia
+1699,Bistre brown,967117,Encycolorpedia
+1700,Drab,967117,Encycolorpedia
+1701,Mode beige,967117,Encycolorpedia
+1702,Sand dune,967117,Encycolorpedia
+1703,Sandy taupe,967117,Encycolorpedia
+1704,Persian green,00A693,Encycolorpedia
+1705,Blue-green,0D98BA,Encycolorpedia
+1706,Magenta (Pantone),D0417E,Encycolorpedia
+1707,Tufts Blue,417DC1,Encycolorpedia
+1708,Ruber,CE4676,Encycolorpedia
+1709,Light brown,B5651D,Encycolorpedia
+1710,Orange-red,FF4500,Encycolorpedia
+1711,Hot magenta,FF1DCE,Encycolorpedia
+1712,Deep lilac,9955BB,Encycolorpedia
+1713,Sonic silver,757575,Encycolorpedia
+1714,Spanish bistre,80755A,Encycolorpedia
+1715,Copper rose,996666,Encycolorpedia
+1716,Dark terra cotta,CC4E5C,Encycolorpedia
+1717,Gold Fusion,85754E,Encycolorpedia
+1718,Steel blue,4682B4,Encycolorpedia
+1719,Persian rose,FE28A2,Encycolorpedia
+1720,Alloy orange,C46210,Encycolorpedia
+1721,Dark chestnut,986960,Encycolorpedia
+1722,Radical Red,FF355E,Encycolorpedia
+1723,Mulberry,C54B8C,Encycolorpedia
+1724,Olive Drab #3,6B8E23,Encycolorpedia
+1725,Windsor tan,AE6838,Encycolorpedia
+1726,Tangelo,F94D00,Encycolorpedia
+1727,Ruddy brown,BB6528,Encycolorpedia
+1728,Toolbox,746CC0,Encycolorpedia
+1729,Cerise pink,EC3B83,Encycolorpedia
+1730,Dark pastel green,03C03C,Encycolorpedia
+1731,Coral red,FF4040,Encycolorpedia
+1732,Cedar Chest,C95A49,Encycolorpedia
+1733,Rhythm,777696,Encycolorpedia
+1734,AuroMetalSaurus,6E7F80,Encycolorpedia
+1735,Lavender indigo,9457EB,Encycolorpedia
+1736,Navy purple,9457EB,Encycolorpedia
+1737,Persimmon,EC5800,Encycolorpedia
+1738,Carmine pink,EB4C42,Encycolorpedia
+1739,Dodger blue,1E90FF,Encycolorpedia
+1740,Dark coral,CD5B45,Encycolorpedia
+1741,International orange (aerospace),FF4F00,Encycolorpedia
+1742,Shadow,8A795D,Encycolorpedia
+1743,Green (Crayola),1CAC78,Encycolorpedia
+1744,Flame,E25822,Encycolorpedia
+1745,Bleu de France,318CE7,Encycolorpedia
+1746,Orioles orange,FB4F14,Encycolorpedia
+1747,Smoke,738276,Encycolorpedia
+1748,Pale brown,987654,Encycolorpedia
+1749,Medium slate blue,7B68EE,Encycolorpedia
+1750,Slate gray,708090,Encycolorpedia
+1751,Dirt,9B7653,Encycolorpedia
+1752,Neon fuchsia,FE4164,Encycolorpedia
+1753,Glaucous,6082B6,Encycolorpedia
+1754,Spanish sky blue,00AAE4,Encycolorpedia
+1755,Indian red,CD5C5C,Encycolorpedia
+1756,Metallic Sunburst,9C7C38,Encycolorpedia
+1757,Spanish orange,E86100,Encycolorpedia
+1758,Xanadu,738678,Encycolorpedia
+1759,Camouflage green,78866B,Encycolorpedia
+1760,Dark yellow,9B870C,Encycolorpedia
+1761,Blast-off bronze,A57164,Encycolorpedia
+1762,Chocolate,D2691E,Encycolorpedia
+1763,Cinnamon,D2691E,Encycolorpedia
+1764,Cocoa brown,D2691E,Encycolorpedia
+1765,Medium vermilion,D9603B,Encycolorpedia
+1766,Vermilion (Plochere),D9603B,Encycolorpedia
+1767,Air Force blue (RAF),5D8AA8,Encycolorpedia
+1768,Rackley,5D8AA8,Encycolorpedia
+1769,Gray,808080,Encycolorpedia
+1770,Gray,808080,Encycolorpedia
+1771,Trolley Grey,808080,Encycolorpedia
+1772,Jungle green,29AB87,Encycolorpedia
+1773,Dark tan,918151,Encycolorpedia
+1774,Copper,B87333,Encycolorpedia
+1775,Chamoisee,A0785A,Encycolorpedia
+1776,Copper penny,AD6F69,Encycolorpedia
+1777,Amethyst,9966CC,Encycolorpedia
+1778,Deep fuchsia,C154C1,Encycolorpedia
+1779,Fuchsia (Crayola),C154C1,Encycolorpedia
+1780,Bazaar,98777B,Encycolorpedia
+1781,Razzle dazzle rose,FF33CC,Encycolorpedia
+1782,Medium orchid,BA55D3,Encycolorpedia
+1783,Fandango pink,DE5285,Encycolorpedia
+1784,Rocket metallic,8A7F80,Encycolorpedia
+1785,Blueberry,4F86F7,Encycolorpedia
+1786,Jelly Bean,DA614E,Encycolorpedia
+1787,Rose bonbon,F9429E,Encycolorpedia
+1788,Battleship grey,848482,Encycolorpedia
+1789,Old silver,848482,Encycolorpedia
+1790,Raspberry pink,E25098,Encycolorpedia
+1791,Giants orange,FE5A1D,Encycolorpedia
+1792,Café au lait,A67B5B,Encycolorpedia
+1793,French beige,A67B5B,Encycolorpedia
+1794,Tuscan tan,A67B5B,Encycolorpedia
+1795,Fuzzy Wuzzy,CC6666,Encycolorpedia
+1796,French rose,F64A8A,Encycolorpedia
+1797,Tiffany Blue,0ABAB5,Encycolorpedia
+1798,Light slate gray,778899,Encycolorpedia
+1799,Dark pink,E75480,Encycolorpedia
+1800,Rose gold,B76E79,Encycolorpedia
+1801,Red-orange,FF5349,Encycolorpedia
+1802,Ube,8878C3,Encycolorpedia
+1803,Light sea green,20B2AA,Encycolorpedia
+1804,Mountbatten pink,997A8D,Encycolorpedia
+1805,Ball Blue,21ABCD,Encycolorpedia
+1806,Copper red,CB6D51,Encycolorpedia
+1807,Bright cerulean,1DACD6,Encycolorpedia
+1808,Celestial blue,4997D0,Encycolorpedia
+1809,Cyan (process),00B7EB,Encycolorpedia
+1810,Pearly purple,B768A2,Encycolorpedia
+1811,Wild Strawberry,FF43A4,Encycolorpedia
+1812,Dark pastel purple,966FD6,Encycolorpedia
+1813,Medium purple,9370DB,Encycolorpedia
+1814,Ochre,CC7722,Encycolorpedia
+1815,Dark goldenrod,B8860B,Encycolorpedia
+1816,Kelly green,4CBB17,Encycolorpedia
+1817,Cinereous,98817B,Encycolorpedia
+1818,Portland Orange,FF5A36,Encycolorpedia
+1819,Taupe gray,8B8589,Encycolorpedia
+1820,Turkish rose,B57281,Encycolorpedia
+1821,Medium sea green,3CB371,Encycolorpedia
+1822,Blush,DE5D83,Encycolorpedia
+1823,Beaver,9F8170,Encycolorpedia
+1824,Purple mountain majesty,9678B6,Encycolorpedia
+1825,Wild orchid,D77A02,Encycolorpedia
+1826,Deep carrot orange,E9692C,Encycolorpedia
+1827,Rich lavender,A76BCF,Encycolorpedia
+1828,Roman silver,838996,Encycolorpedia
+1829,Safety orange (blaze orange),FF6700,Encycolorpedia
+1830,Caribbean green,00CC99,Encycolorpedia
+1831,Lavender purple,967BB6,Encycolorpedia
+1832,Rich lilac,B666D2,Encycolorpedia
+1833,University of California Gold,B78727,Encycolorpedia
+1834,United Nations blue,5B92E5,Encycolorpedia
+1835,Cadet blue,5F9EA0,Encycolorpedia
+1836,Violet-red,F75394,Encycolorpedia
+1837,Green (RYB),66B032,Encycolorpedia
+1838,Mint,3EB489,Encycolorpedia
+1839,Mountain Meadow,30BA8F,Encycolorpedia
+1840,Malachite,0BDA51,Encycolorpedia
+1841,Lime green,32CD32,Encycolorpedia
+1842,Capri,00BFFF,Encycolorpedia
+1843,Deep sky blue,00BFFF,Encycolorpedia
+1844,Bronze,CD7F32,Encycolorpedia
+1845,Light carmine pink,E66771,Encycolorpedia
+1846,Tomato,FF6347,Encycolorpedia
+1847,Robin egg blue,00CCCC,Encycolorpedia
+1848,Blue-gray,6699CC,Encycolorpedia
+1849,Super pink,CF6BA9,Encycolorpedia
+1850,Strawberry,FC5A8D,Encycolorpedia
+1851,Cornflower blue,6495ED,Encycolorpedia
+1852,Brilliant rose,FF55A3,Encycolorpedia
+1853,Magenta (Crayola),FF55A3,Encycolorpedia
+1854,Dark turquoise,00CED1,Encycolorpedia
+1855,Terra cotta,E2725B,Encycolorpedia
+1856,Verdigris,43B3AE,Encycolorpedia
+1857,Deer,BA8759,Encycolorpedia
+1858,Fulvous,E48400,Encycolorpedia
+1859,Cerulean frost,6D9BC3,Encycolorpedia
+1860,Brink pink,FB607F,Encycolorpedia
+1861,Spiro Disco Ball,0FC0FC,Encycolorpedia
+1862,Peru,CD853F,Encycolorpedia
+1863,Purple pizzazz,FE4EDA,Encycolorpedia
+1864,Burnt sienna,E97451,Encycolorpedia
+1865,Light red ochre,E97451,Encycolorpedia
+1866,Cool grey,8C92AC,Encycolorpedia
+1867,Gray-blue,8C92AC,Encycolorpedia
+1868,Old rose,C08081,Encycolorpedia
+1869,Light taupe,B38B6D,Encycolorpedia
+1870,Pumpkin,FF7518,Encycolorpedia
+1871,English lavender,B48395,Encycolorpedia
+1872,Pale red-violet,DB7093,Encycolorpedia
+1873,Pale violet-red,"B7093 ",Encycolorpedia
+1874,Sky magenta,CF71AF,Encycolorpedia
+1875,University of Tennessee Orange,F77F00,Encycolorpedia
+1876,Candy pink,E4717A,Encycolorpedia
+1877,Tango pink,E4717A,Encycolorpedia
+1878,Vivid sky blue,00CCFF,Encycolorpedia
+1879,Pastel red,FF6961,Encycolorpedia
+1880,Apple green,8DB600,Encycolorpedia
+1881,Outrageous Orange,FF6E4A,Encycolorpedia
+1882,Electric green,00FF00,Encycolorpedia
+1883,Green (X11 green),00FF00,Encycolorpedia
+1884,Lime (X11 green),00FF00,Encycolorpedia
+1885,China pink,DE6FA1,Encycolorpedia
+1886,Thulian pink,DE6FA1,Encycolorpedia
+1887,Air superiority blue,72A0C1,Encycolorpedia
+1888,SAE/ECE Amber,FF7E00,Encycolorpedia
+1889,Citron,9FA91F,Encycolorpedia
+1890,Harvest Gold,DA9100,Encycolorpedia
+1891,Tangerine,F28500,Encycolorpedia
+1892,Orange,FF7F00,Encycolorpedia
+1893,Opera mauve,B784A7,Encycolorpedia
+1894,Little boy blue,6CA0DC,Encycolorpedia
+1895,Light crimson,F56991,Encycolorpedia
+1896,Dark pastel blue,779ECB,Encycolorpedia
+1897,Asparagus,87A96B,Encycolorpedia
+1898,Bittersweet,FE6F5E,Encycolorpedia
+1899,UFO Green,3CD070,Encycolorpedia
+1900,Lavender (floral),B57EDC,Encycolorpedia
+1901,Wild Watermelon,FC6C85,Encycolorpedia
+1902,Manatee,979AAA,Encycolorpedia
+1903,Emerald,50C878,Encycolorpedia
+1904,Paris Green,50C878,Encycolorpedia
+1905,Deep mauve,D473D4,Encycolorpedia
+1906,French mauve,D473D4,Encycolorpedia
+1907,Iceberg,71A6D2,Encycolorpedia
+1908,Cadmium orange,ED872D,Encycolorpedia
+1909,Orchid,DA70D6,Encycolorpedia
+1910,New York pink,D7837F,Encycolorpedia
+1911,Moonstone blue,73A9C2,Encycolorpedia
+1912,Grullo,A99A86,Encycolorpedia
+1913,Rosy brown,BC8F8F,Encycolorpedia
+1914,Tiger's eye,E08D3C,Encycolorpedia
+1915,Copper (Crayola),DA8A67,Encycolorpedia
+1916,Pale copper,DA8A67,Encycolorpedia
+1917,Lemon curry,CCA01D,Encycolorpedia
+1918,Puce,CC8899,Encycolorpedia
+1919,Hot pink,FF69B4,Encycolorpedia
+1920,Dark orange,FF8C00,Encycolorpedia
+1921,Brass,B5A642,Encycolorpedia
+1922,Cadet grey,91A3B0,Encycolorpedia
+1923,Rose quartz,AA98A9,Encycolorpedia
+1924,Rose pink,FF66CC,Encycolorpedia
+1925,Persian orange,D99058,Encycolorpedia
+1926,Carrot orange,ED9121,Encycolorpedia
+1927,Pale taupe,BC987E,Encycolorpedia
+1928,Coral,FF7F50,Encycolorpedia
+1929,Princeton orange,FF8F00,Encycolorpedia
+1930,Mango Tango,FF8243,Encycolorpedia
+1931,Camel,C19A6B,Encycolorpedia
+1932,Desert,C19A6B,Encycolorpedia
+1933,Fallow,C19A6B,Encycolorpedia
+1934,Lion,C19A6B,Encycolorpedia
+1935,Wood brown,C19A6B,Encycolorpedia
+1936,Shimmering Blush,D98695,Encycolorpedia
+1937,Mantis,74C365,Encycolorpedia
+1938,Gamboge,E49B0F,Encycolorpedia
+1939,Dollar bill,85BB65,Encycolorpedia
+1940,Satin sheen gold,CBA135,Encycolorpedia
+1941,Light coral,F08080,Encycolorpedia
+1942,Ceil,92A1CF,Encycolorpedia
+1943,Limerick,9DC209,Encycolorpedia
+1944,Antique brass,CD9575,Encycolorpedia
+1945,Turquoise,30D5C8,Encycolorpedia
+1946,Heliotrope,DF73FF,Encycolorpedia
+1947,Bright turquoise,08E8DE,Encycolorpedia
+1948,Guppie green,00FF7F,Encycolorpedia
+1949,Spring green,00FF7F,Encycolorpedia
+1950,Medium spring green,00FA9A,Encycolorpedia
+1951,Tuscany,C09999,Encycolorpedia
+1952,Congo pink,F88379,Encycolorpedia
+1953,Coral pink,F88379,Encycolorpedia
+1954,Tea rose (orange),F88379,Encycolorpedia
+1955,Orange (RYB),FB9902,Encycolorpedia
+1956,Goldenrod,DAA520,Encycolorpedia
+1957,Eucalyptus,44D7A8,Encycolorpedia
+1958,Pastel purple,B39EB5,Encycolorpedia
+1959,Sheen Green,8FD400,Encycolorpedia
+1960,Blue Bell,A2A2D0,Encycolorpedia
+1961,Medium turquoise,48D1CC,Encycolorpedia
+1962,Ruddy pink,E18E96,Encycolorpedia
+1963,Olivine,9AB973,Encycolorpedia
+1964,Harlequin,3FFF00,Encycolorpedia
+1965,Dark gray,A9A9A9,Encycolorpedia
+1966,Neon green,39FF14,Encycolorpedia
+1967,Light pastel purple,B19CD9,Encycolorpedia
+1968,Dark sea green,8FBC8F,Encycolorpedia
+1969,Orange peel,FF9F00,Encycolorpedia
+1970,Bright lavender,BF94E4,Encycolorpedia
+1971,Persian pink,F77FBE,Encycolorpedia
+1972,Salmon,FF8C69,Encycolorpedia
+1973,Shocking pink (Crayola),FF6FFF,Encycolorpedia
+1974,Ultra pink,FF6FFF,Encycolorpedia
+1975,French sky blue,77B5FE,Encycolorpedia
+1976,Tulip,FF878D,Encycolorpedia
+1977,Dark salmon,E9967A,Encycolorpedia
+1978,Android Green,A4C639,Encycolorpedia
+1979,Deep saffron,FF9933,Encycolorpedia
+1980,Silver chalice,ACACAC,Encycolorpedia
+1981,Yellow-green,9ACD32,Encycolorpedia
+1982,Charm pink,E68FAC,Encycolorpedia
+1983,Light Thulian pink,E68FAC,Encycolorpedia
+1984,Gold (metallic),D4AF37,Encycolorpedia
+1985,Pistachio,93C572,Encycolorpedia
+1986,Urobilin,E1AD21,Encycolorpedia
+1987,Orange (web color),FFA500,Encycolorpedia
+1988,Pastel violet,CB99C9,Encycolorpedia
+1989,Wild blue yonder,A2ADD0,Encycolorpedia
+1990,Vegas gold,C5B358,Encycolorpedia
+1991,Chrome yellow,FFA700,Encycolorpedia
+1992,Lavender magenta,EE82EE,Encycolorpedia
+1993,Violet,EE82EE,Encycolorpedia
+1994,Old gold,CFB53B,Encycolorpedia
+1995,Fuchsia pink,FF77FF,Encycolorpedia
+1996,Tickle Me Pink,FC89AC,Encycolorpedia
+1997,Dark khaki,BDB76B,Encycolorpedia
+1998,Indian yellow,E3A857,Encycolorpedia
+1999,Pink Sherbet,F78FA7,Encycolorpedia
+2000,Maya blue,73C2FB,Encycolorpedia
+2001,Dark tangerine,FFA812,Encycolorpedia
+2002,Turquoise blue,00FFEF,Encycolorpedia
+2003,Ecru,C2B280,Encycolorpedia
+2004,Sand,C2B280,Encycolorpedia
+2005,Light medium orchid,D39BCB,Encycolorpedia
+2006,Earth yellow,E1A95F,Encycolorpedia
+2007,Laurel green,A9BA9D,Encycolorpedia
+2008,Atomic tangerine,FF9966,Encycolorpedia
+2009,Pink-orange,FF9966,Encycolorpedia
+2010,Lilac,C8A2C8,Encycolorpedia
+2011,Dark sky blue,8CBED6,Encycolorpedia
+2012,Pale magenta,F984E5,Encycolorpedia
+2013,Khaki,C3B091,Encycolorpedia
+2014,Flamingo pink,FC8EAC,Encycolorpedia
+2015,Orchid pink,F28DCD,Encycolorpedia
+2016,Aqua,00FFFF,Encycolorpedia
+2017,Cyan,00FFFF,Encycolorpedia
+2018,Electric cyan,00FFFF,Encycolorpedia
+2019,Pastel green,77DD77,Encycolorpedia
+2020,Wisteria,C9A0DC,Encycolorpedia
+2021,Light fuchsia pink,F984EF,Encycolorpedia
+2022,Neon Carrot,FFA343,Encycolorpedia
+2023,Medium aquamarine,66DDAA,Encycolorpedia
+2024,Salmon pink,FF91A4,Encycolorpedia
+2025,Mauvelous,EF98AA,Encycolorpedia
+2026,Carolina blue,99BADD,Encycolorpedia
+2027,Sandy brown,F4A460,Encycolorpedia
+2028,Bright green,66FF00,Encycolorpedia
+2029,Silver pink,C4AEAD,Encycolorpedia
+2030,Eton blue,96C8A2,Encycolorpedia
+2031,Fawn,E5AA70,Encycolorpedia
+2032,Baker-Miller pink,FF91AF,Encycolorpedia
+2033,Schauss pink,FF91AF,Encycolorpedia
+2034,UCLA Gold,FFB300,Encycolorpedia
+2035,Tumbleweed,DEAA88,Encycolorpedia
+2036,Cambridge Blue,A3C1AD,Encycolorpedia
+2037,Pastel pink,DEA5A4,Encycolorpedia
+2038,Bright ube,D19FE8,Encycolorpedia
+2039,Meat brown,E5B73B,Encycolorpedia
+2040,Light salmon pink,FF9999,Encycolorpedia
+2041,Light salmon,FFA07A,Encycolorpedia
+2042,Tan,D2B48C,Encycolorpedia
+2043,Kobi,E79FC4,Encycolorpedia
+2044,Lawn green,7CFC00,Encycolorpedia
+2045,Medium lavender magenta,DDA0DD,Encycolorpedia
+2046,Pale plum,DDA0DD,Encycolorpedia
+2047,Plum,DDA0DD,Encycolorpedia
+2048,Ash grey,B2BEB5,Encycolorpedia
+2049,Selective yellow,FFBA00,Encycolorpedia
+2050,Pastel magenta,F49AC2,Encycolorpedia
+2051,Vivid tangerine,FFA089,Encycolorpedia
+2052,Yellow Orange,FFAE42,Encycolorpedia
+2053,Rajah,FBAB60,Encycolorpedia
+2054,Pale cerulean,9BC4E2,Encycolorpedia
+2055,Pale chestnut,DDADAF,Encycolorpedia
+2056,Chartreuse,7FFF00,Encycolorpedia
+2057,Sky blue,87CEEB,Encycolorpedia
+2058,Amber,FFBF00,Encycolorpedia
+2059,Fluorescent orange,FFBF00,Encycolorpedia
+2060,Golden poppy,FCC200,Encycolorpedia
+2061,Pearl Aqua,88D8C0,Encycolorpedia
+2062,Pastel orange,FFB347,Encycolorpedia
+2063,Burlywood,DEB887,Encycolorpedia
+2064,Light sky blue,87CEFA,Encycolorpedia
+2065,Baby blue,89CFF0,Encycolorpedia
+2066,Gray (X11 gray),BEBEBE,Encycolorpedia
+2067,Light cornflower blue,93CCEA,Encycolorpedia
+2068,Yellow (Munsell),EFCC00,Encycolorpedia
+2069,Citrine,E4D00A,Encycolorpedia
+2070,Pastel blue,AEC6CF,Encycolorpedia
+2071,Light orchid,E6A8D7,Encycolorpedia
+2072,Silver,C0C0C0,Encycolorpedia
+2073,Silver sand,BFC1C2,Encycolorpedia
+2074,Mikado yellow,FFC40C,Encycolorpedia
+2075,Light steel blue,B0C4DE,Encycolorpedia
+2076,Medium sky blue,80DAEB,Encycolorpedia
+2077,Deep lemon,F5C71A,Encycolorpedia
+2078,Dark vanilla,D1BEA8,Encycolorpedia
+2079,Bitter lemon,CAE00D,Encycolorpedia
+2080,Saffron,F4C430,Encycolorpedia
+2081,Pink pearl,E7ACCF,Encycolorpedia
+2082,Turquoise green,A0D6B4,Encycolorpedia
+2083,Jonquil,F4CA16,Encycolorpedia
+2084,Pale silver,C9C0BB,Encycolorpedia
+2085,Baby blue eyes,A1CAF1,Encycolorpedia
+2086,June bud,BDDA57,Encycolorpedia
+2087,Lavender rose,FBA0E3,Encycolorpedia
+2088,Mellow apricot,F8B878,Encycolorpedia
+2089,Tangerine yellow,FFCC00,Encycolorpedia
+2090,USC Gold,FFCC00,Encycolorpedia
+2091,Pale gold,E6BE8A,Encycolorpedia
+2092,Carnation pink,FFA6C9,Encycolorpedia
+2093,Lavender gray,C4C3D0,Encycolorpedia
+2094,Nadeshiko pink,F6ADC6,Encycolorpedia
+2095,Spring bud,A7FC00,Encycolorpedia
+2096,Pale cornflower blue,ABCDEF,Encycolorpedia
+2097,Screamin' Green,76FF7A,Encycolorpedia
+2098,Pale robin egg blue,96DED1,Encycolorpedia
+2099,Rich brilliant lavender,F1A7FE,Encycolorpedia
+2100,Light green,90EE90,Encycolorpedia
+2101,Mauve,E0B0FF,Encycolorpedia
+2102,Yellow (NCS),FFD300,Encycolorpedia
+2103,Pear,D1E231,Encycolorpedia
+2104,Lavender pink,FBAED2,Encycolorpedia
+2105,Teal deer,99E6B3,Encycolorpedia
+2106,Thistle,D8BFD8,Encycolorpedia
+2107,Peridot,E6E200,Encycolorpedia
+2108,Sunglow,FFCC33,Encycolorpedia
+2109,French lime,9EFD38,Encycolorpedia
+2110,Granny Smith Apple,A8E4A0,Encycolorpedia
+2111,Moss green,ADDFAD,Encycolorpedia
+2112,Inchworm,B2EC5D,Encycolorpedia
+2113,Gold (Golden),FFD700,Encycolorpedia
+2114,Sandstorm,ECD540,Encycolorpedia
+2115,School bus yellow,FFD800,Encycolorpedia
+2116,Celadon,ACE1AF,Encycolorpedia
+2117,Cameo pink,EFBBCC,Encycolorpedia
+2118,Medium spring bud,C9DC87,Encycolorpedia
+2119,Light blue,ADD8E6,Encycolorpedia
+2120,Light pink,FFB6C1,Encycolorpedia
+2121,Columbia blue,9BDDFF,Encycolorpedia
+2122,Pastel gray,CFCFC4,Encycolorpedia
+2123,Non-photo blue,A4DDED,Encycolorpedia
+2124,Cherry blossom pink,FFB7C5,Encycolorpedia
+2125,Titanium yellow,EEE600,Encycolorpedia
+2126,Soap,CEC8EF,Encycolorpedia
+2127,Melon,FDBCB4,Encycolorpedia
+2128,Green-yellow,ADFF2F,Encycolorpedia
+2129,Bitter lime,BFFF00,Encycolorpedia
+2130,Lime,BFFF00,Encycolorpedia
+2131,Beau blue,BCD4E6,Encycolorpedia
+2132,Pale aqua,BCD4E6,Encycolorpedia
+2133,Golden yellow,FFDF00,Encycolorpedia
+2134,Arylide yellow,E9D66B,Encycolorpedia
+2135,Hansa yellow,E9D66B,Encycolorpedia
+2136,Languid lavender,D6CADD,Encycolorpedia
+2137,Topaz,FFC87C,Encycolorpedia
+2138,Straw,E4D96F,Encycolorpedia
+2139,Desert sand,EDC9AF,Encycolorpedia
+2140,Baby pink,F4C2C2,Encycolorpedia
+2141,Tea rose (rose),F4C2C2,Encycolorpedia
+2142,Dandelion,F0E130,Encycolorpedia
+2143,Lavender blue,CCCCFF,Encycolorpedia
+2144,Periwinkle,CCCCFF,Encycolorpedia
+2145,Pale green,98FB98,Encycolorpedia
+2146,Powder blue,B0E0E6,Encycolorpedia
+2147,Electric lime,CCFF00,Encycolorpedia
+2148,Fluorescent yellow,CCFF00,Encycolorpedia
+2149,Light gray,D3D3D3,Encycolorpedia
+2150,Dust storm,E5CCC9,Encycolorpedia
+2151,Cotton candy,FFBCD9,Encycolorpedia
+2152,Brilliant lavender,F4BBFF,Encycolorpedia
+2153,Electric lavender,F4BBFF,Encycolorpedia
+2154,Aquamarine,7FFFD4,Encycolorpedia
+2155,Pink,FFC0CB,Encycolorpedia
+2156,Mint green,98FF98,Encycolorpedia
+2157,Electric blue,7DF9FF,Encycolorpedia
+2158,Bubble gum,FFC1CC,Encycolorpedia
+2159,Blizzard Blue,ACE5EE,Encycolorpedia
+2160,Naples yellow,FADA5E,Encycolorpedia
+2161,Royal yellow,FADA5E,Encycolorpedia
+2162,Stil de grain yellow,FADA5E,Encycolorpedia
+2163,Peach-orange,FFCC99,Encycolorpedia
+2164,Queen pink,E8CCD7,Encycolorpedia
+2165,Deep peach,FFCBA4,Encycolorpedia
+2166,Peach (Crayola),FFCBA4,Encycolorpedia
+2167,Fresh Air,A6E7FF,Encycolorpedia
+2168,Banana yellow,FFE135,Encycolorpedia
+2169,Mustard,FFDB58,Encycolorpedia
+2170,Flax,EEDC82,Encycolorpedia
+2171,Aureolin,FDEE00,Encycolorpedia
+2172,Magic mint,AAF0D1,Encycolorpedia
+2173,Timberwolf,DBD7D2,Encycolorpedia
+2174,Buff,F0DC82,Encycolorpedia
+2175,Apricot,FBCEB1,Encycolorpedia
+2176,Chartreuse (traditional),DFFF00,Encycolorpedia
+2177,Canary yellow,FFEF00,Encycolorpedia
+2178,Yellow (process),FFEF00,Encycolorpedia
+2179,Pale lavender,DCD0FF,Encycolorpedia
+2180,Yellow rose,FFF000,Encycolorpedia
+2181,Lemon lime,E3FF00,Encycolorpedia
+2182,Bone,E3DAC9,Encycolorpedia
+2183,Jasmine,F8DE7E,Encycolorpedia
+2184,Mellow yellow,F8DE7E,Encycolorpedia
+2185,Pale blue,AFEEEE,Encycolorpedia
+2186,Pale turquoise,AFEEEE,Encycolorpedia
+2187,Deep champagne,FAD6A5,Encycolorpedia
+2188,Sunset,FAD6A5,Encycolorpedia
+2189,Tuscan,FAD6A5,Encycolorpedia
+2190,Gainsboro,DCDCDC,Encycolorpedia
+2191,Cadmium yellow,FFF600,Encycolorpedia
+2192,Waterspout,A4F4F9,Encycolorpedia
+2193,Feldspar,FDD5B1,Encycolorpedia
+2194,Light apricot,FDD5B1,Encycolorpedia
+2195,Classic rose,FBCCE7,Encycolorpedia
+2196,Lemon,FFF700,Encycolorpedia
+2197,Khaki (X11) (Light khaki),F0E68C,Encycolorpedia
+2198,Light khaki,F0E68C,Encycolorpedia
+2199,Wheat,F5DEB3,Encycolorpedia
+2200,Corn,FBEC5D,Encycolorpedia
+2201,Maize,FBEC5D,Encycolorpedia
+2202,Pearl,EAE0C8,Encycolorpedia
+2203,Tea green,D0F0C0,Encycolorpedia
+2204,Almond,EFDECD,Encycolorpedia
+2205,Shampoo,FFCFF1,Encycolorpedia
+2206,Peach puff,FFDAB9,Encycolorpedia
+2207,Peach-yellow,FADFAD,Encycolorpedia
+2208,Vanilla ice,F3D9DF,Encycolorpedia
+2209,Yellow,FFFF00,Encycolorpedia
+2210,Navajo white,FFDEAD,Encycolorpedia
+2211,Medium champagne,F3E5AB,Encycolorpedia
+2212,Vanilla,F3E5AB,Encycolorpedia
+2213,Pale goldenrod,EEE8AA,Encycolorpedia
+2214,Flavescent,F7E98E,Encycolorpedia
+2215,Pale pink,FADADD,Encycolorpedia
+2216,Platinum,E5E4E2,Encycolorpedia
+2217,Lemon yellow,FFF44F,Encycolorpedia
+2218,Unbleached silk,FFDDCA,Encycolorpedia
+2219,Midori,E3F988,Encycolorpedia
+2220,Pale spring bud,ECEBBD,Encycolorpedia
+2221,Yellow (RYB),FEFE33,Encycolorpedia
+2222,Banana Mania,FAE7B5,Encycolorpedia
+2223,Icterine,FCF75E,Encycolorpedia
+2224,Peach,FFE5B4,Encycolorpedia
+2225,Daffodil,FFFF31,Encycolorpedia
+2226,Piggy pink,FDDDE6,Encycolorpedia
+2227,Electric yellow,FFFF33,Encycolorpedia
+2228,Celeste,B2FFFF,Encycolorpedia
+2229,Italian sky blue,B2FFFF,Encycolorpedia
+2230,Lavender,E6E6FA,Encycolorpedia
+2231,Lavender mist,E6E6FA,Encycolorpedia
+2232,Bisque,FFE4C4,Encycolorpedia
+2233,Lemon meringue,F6EABE,Encycolorpedia
+2234,Champagne,F7E7CE,Encycolorpedia
+2235,Lumber,FFE4CD,Encycolorpedia
+2236,Glitter,E6E8FA,Encycolorpedia
+2237,Eggshell,F0EAD6,Encycolorpedia
+2238,Pink lace,FFDDF4,Encycolorpedia
+2239,Misty rose,FFE4E1,Encycolorpedia
+2240,Aero blue,C9FFE5,Encycolorpedia
+2241,Antique white,FAEBD7,Encycolorpedia
+2242,Moccasin,FAEBD7,Encycolorpedia
+2243,Blond,FAF0BE,Encycolorpedia
+2244,Laser Lemon,FFFF66,Encycolorpedia
+2245,Unmellow Yellow,FFFF66,Encycolorpedia
+2246,Blanched Almond,FFEBCD,Encycolorpedia
+2247,Isabelline,F4F0EC,Encycolorpedia
+2248,Papaya whip,FFEFD5,Encycolorpedia
+2249,Pastel yellow,FDFD96,Encycolorpedia
+2250,Linen,FAF0E6,Encycolorpedia
+2251,Beige,F5F5DC,Encycolorpedia
+2252,Anti-flash white,F2F3F4,Encycolorpedia
+2253,Nyanza,E9FFDB,Encycolorpedia
+2254,White smoke,F5F5F5,Encycolorpedia
+2255,Lavender blush,FFF0F5,Encycolorpedia
+2256,Light goldenrod yellow,FAFAD2,Encycolorpedia
+2257,Old lace,FDF5E6,Encycolorpedia
+2258,Light cyan,E0FFFF,Encycolorpedia
+2259,Lemon chiffon,FFFACD,Encycolorpedia
+2260,Alice blue,F0F8FF,Encycolorpedia
+2261,Magnolia,F8F4FF,Encycolorpedia
+2262,Cornsilk,FFF8DC,Encycolorpedia
+2263,Seashell,FFF5EE,Encycolorpedia
+2264,Bubbles,E7FEFF,Encycolorpedia
+2265,Cosmic latte,FFF8E7,Encycolorpedia
+2266,Cream,FFFDD0,Encycolorpedia
+2267,Ghost white,F8F8FF,Encycolorpedia
+2268,Honeydew,F0FFF0,Encycolorpedia
+2269,Floral white,FFFAF0,Encycolorpedia
+2270,Azure mist/web,F0FFFF,Encycolorpedia
+2271,Mint cream,F5FFFA,Encycolorpedia
+2272,Light yellow,FFFFE0,Encycolorpedia
+2273,Snow,FFFAFA,Encycolorpedia
+2274,Ivory,FFFFF0,Encycolorpedia
+2275,Baby powder,FEFEFA,Encycolorpedia
+2276,White,FFFFFF,Encycolorpedia

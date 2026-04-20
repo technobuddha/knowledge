@@ -1,0 +1,20 @@
+#!/bin/bash
+# 🚨
+# 🚨 Source: https://netactuate.dl.sourceforge.net/project/wordlist/SCOWL/2020.12.07/scowl-2020.12.07.zip?viasf=1::src/get-all-below
+# 🚨
+
+shopt -s nullglob
+
+i=`src/get-level min`
+while [ $i -le $1 ]
+do
+  fl="$fl `echo l/$2/$i/*`"
+  i=`src/get-level next $i`
+done
+
+echo $fl
+
+
+
+
+

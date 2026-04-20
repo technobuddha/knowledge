@@ -1,0 +1,11 @@
+#!/bin/sh
+# 🚨
+# 🚨 Source: https://netactuate.dl.sourceforge.net/project/wordlist/SCOWL/2020.12.07/scowl-2020.12.07.zip?viasf=1::src/make-all.lst
+# 🚨
+
+cat `find l/supplement/ l/add-affixes l/add-possessive -type l` | tr -d '\r' | sort | uniq > working/all.lst-unfiltered
+cat working/all.lst-unfiltered   \
+  | src/filter                   \
+  | sort | uniq                  \
+  > working/all.lst
+

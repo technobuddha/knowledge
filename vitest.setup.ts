@@ -1,15 +1,11 @@
 // 🚨
 // 🚨 CHANGES TO THIS FILE WILL BE OVERRIDDEN
 // 🚨
-// 🚨
-// 🚨 CHANGES TO THIS FILE WILL BE OVERRIDDEN
-// 🚨
 /// <reference types="vite/client" />
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-import jestExtended from 'jest-extended';
-import jestMatcherDeepCloseTo from 'jest-matcher-deep-close-to';
+import { jestExtended, jestMatcherDeepCloseTo } from '@technobuddha/project';
 import { beforeAll, expect } from 'vitest';
 
 expect.extend(jestExtended);
@@ -29,7 +25,7 @@ if (import.meta.env.MODE === 'full') {
           file.name !== 'tsconfig.json' &&
           file.name !== 'tsdoc.json'
         ) {
-          await fs.readFile(`./fixtures/${file.name}`, 'utf8').then((json) => {
+          await fs.readFile(`./fixtures/${file.name}`, 'utf-8').then((json) => {
             globalFixtures.fixtures![path.parse(file.name).name] = JSON.parse(json);
           });
         }

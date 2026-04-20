@@ -5,9 +5,8 @@
 
 /** @type import('typedoc').TypeDocOptions */
 const config = {
-// typedoc
   // Configuration
-  name: 'moby',
+  name: 'knowledge',
   tsconfig: 'src/tsconfig.typedoc.json',
   plugin: ['@technobuddha/project/plugin-typedoc'],
   // Input

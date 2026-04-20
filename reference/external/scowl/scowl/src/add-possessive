@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+# 🚨
+# 🚨 Source: https://netactuate.dl.sourceforge.net/project/wordlist/SCOWL/2020.12.07/scowl-2020.12.07.zip?viasf=1::src/add-possessive
+# 🚨
+
+while (<STDIN>) {
+  print;
+  chomp;
+  print "$_\'s\n";
+}

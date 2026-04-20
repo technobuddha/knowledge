@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+# 🚨
+# 🚨 Source: https://netactuate.dl.sourceforge.net/project/wordlist/SCOWL/2020.12.07/scowl-2020.12.07.zip?viasf=1::speller/add-no-suggest
+# 🚨
+
+while (<>) {
+  chop;
+  my ($w, $a) = split /\//;
+  $a .= '!';
+  print "$w";
+  print "/$a" if length($a) > 0;
+  print "\n";
+}

@@ -1,0 +1,204 @@
+# 🚨
+# 🚨 Source: https://web.archive.org/web/20071018165557if_/http://personal.riverusers.com/~thegrendel/ablesupp.zip::ABLESUPP.DOC
+# 🚨
+                           THE ENABLE2K ABLE SUPPLEMENT
+�����������������������������������������������������������������������������
+
+
+The ABLE supplement to ENABLE2K is a collection of files relating to the
+ABLE (Alternate British LExicon) word list to be found in the ENABLE2K
+Supplement.  The ABLE word list purports to contain words from the fourth
+edition of the British Official Scrabble Words (OSW) and the 1997
+Chambers Dictionary.  As distributed in the ENABLE2K supplement, it was
+shortened by removing words duplicated in the main ENABLE2K WORD.LST.
+This supplement contains the list in its entirety.
+
+Since the release of the ABLE list in 2000, I have been engaged in
+verifying its contents, and making corrections as necessary.  The
+results, present in this archive as FULLABLE.LST, do not entirely
+reflect OSW for two reasons.  First, some OSW words are not eligible for
+Scrabble play according to American rules, and have been removed.  Also,
+a small number of cases have been found where OSW and Chambers are in
+conflict, or where OSW omits words I believe to be implied by, or at
+least compatible with, Chambers.  The ineligible words are to be found
+in the file UNABLE.LST.  The corrections, with annotations, are to be
+found in the file ABLESIG.LST.  Both files are discussed in greater
+detail below.
+
+Words were moved from FULLABLE.LST to UNABLE.LST for one of three
+reasons preventing their use in American Scrabble play.  Most of the
+words in UNABLE.LST are shown by Chambers as unassimilated foreign
+words, such as "bitte", "gentilhomme", "kulak" and "tubae".  Another
+Scrabble requirement is that a word must have a part of speech.  This
+causes words like "gotta", "winna" and "wysiwyg" to be dropped.
+Interestingly enough, most words in this category are Latin, such as
+"dixi" and "fecit", and therefore excluded by the first criterion
+as well.  Finally, the Scrabble rules prohibit "capitalized" words.
+OSW includes the words "pH" and "pHs", on the grounds that they are not
+capitalized in the strictest sense of the word.  I hold that the intent
+of this provision is to exclude words containing any capital letters,
+as otherwise, words like "cDNA". "dGTP" and "rRNA" would be listed in
+OSPD.  For this reason, I have moved "pH" and its plural to UNABLE.LST.
+
+The ABLESIG.LST file of "signature corrections" contains 356 words.
+Each word begins with a character indicating the action required for
+the word.  A "+" indicates a word which was added, and a "-" one which
+was removed.  A "&" indicates an additional word which, though present
+or implied by Chambers, is not valid for Scrabble play as discussed
+above.  A "~" indicates a removed word which, if it were to be
+accepted, would be invalid for Scrabble play.  The FULLABLE.LST and
+UNABLE.LST files have had the changes indicated by ABLESIG.LST already
+applied.  Thus, if you do not accept these changes, the edits should be
+undone.  For instance, the signature word "clast" (shown with a "+")
+would be removed from FULLABLE.LST, and the word "chilioi" (shown with
+a "~") would be added to UNABLE.LST.  (See the ENABLE2K Supplement for
+information on the MAKELIST program, which is provided to facilitate
+such recombination of the ENABLE2K lists.)
+
+While there are too many words in ABLESIG.LST to justify them all, I will
+discuss briefly some classes of corrections, and some interesting
+specific cases.  I will also discuss a few ambiguous entries in Chambers
+for which I concluded that no correction was warranted.  As you will
+observe from these "war stories", the Chambers dictionary is a most
+unusual dictionary from an American perspective, and the high proportion
+of archaic, literary, Scots, and just plain peculiar words therein
+presents considerable challenges of interpretation.  (During my original
+editing of the ENABLE word list, I referred to MW10 as "the big book of
+drugs, chemicals and diseases," out of frustration with its seeming
+emphasis on esoteric scientific terminology.  Chambers, in contrast,
+could easily be called "the humongous book of Spenser, Scots and the
+Raj," even though it likely surpasses MW10 in drugs, chemicals and
+diseases as well.)
+
+The most common class of corrections in ABLESIG.TXT contains what I call
+"etc." words.  These derive from entries such as that for "ecumenic",
+which defines six words and concludes "Also oecumenic, etc.".  My
+assumption is that the "etc." (and others) should be taken as meaningful,
+and that the existence of "oecumenical", "oecumenicalism", and so on, is
+implied.  Prefixes such as "archeo-", "lacri-" and "leuko-" generate
+large numbers of such words.  The inclusion by OSW of "spagerist" and
+"spagirist" is an unusual case where the compilers of OSW have given
+such a reading of "etc.", which may lend some legitimacy to it.
+
+Another common class of corrections contains additional inflections for
+words for which Chambers does not list the inflections.  The introduction
+to OSW admits that, where necessary, its compilers have gone beyond
+Chambers for inflections; thus the inclusion of words like "hymenia",
+which is not actually present in Chambers.  I have tried, in continuing
+this process, to rely as much as possible on British sources, especially
+the New Shorter Oxford English Dictionary (NSOED), but I have used
+American sources where I couldn't find British ones.  I have avoided
+adding irregular disease plurals (e.g., "arthritides"), having been
+assured by an expert that these plurals are not used in British English.
+Examples of plurals not in OSW that I have added are "encephala", "litui",
+"matzohs" and "victrices".  "encephala", a plural of "encephalon", is
+worth mentioning because of the significant number of related compounds
+such as "diencephalon", "rhinencephalon", etc.  I have listed the -a
+plurals of all these words in ABLESIG.TXT, so that anyone who believes
+that "encephala" was deliberately excluded from OSW can more easily
+remove all these related words.
+
+I found it amusing that OSW shows, for some words considered foreign,
+only a regular English plural.  I therefore made an effort to determine
+any appropriate non-English plurals for these words, and added them to
+ABLESIG.TXT when successful, resulting in such additions as "autobahnen",
+"gighe" and "kulaki".
+
+Another source of signature corrections was the frequent practice in
+Chambers of describing a word as a variant spelling without specifying
+the parts of speech for which the variant was used.  While sometimes this
+could be resolved by considering, for instance, that none of Spenser's
+works related to computers, there were still many ambiguities, generally
+involving historical spellings.  I used the NSOED and, for a few
+particularly difficult cases, the full OED, to resolve such questions,
+resulting in the addition of words like "antickes", "gingled", "gingling",
+"poudred" and "poudring", and the removal of "wheeshed", "wheeshes" and
+"wheeshing".
+
+Some interesting corrections made for other reasons include:
+
+agonothete - Chambers lists "agonothetes" as "a director of public games".
+   But NSOED shows the word as "agonothete".  I have chosen to regard
+   this as an error in Chambers, and added "agonothete".
+airbus - Clearly OSW is in error here, since it shows "airbusses", but
+   not "airbus" or "airbuses".  What is unclear is whether "airbusses"
+   should be removed, or "airbus" added.  "air-bus" is listed under
+   "air", implying that "airbus" is erroneous, but it is also used
+   without hyphen under "aerobus", which persuaded me to add rather
+   than remove.  Similar reasons led to the addition of "cruiserweight".
+centimorgan - The most recent Chambers shows this word as "centi Morgan",
+   but earlier editions showed "centimorgan".  The two-word form is
+   very odd, and I could find no corroboration for it, so I added
+   back "centimorgan" as a signature.
+chondroma - This word is shown (under the heading "chondrus") only in the
+   plural, but there is no reason not to infer the signular.  "clast" and
+   "frunctan" were added for similar reasons.  I believe I found a case
+   where OSW includes such an implied singular, but I have misplaced it.
+francomania, etc. - The entry for "Franco-" includes the subentry
+   "n Francomania, Francophil, Francophile, Francophobe and Francophobia
+   (also without cap)."  It isn't clear whether the "also without cap"
+   applies to the entire list or not, but I have chosen to assume that
+   it does.  (It seems unlikely to me that "francophobia" would be
+   valid, but "francophobe" not.)
+piercings - This word was removed because "piercing" is not shown as a
+   noun, but only as a component of the phrase "body piercing".  The
+   word "rouming" was removed for similar reasons.
+pizzazz - This word, and its many variants, is presumably omitted from
+   OSW because, having four z's, it is impossible to play in Scrabble.
+   Since ENABLE2K intentionally does not limit itself exclusively to
+   Scrabble, these words have been added.
+wilco - Chambers' entry for this word shows it as an interjection, but
+   calls it an abbreviation in the text.  Since "abbrev" is not shown
+   as the part of speech, I have chosen to regard it as a legitimate
+   word.  (One might question why I chose to add "wilco", but not "sinh",
+   whose entry is similar.  Good question.)
+
+Some examples of corrections considered but ultimately rejected are as
+follows:
+
+alphatest - Chambers shows the verb "alphatest", which is omitted from
+   OSW.  This is dubious, and I have chosen to leave it out, based on
+   the spelling of the corresponding form "beta-test".
+peincted - Chambers shows "peinct" as an obsolete spelling of "painting".
+   This seems unlikely.  The OED confirms "peinct" as an old spelling
+   of "paint", implying the correctness of OSW's inclusion of "peincted"
+   and "peincting".
+sinoekete - The 1997 Chambers lists the word "sinoekete" as a variant of
+   "synoecete".  Previous editions listed "synoekete", which is the form
+   in OSW.  Since NSOED lists the -y- spelling, but not the -i- spelling,
+   I believe that the 1997 entry is a typo, and have retained "synoekete".
+   Similar considerations have led me to reject the Chambers "xeraphin"
+   in favor of the OSW "xeraphim".
+tottring - The 1997 Chambers lists "tottring" as a Shakespearean word
+   meaning "hanging in rags".  Previous editions listed the word as
+   "tott'ring", which of course is ineligible for OSW.  The literary
+   archives confirm that the correct form is "tott'ring", and so
+   "tottring" was not added.
+whatsoeer - The 1997 Chambers shows a number of words ending in "eer"
+   such as "whatsoeer", "whensoeer" and "wheneer" that previous
+   editions showed with an "e'er" ending.  I could find no confirmation
+   of these forms, and they are not in OSW.  But the fact that a number
+   of such words changed makes it seem less likely this is just a typo.
+   My best guess is that the problem is caused by the extreme similarity
+   of the apostrophe and the syllable accent in the Chambers typeface.
+   At any rate, without some confirmation of these forms, I was unable
+   to persuade myself to add them.
+
+
+Finally, I should note two things.  One is that the Chambers dictionary
+is a mammoth work.  While I have done my best to accurately reflect every
+obscure entry, is it not possible that I have avoided mistakes, even
+ignoring questions of interpretation without a clear resolution.  The
+ABLE list is still far from perfect; the most I can claim is that it is
+slightly improved from the previous version.
+
+In compiling this version of the ABLE list, I have received the advice of
+a number of anonymous experts (you know who you are).  I would like to
+offer my thanks here; without your help, many details of this project
+would have been less than satisfactorily resolved.  Of course, I myself
+take full blame for any remaining errors.
+
+
+
+Scrabble is a trademark of the Milton Bradley Co., Inc.
+--Alan Beale
