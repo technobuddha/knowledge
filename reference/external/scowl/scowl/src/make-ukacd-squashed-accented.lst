@@ -1,0 +1,11 @@
+#!/bin/sh
+# 🚨
+# 🚨 Source: https://netactuate.dl.sourceforge.net/project/wordlist/SCOWL/2020.12.07/scowl-2020.12.07.zip?viasf=1::src/make-ukacd-squashed-accented.lst
+# 🚨
+
+set -e
+
+cat r/ukacd/ukacd17.txt \
+  | tr -d '\r -'        \
+  > r/ukacd/squashed-accented.lst
+

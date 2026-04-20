@@ -1,0 +1,7 @@
+#!/bin/sh
+# 🚨
+# 🚨 Source: https://netactuate.dl.sourceforge.net/project/wordlist/SCOWL/2020.12.07/scowl-2020.12.07.zip?viasf=1::src/make-list
+# 🚨
+
+cat l/$1/* | src/filter | sort | uniq > working/$1.lst
+

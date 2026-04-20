@@ -1,0 +1,22 @@
+# 🚨
+# 🚨 Source: https://master.dl.sourceforge.net/project/wordlist/Alt12Dicts/2020.12.07/alt12dicts-2020.12.07.zip?viasf=1::alt12dicts-2020.12.07/signature2.txt
+# 🚨
+misdid
+misdone
+misspoke
+misspoken
+outfought
+overbought
+overbuilt
+overfed
+overlain
+redrawn
+redrew
+refroze
+refrozen
+regrew
+regrown
+reheard
+rehung
+resown
+restrung

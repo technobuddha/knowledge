@@ -1,0 +1,15 @@
+#!/bin/sh
+# 🚨
+# 🚨 Source: https://netactuate.dl.sourceforge.net/project/wordlist/SCOWL/2020.12.07/scowl-2020.12.07.zip?viasf=1::src/make-known-upper.lst
+# 🚨
+
+cat l/upper/*                                      \
+  | src/filter                                     \
+  | grep "^[A-Z]"                                  \
+  | src/find-ss working/all.lst                    \
+  | sort -u                                        \
+  | comm -23 - r/special/not-upper                 \
+  | src/add-other-spellings                        \
+  | sort -u                                        \
+  > working/known-upper.lst
+

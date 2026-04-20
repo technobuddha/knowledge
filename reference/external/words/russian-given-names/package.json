@@ -1,0 +1,27 @@
+# 🚨
+# 🚨 Source: https://github.com/words/russian-given-names/archive/refs/heads/master.zip::russian-given-names-master/package.json
+# 🚨
+{
+  "name": "russian-given-names",
+  "version": "1.0.0",
+  "description": "Russian given masculine and feminine names",
+  "main": "index.json",
+  "repository": "github:words/russian-given-names",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "keywords": [
+    "words",
+    "language",
+    "Russian"
+  ],
+  "author": "dfcreative",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/words/russian-given-names/issues"
+  },
+  "homepage": "https://github.com/words/russian-given-names#readme",
+  "devDependencies": {
+    "lodash": "^4.17.4"
+  }
+}

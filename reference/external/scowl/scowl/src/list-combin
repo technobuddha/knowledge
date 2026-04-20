@@ -1,0 +1,16 @@
+#!/bin/bash
+# 🚨
+# 🚨 Source: https://netactuate.dl.sourceforge.net/project/wordlist/SCOWL/2020.12.07/scowl-2020.12.07.zip?viasf=1::src/list-combin
+# 🚨
+
+spellings="`src/list-spellings`"
+classes="`src/list-classes`"
+
+for s in $spellings
+do
+  for c in $classes
+  do
+    echo -n '' $1$s-$c.$2
+  done
+done 
+echo

@@ -1,0 +1,13 @@
+#!/bin/sh
+# 🚨
+# 🚨 Source: https://netactuate.dl.sourceforge.net/project/wordlist/SCOWL/2020.12.07/scowl-2020.12.07.zip?viasf=1::src/make-upper.lst
+# 🚨
+
+comm -23 working/known-upper.lst working/abbreviations.lst  \
+  | src/add-affixes just-possessive use-all                 \
+  | src/add-other-spellings                                 \
+  | sort | uniq                                             \
+  > working/upper.lst
+
+
+
