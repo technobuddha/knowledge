@@ -2,11 +2,17 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-import { camelCase, empty, quote, splitLines } from '@technobuddha/library';
+import { camelCase, empty, err, locatePackageRoot, quote, splitLines } from '@technobuddha/library';
 import { saveRaw, saveTerser } from '@technobuddha/project';
 
 import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
+
+const root = await locatePackageRoot();
+if (!root) {
+  err('Could not find root directory');
+  process.exit(1);
+}
 
 // prettier-ignore
 const files: [string, string, number][] = [
@@ -22,7 +28,7 @@ const files: [string, string, number][] = [
 
 await Promise.all(
   files.flatMap(async ([input, output, skip]) => {
-    const docs = await readDocumentation(`moby-${output}`);
+    const docs = await readDocumentation(root, `moby-${output}`);
 
     return fs
       .readFile(path.join(externalReference, 'moby', 'mwords', input), 'utf-8')

@@ -3,7 +3,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-import { empty, quote, space, splitLines } from '@technobuddha/library';
+import { empty, err, locatePackageRoot, quote, space, splitLines } from '@technobuddha/library';
 import { saveRaw, saveTerser } from '@technobuddha/project';
 
 import { data, externalReference } from '../helpers/paths.ts';
@@ -13,6 +13,12 @@ import { exceptions } from './data/exceptions.ts';
 import { ipaPhones } from './data/phonemes.ts';
 import { spacedWords } from './data/spaced-words.ts';
 import { parse } from './moby-pronunciation-parser.ts';
+
+const root = await locatePackageRoot();
+if (!root) {
+  err('Could not find root directory');
+  process.exit(1);
+}
 
 function toIPA(phone: string): string {
   const ipaPhone = ipaPhones[phone];
@@ -37,7 +43,7 @@ function toIPA(phone: string): string {
 //   ['Z', 'z'], // Zq
 // ];
 
-const docs = await readDocumentation('moby-pronunciation-ipa');
+const docs = await readDocumentation(root, 'moby-pronunciation-ipa');
 
 await fs
   .readFile(path.join(externalReference, 'moby', 'mpron', 'mobypron.unc'), 'utf-8')

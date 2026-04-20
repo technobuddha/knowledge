@@ -2,18 +2,32 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-import { camelCase, empty, escapeJS, quote, splitLines } from '@technobuddha/library';
+import {
+  camelCase,
+  empty,
+  err,
+  escapeJS,
+  locatePackageRoot,
+  quote,
+  splitLines,
+} from '@technobuddha/library';
 import { saveRaw, saveTerser } from '@technobuddha/project';
 
 import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
+
+const root = await locatePackageRoot();
+if (!root) {
+  err('Could not find root directory');
+  process.exit(1);
+}
 
 // prettier-ignore
 const files: string[] = ['french','german', 'italian', 'japanese', 'spanish'];
 
 await Promise.all(
   files.map(async (input) => {
-    const docs = await readDocumentation(`moby-${input}`);
+    const docs = await readDocumentation(root, `moby-${input}`);
 
     return fs
       .readFile(path.join(externalReference, 'moby', 'mlang', `${input}.txt`), 'utf-8')

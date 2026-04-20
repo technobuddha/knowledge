@@ -2,16 +2,30 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-import { cleanEnd, emDash, empty, quote, splitLines } from '@technobuddha/library';
+import {
+  cleanEnd,
+  emDash,
+  empty,
+  err,
+  locatePackageRoot,
+  quote,
+  splitLines,
+} from '@technobuddha/library';
 import { saveRaw, saveTerser } from '@technobuddha/project';
 
 import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 
+const root = await locatePackageRoot();
+if (!root) {
+  err('Could not find root directory');
+  process.exit(1);
+}
+
 // Replace box drawing characters with em dash
 const correction = /\u2500/gv; // box drawings light horizontal
 
-const doc = await readDocumentation('moby-constitution');
+const doc = await readDocumentation(root, 'moby-constitution');
 
 await fs
   .readFile(path.join(externalReference, 'moby', 'mwords', 'usaconst.itu'), 'utf-8')

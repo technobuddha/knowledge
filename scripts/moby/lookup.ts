@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 // cspell:ignore rapidapi
 
 type Definition = {

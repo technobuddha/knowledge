@@ -6,6 +6,8 @@ import {
   clean,
   cleanEnd,
   empty,
+  err,
+  locatePackageRoot,
   quote,
   splitLines,
   titleCase,
@@ -15,6 +17,12 @@ import { saveRaw, saveTerser } from '@technobuddha/project';
 
 import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
+
+const root = await locatePackageRoot();
+if (!root) {
+  err('Could not find root directory');
+  process.exit(1);
+}
 
 type GENRE = 'comedy' | 'history' | 'poetry' | 'tragedy' | 'glossary';
 
@@ -62,7 +70,7 @@ const titles: [string, GENRE][] = [
   ['THE WINTER’S TALE',           'comedy'],
 ];
 
-const doc = await readDocumentation('moby-shakespeare');
+const doc = await readDocumentation(root, 'moby-shakespeare');
 
 const code = ['export const mobyShakespeare = {'];
 function shake(name: string, content: string[]): void {

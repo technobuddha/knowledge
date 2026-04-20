@@ -2,14 +2,20 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-import { empty, quote, splitLines } from '@technobuddha/library';
+import { empty, err, locatePackageRoot, quote, splitLines } from '@technobuddha/library';
 import { saveRaw, saveTerser } from '@technobuddha/project';
 
 import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 
-const docFirst = await readDocumentation('moby-scrabble-first');
-const docSecond = await readDocumentation('moby-scrabble-second');
+const root = await locatePackageRoot();
+if (!root) {
+  err('Could not find root directory');
+  process.exit(1);
+}
+
+const docFirst = await readDocumentation(root, 'moby-scrabble-first');
+const docSecond = await readDocumentation(root, 'moby-scrabble-second');
 
 const firstEdition: Set<string> = new Set();
 const secondEdition: Set<string> = new Set();

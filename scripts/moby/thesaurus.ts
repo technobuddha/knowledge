@@ -2,13 +2,19 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-import { empty, quote, splitLines } from '@technobuddha/library';
+import { empty, err, locatePackageRoot, quote, splitLines } from '@technobuddha/library';
 import { saveRaw, saveTerser } from '@technobuddha/project';
 
 import { data, externalReference } from '../helpers/paths.ts';
 import { readDocumentation } from '../helpers/read-documentation.ts';
 
-const docs = await readDocumentation('moby-thesaurus');
+const root = await locatePackageRoot();
+if (!root) {
+  err('Could not find root directory');
+  process.exit(1);
+}
+
+const docs = await readDocumentation(root, 'moby-thesaurus');
 
 await fs
   .readFile(path.join(externalReference, 'moby', 'mthes', 'mobythes.aur'), 'utf-8')
